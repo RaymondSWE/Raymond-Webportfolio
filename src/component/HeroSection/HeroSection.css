@@ -1,0 +1,24 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    /* background: url('./your-background-image.jpg') no-repeat center center/cover; */
+  }
+  
+  .hero-container h1 {
+    font-size: 3rem;
+    color: #ff9800; 
+  }
+  
+  .hero-container p {
+    font-size: 1.5rem;
+    color: #c2c2c2; 
+    margin-top: 1rem;
+  }
+  
+  .hero-container button {
+    margin-top: 2rem;
+  }
+  
