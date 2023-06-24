@@ -7,8 +7,8 @@
   font-family: 'Orbitron', sans-serif;
   color: #ffffff;
   text-align: center;
-  position: relative; 
-  overflow: hidden; 
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-container::before {
@@ -18,10 +18,29 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(45deg, #976d2d 0%, #121212 100%); 
-  animation: glitch-bg 5s infinite;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.05) 2%, rgba(255, 255, 255, 0.05) 98%, rgba(0, 0, 0, 0) 100%);
   z-index: -1;
+  animation: glitch-bg 5s infinite linear;
 }
+
+@keyframes glitch-bg {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(4%);
+  }
+  50% {
+    transform: translateX(-4%);
+  }
+  75% {
+    transform: translateX(4%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
 .glitch {
   font-size: 3.5rem;
@@ -216,21 +235,3 @@
   }
 }
 
-
-@keyframes glitch-bg {
-  0% {
-    transform: translate(-30%, -30%);
-  }
-  25% {
-    transform: translate(30%, -30%);
-  }
-  50% {
-    transform: translate(30%, 30%);
-  }
-  75% {
-    transform: translate(-30%, 30%);
-  }
-  100% {
-    transform: translate(-30%, -30%);
-  }
-}

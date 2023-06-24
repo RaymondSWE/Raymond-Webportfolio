@@ -4,7 +4,6 @@
     left: 0;
     width: 100%;
     padding: 1rem 2rem;
-    background-color: rgba(0,0,0,0.7); 
     z-index: 1000; 
     font-family: 'Orbitron', sans-serif; /* A modern, futuristic font */
   }
