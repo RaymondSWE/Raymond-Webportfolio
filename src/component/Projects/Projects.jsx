@@ -1,5 +1,4 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
 import './Projects.css';
 import csgoImage from '../../img/csgo.png';
 
@@ -16,7 +15,7 @@ const Projects = () => {
       liveDemo: 'https://csfairtrade.com/',
       githubRepo: 'GitHub repository available upon request.',
     },
-    
+    // Add more projects...
   ];
 
   return (
@@ -31,27 +30,51 @@ const Projects = () => {
   );
 };
 
-const ProjectCard = ({ title, description, image, url, github }) => { // Receive github URL as a prop
+const ProjectCard = ({
+  title,
+  description,
+  image,
+  liveDemo,
+  githubRepo,
+  authentication,
+  platform,
+  deployment,
+}) => {
+  const [showDetails, setShowDetails] = useState(false);
+
+  const toggleDetails = () => {
+    setShowDetails(!showDetails);
+  };
+
   return (
-    <motion.div className="project-card" whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }}>
-      <div className="project-inner">
-        <div className="project-front">
-          <img src={image} alt={title} />
-        </div>
-        <div className="project-back">
-          <h3>{title}</h3>
-          <p className='project-description'>{description}</p>
-          <div className="project-buttons">
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              <button>Live</button>
-            </a>
-            <a href={github} target="_blank" rel="noopener noreferrer">
-              <button>GitHub</button>
-            </a>
-          </div>
-        </div>
+    <div className="project-card">
+      <div className="project-image">
+        <img src={image} alt={title} />
       </div>
-    </motion.div>
+      <div className="project-details">
+        <h3>{title}</h3>
+        <p className="project-description">{description}</p>
+        <div className="project-buttons">
+          <a href={liveDemo} target="_blank" rel="noopener noreferrer">
+            <button>Live Demo</button>
+          </a>
+          <a href={githubRepo} target="_blank" rel="noopener noreferrer">
+            <button>GitHub</button>
+          </a>
+          <button onClick={toggleDetails}>More Information</button>
+        </div>
+        {showDetails && (
+          <div className="project-more-info">
+            <h4>Authentication</h4>
+            <p>{authentication}</p>
+            <h4>Platform</h4>
+            <p>{platform}</p>
+            <h4>Deployment</h4>
+            <p>{deployment}</p>
+          </div>
+        )}
+      </div>
+    </div>
   );
 };
 
