@@ -5,54 +5,23 @@ import './WorkExperience.css';
 const WorkExperience = () => {
   const jobs = [
     {
-      title: 'Software Engineer',
-      company: 'Company A',
-      description: 'Job description...',
-      startDate: '2020',
-      endDate: 'Present',
-    },{
-        title: 'Software Engineer',
-        company: 'Company A',
-        description: 'Job description...',
-        startDate: '2020',
-        endDate: 'Present',
-      },
-      {
-        title: 'Software Engineer',
-        company: 'Company A',
-        description: 'Job description...',
-        startDate: '2020',
-        endDate: 'Present',
-      },
-      {
-        title: 'Software Engineer',
-        company: 'Company A',
-        description: 'Job description...',
-        startDate: '2020',
-        endDate: 'Present',
-      },
-      {
-        title: 'Software Engineer',
-        company: 'Company A',
-        description: 'Job description...',
-        startDate: '2020',
-        endDate: 'Present',
-      },
-      {
-        title: 'Software Engineer',
-        company: 'Company A',
-        description: 'Job description...',
-        startDate: '2020',
-        endDate: 'Present',
-      },
-      {
-        title: 'Software Engineer',
-        company: 'Company A',
-        description: 'Job description...',
-        startDate: '2020',
-        endDate: 'Present',
-      },
-    // More jobs...
+      title: 'Junior Developer',
+      company: "Bally's Skövde",
+      startDate: 'Dec 2022',
+      endDate: 'Jan 2023',
+    },
+    {
+      title: 'Junior Developer',
+      company: "Bally's Skövde",
+      startDate: 'Jun 2023',
+      endDate: 'Jul 2023',
+    },
+    {
+      title: 'Full Stack Developer',
+      company: "Integrify Remote",
+      startDate: 'Jan 2022',
+      endDate: 'Jun 2022',
+    },
   ];
 
   return (
@@ -80,7 +49,6 @@ const TimelineItem = ({ title, company, description, startDate, endDate }) => {
         <span className="tag" style={{ background: '#ff9800' }}>{startDate} - {endDate}</span>
         <h2>{title}</h2>
         <h3>{company}</h3>
-        <p>{description}</p>
         <span className="circle" />
       </div>
     </div>

@@ -1,18 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Projects.css';
-// import ProjectImage from '../../img/project.jpg';
+import csgoImage from '../../img/csgo.png';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Project Title 1',
-      description: 'Project description.. dsadasdsad sad sadsdsa.',
-      // image: ProjectImage,
-      url: 'https://projecturl.com',
-      github: 'https://github.com/user/project1', // Add github URL
+      title: 'CSFairTrade',
+      description: 'CSFairTrade is a full-stack trading platform developed by me. The platform provides users with the ability to buy and sell in-game skins for the CS:GO market, with a total value of over 1 billion euros.',
+      image: csgoImage,
+      technologyStack: 'React.js, Node.js, Express.js, MySQL, Socket.IO, HTTPS',
+      authentication: 'Integrated Steam API OAuth 2.0 for user registration and session management.',
+      platform: 'CSFairTrade offers users an interface to manage their inventories directly within the platform. It fetches user inventory data, obtains data from all bots, and accesses the current price list. Data is stored and displayed using MySQL due to API request limitations from Steam. The database is hosted on Azure.',
+      deployment: 'Hosted on DigitalOcean droplets, running on PM2. Implemented CI/CD pipeline using GitHub Actions for frontend and backend in both development and production environments. Both frontend and backend are secured with SSL certification and traffic is managed using Nginx.',
+      liveDemo: 'https://csfairtrade.com/',
+      githubRepo: 'GitHub repository available upon request.',
     },
-    // More projects...
+    
   ];
 
   return (

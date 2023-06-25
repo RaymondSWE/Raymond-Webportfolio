@@ -2,7 +2,7 @@
   padding: 2rem;
   font-family: 'Orbitron', sans-serif;
   color: #000;
-  background: #121212;;
+  background: #121212;
   margin: auto;
 }
 
@@ -33,36 +33,38 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  place-items: center; /* Keep grid items centered */
+  justify-items: center;
 }
 
 .project-description {
-  width: 50%;
+  width: 100%;
+  text-align: center;
 }
 
 .project-card {
-  perspective: 1500px;  
-  position: relative; 
+  perspective: 1500px;
+  position: relative;
   width: 300px;
   height: 300px;
 }
+
 .project-inner {
-  position: absolute;  
+  position: absolute;
   width: 100%;
   height: 100%;
   text-align: center;
   transition: transform 1s;
   transform-style: preserve-3d;
-  transform-origin: center; 
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transform-origin: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
 
 .project-card:hover .project-inner {
   transform: rotateY(180deg);
 }
 
-.project-front, .project-back {
+.project-front,
+.project-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -74,24 +76,25 @@
 }
 
 .project-front {
-  background-color: #333333;;
+  background-color: #333333;
   color: black;
 }
 
 .project-front img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
+
 
 .project-back {
   background-color: #222;
   color: white;
   transform: rotateY(180deg);
   padding: 1rem;
-  width: 100%; 
-  overflow: hidden; 
-  text-align: center; 
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
 }
 
 .project-back h3 {
