@@ -105,3 +105,49 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+
+@media only screen and (max-width: 1200px) {
+  .timeline {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .education-section h2 {
+    font-size: 1.5em;
+  }
+
+  .timeline-item {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .timeline-item::before {
+    right: calc(50% - 10px);
+  }
+
+  .timeline-item-content {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .timeline::before {
+    left: calc(50% - 1px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .education-section {
+    padding: 1rem;
+  }
+
+  .education-section h2 {
+    font-size: 1.2em;
+  }
+
+  .timeline-item-content {
+    padding: 15px;
+  }
+}

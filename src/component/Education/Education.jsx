@@ -5,12 +5,17 @@ import './Education.css';
 const Education = () => {
   const education = [
     {
-      school: 'School Name 1',
-      degree: 'Degree 1',
-      startDate: 'September 2015',
-      endDate: 'June 2019',
+      school: 'University Skövde',
+      degree: 'Computer science - specialization system development',
+      startDate: 'August 2021',
+      endDate: 'May 2024',
     },
-    // Add or remove education entries as needed
+    {
+      school: 'University Borås',
+      degree: 'Economic (Unfinished 60 credits)',
+      startDate: 'August 2020',
+      endDate: 'May 2021',
+    },
   ];
 
   return (
