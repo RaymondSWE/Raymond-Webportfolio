@@ -178,6 +178,21 @@
   }
 }
 
+.social-icons {
+  margin-top: 2rem;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.icon:hover {
+  color: #ff9900;
+}
+
 
 
 @keyframes glitch-anim {

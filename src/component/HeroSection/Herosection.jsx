@@ -1,7 +1,17 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './HeroSection.css';
 
 const HeroSection = () => {
+  const openGithubProfile = () => {
+    window.open('https://github.com/RaymondSWE', '_blank');
+  };
+
+  const openLinkedInProfile = () => {
+    window.open('https://www.linkedin.com/in/raman-mohammed/', '_blank');
+  };
+
   return (
     <div className="hero-container">
       <div className="hero-background"></div>
@@ -15,7 +25,10 @@ const HeroSection = () => {
         With a foundation in computer science and practical experience, I excel in front-end and
         back-end development, database design, and cloud services. Always open to learn more.
       </p>
-      <button className="cta-button">See My Work</button>
+      <div className="social-icons">
+        <FontAwesomeIcon icon={faGithub} className="icon" onClick={openGithubProfile} />
+        <FontAwesomeIcon icon={faLinkedin} className="icon" onClick={openLinkedInProfile} />
+      </div>
     </div>
   );
 };
