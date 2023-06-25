@@ -9,6 +9,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  padding: 20px;
 }
 
 .hero-container::before {
@@ -18,7 +19,6 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.05) 2%, rgba(255, 255, 255, 0.05) 98%, rgba(0, 0, 0, 0) 100%);
   z-index: -1;
   animation: glitch-bg 5s infinite linear;
 }
@@ -49,6 +49,8 @@
   color: #ff9900; 
   text-transform: uppercase;
   text-shadow: 0 0 5px rgba(0, 230, 212, 0.7); 
+  font-size: 2rem;
+
 }
 
 .glitch::before,
@@ -81,6 +83,8 @@
   width: 50%;
   font-size: 1.2rem; 
   line-height: 1.6; 
+  width: 80%;
+
 }
 
 .cta-button {
@@ -101,6 +105,79 @@
   background-color: #ffffff; 
   box-shadow: 0 0 10px rgba(221, 134, 3, 0.7); 
 }
+
+@media only screen and (max-width: 1024px) {
+  .hero-container {
+    height: 70vh;
+  }
+
+  .glitch {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .hero-story {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-container {
+    height: 100vh;
+  }
+
+  .glitch {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-story {
+    width: 90%;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-container {
+    height: 100vh;
+    padding: 10px;
+  }
+
+  .glitch {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-story {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
 
 
 @keyframes glitch-anim {

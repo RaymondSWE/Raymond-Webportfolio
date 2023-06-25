@@ -1,4 +1,5 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import './Education.css';
 
 const Education = () => {
@@ -13,15 +14,32 @@ const Education = () => {
   ];
 
   return (
-    <div id="education" className="education-section">
+    <div className="education-section">
       <h2>Education</h2>
-      {education.map((education, index) => (
-        <div key={index} className="education-card">
-          <h3>{education.school}</h3>
-          <p>{education.degree}</p>
-          <p>{education.startDate} - {education.endDate}</p>
-        </div>
-      ))}
+      <div className="timeline">
+        {education.map((item, index) => (
+          <TimelineItem key={index} {...item} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const TimelineItem = ({ school, degree, startDate, endDate }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  return (
+    <div ref={ref} className={`timeline-item ${inView ? 'in-view' : ''}`}>
+      <div className="timeline-item-content">
+        <span className="tag" style={{ background: '#ff9800' }}>
+          {startDate} - {endDate}
+        </span>
+        <h3>{school}</h3>
+        <p>{degree}</p>
+      </div>
     </div>
   );
 };

@@ -1,54 +1,107 @@
 .education-section {
   padding: 2rem;
-  background: linear-gradient(45deg, #1e1e1e, #2b2b2b);
+  color: #c2c2c2;
   font-family: 'Orbitron', sans-serif;
-  color: #fff;
 }
 
 .education-section h2 {
   text-align: center;
   margin-bottom: 1rem;
-  color: #c2c2c2;
+  color: #ff9800;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2em;
   position: relative;
 }
 
-.education-section h2:after {
+.education-section h2::after {
   content: "";
   display: block;
   width: 50px;
   height: 3px;
-  background: linear-gradient(45deg, #b8321a, #ff9900);
+  background: #ff9800;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: -10px;
 }
 
-.education-card {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 10px;
-  margin: 2rem;
-  padding: 2rem;
-  transition: 0.3s;
-  text-align: center;
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.education-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16);
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #333;
 }
 
-.education-card h3 {
-  color: #ff9900;
-  font-size: 1.5em;
-  margin-bottom: 0.5rem;
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  position: relative;
+  margin-bottom: 50px;
 }
 
-.education-card p {
-  margin-bottom: 0.5rem;
+.timeline-item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #ff9800;
+  position: absolute;
+  top: calc(50% - 10px);
+  right: -60px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #333;
+}
+
+.timeline-item-content {
+  background: #333;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.timeline-item-content::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #333;
+  top: calc(50% - 10px);
+  right: -10px;
+  border-radius: 50%;
+}
+
+.timeline-item-content .tag {
+  background: #ff9800;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.timeline-item-content h3 {
+  font-size: 1.2em;
   color: #c2c2c2;
+}
+
+.timeline-item-content p {
+  color: #c2c2c2;
+}
+
+.timeline-item.in-view .timeline-item-content {
+  opacity: 1;
+  transform: translateY(0);
 }

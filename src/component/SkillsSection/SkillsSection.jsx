@@ -5,8 +5,6 @@ import Javascript from '../../img/Javascript.jpg';
 import ReactImg from '../../img/react.jpg';
 import Redux from '../../img/redux.png';
 
-
-
 const SkillsSection = () => {
   const skills = [
     { name: 'JavaScript', level: 5, image: Javascript },
@@ -20,12 +18,10 @@ const SkillsSection = () => {
       <div className="skills-container">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
-            <img src={skill.image} alt={skill.name} className="skill-image" />
+            <div className="skill-image" style={{ backgroundImage: `url(${skill.image})` }} />
             <div className="skill-name">{skill.name}</div>
-            <div className="skill-rating">
-              {[...Array(5)].map((e, i) => (
-                <span key={i} className={`star ${i < skill.level ? 'filled' : ''}`}></span>
-              ))}
+            <div className="skill-bar">
+              <div className="skill-level" style={{ width: `${skill.level * 20}%` }} />
             </div>
           </div>
         ))}

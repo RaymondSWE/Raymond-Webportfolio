@@ -3,8 +3,9 @@ import Contact from './component/Contact/Contact';
 import Education from './component/Education/Education';
 import HeroSection from './component/HeroSection/Herosection';
 import Navbar from './component/Navbar/Navbar';
-import ProjectsSection from './component/ProjectsSection/ProjectsSection';
+import Projects from './component/Projects/Projects';
 import SkillsSection from './component/SkillsSection/SkillsSection';
+import WorkExperience from './component/WorkExperience/WorkExperience';
 
 function App() {
   return (
@@ -16,8 +17,12 @@ function App() {
       <div className="section-container">
         <SkillsSection />
       </div>
+
       <div className="section-container">
-        <ProjectsSection />
+        <WorkExperience />
+      </div>
+      <div className="section-container">
+        <Projects />
       </div>
       <div className="section-container">
         <Education />

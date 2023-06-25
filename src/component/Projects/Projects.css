@@ -1,0 +1,124 @@
+.projects-section {
+  padding: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #000;
+  background: #121212;;
+  margin: auto;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ff9800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2em;
+  position: relative;
+}
+
+.projects-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #ff9800;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  place-items: center; /* Keep grid items centered */
+}
+
+.project-description {
+  width: 50%;
+}
+
+.project-card {
+  perspective: 1500px;  
+  position: relative; 
+  width: 300px;
+  height: 300px;
+}
+.project-inner {
+  position: absolute;  
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform-origin: center; 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.project-card:hover .project-inner {
+  transform: rotateY(180deg);
+}
+
+.project-front, .project-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-front {
+  background-color: #333333;;
+  color: black;
+}
+
+.project-front img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.project-back {
+  background-color: #222;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 1rem;
+  width: 100%; 
+  overflow: hidden; 
+  text-align: center; 
+}
+
+.project-back h3 {
+  margin-bottom: 1rem;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.project-buttons button {
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.project-buttons button:hover {
+  background-color: #555555;
+  color: white;
+}
