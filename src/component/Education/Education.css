@@ -28,13 +28,13 @@
   bottom: -10px;
 }
 
-.timeline {
+.education-section-timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.timeline::before {
+.education-section-timeline::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -43,7 +43,7 @@
   background: #333;
 }
 
-.timeline-item {
+.education-section-timeline-item {
   display: flex;
   justify-content: flex-end;
   padding-right: 30px;
@@ -51,7 +51,7 @@
   margin-bottom: 50px;
 }
 
-.timeline-item::before {
+.education-section-timeline-item::before {
   content: '';
   width: 20px;
   height: 20px;
@@ -63,7 +63,7 @@
   box-shadow: 0 0 0 3px #333;
 }
 
-.timeline-item-content {
+.education-section-timeline-item-content {
   background: #333;
   padding: 20px;
   border-radius: 6px;
@@ -73,7 +73,7 @@
   transition: opacity 1s, transform 1s;
 }
 
-.timeline-item-content::before {
+.education-section-timeline-item-content::before {
   content: '';
   position: absolute;
   width: 20px;
@@ -84,7 +84,7 @@
   border-radius: 50%;
 }
 
-.timeline-item-content .tag {
+.education-section-timeline-item-content .tag {
   background: #ff9800;
   color: #333;
   padding: 5px 10px;
@@ -94,23 +94,23 @@
   border-radius: 3px;
 }
 
-.timeline-item-content h3 {
+.education-section-timeline-item-content h3 {
   font-size: 1.2em;
   color: #c2c2c2;
 }
 
-.timeline-item-content p {
+.education-section-timeline-item-content p {
   color: #c2c2c2;
 }
 
-.timeline-item.in-view .timeline-item-content {
+.education-section-timeline-item.in-view .timeline-item-content {
   opacity: 1;
   transform: translateY(0);
 }
 
 
 @media only screen and (max-width: 1200px) {
-  .timeline {
+  .education-section-timeline {
     max-width: 100%;
     padding: 0 1rem;
   }
@@ -121,21 +121,21 @@
     font-size: 1.5em;
   }
 
-  .timeline-item {
+  .education-section-timeline-item {
     justify-content: center;
     padding-right: 0;
   }
 
-  .timeline-item::before {
+  .education-section-timeline-item::before {
     right: calc(50% - 10px);
   }
 
-  .timeline-item-content {
+  .education-section-timeline-item-content {
     max-width: 80%;
     text-align: center;
   }
 
-  .timeline::before {
+  .education-section-timeline::before {
     left: calc(50% - 1px);
   }
 }
@@ -149,7 +149,7 @@
     font-size: 1.2em;
   }
 
-  .timeline-item-content {
+  .education-section-timeline-item-content {
     padding: 15px;
   }
 }

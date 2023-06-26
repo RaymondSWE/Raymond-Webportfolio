@@ -21,7 +21,7 @@ const Education = () => {
   return (
     <div id='education' className="education-section">
       <h2 className="education-section-title">Education</h2>
-      <div className="timeline">
+      <div className="education-section-timeline">
         {education.map((item, index) => (
           <TimelineItem key={index} {...item} />
         ))}
