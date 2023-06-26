@@ -14,25 +14,25 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#home" className="navbar-logo">Raman Mohammed</a>
-        <ul className="navbar-menu">
-          <li className="navbar-item">
-            <a href="#about" className="navbar-links" onClick={handleClick}>About</a>
+        <a href="#home" className="navbar-container-navbar-logo">Raman Mohammed</a>
+        <ul className="navbar-container-navbar-menu">
+          <li className="navbar-container-navbar-item">
+            <a href="#about" className="navbar-container-navbar-links" onClick={handleClick}>About</a>
           </li>
-          <li className="navbar-item">
-            <a href="#skills" className="navbar-links" onClick={handleClick}>Skills</a>
+          <li className="navbar-container-navbar-item">
+            <a href="#skills" className="navbar-container-navbar-links" onClick={handleClick}>Skills</a>
           </li>
-          <li className="navbar-item">
-            <a href="#workexperience" className="navbar-links" onClick={handleClick}>Work</a>
+          <li className="navbar-container-navbar-item">
+            <a href="#workexperience" className="navbar-container-navbar-links" onClick={handleClick}>Work</a>
           </li>
-          <li className="navbar-item">
-            <a href="#projects" className="navbar-links" onClick={handleClick}>Projects</a>
+          <li className="navbar-container-navbar-item">
+            <a href="#projects" className="navbar-container-navbar-links" onClick={handleClick}>Projects</a>
           </li>
-          <li className="navbar-item">
-            <a href="#education" className="navbar-links" onClick={handleClick}>Education</a>
+          <li className="navbar-container-navbar-item">
+            <a href="#education" className="navbar-container-navbar-links" onClick={handleClick}>Education</a>
           </li>
-          <li className="navbar-item">
-            <a href="#contact" className="navbar-links" onClick={handleClick}>Contact</a>
+          <li className="navbar-container-navbar-item">
+            <a href="#contact" className="navbar-container-navbar-links" onClick={handleClick}>Contact</a>
           </li>
         </ul>
       </div>
