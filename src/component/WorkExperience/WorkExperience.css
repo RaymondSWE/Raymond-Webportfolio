@@ -1,8 +1,4 @@
 
-.work-experience-section {
-  font-family: 'Orbitron', sans-serif;
-}
-
 .work-experience-section h2 {
     text-align: center;
     margin-bottom: 1rem;
@@ -12,6 +8,11 @@
     font-size: 2em;
     position: relative;
     
+  }
+
+  .work-experience-title{
+    font-family: 'Orbitron', sans-serif;
+
   }
   
   .work-experience-section h2::after {

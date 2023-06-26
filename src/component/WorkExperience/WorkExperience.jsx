@@ -7,26 +7,44 @@ const WorkExperience = () => {
     {
       title: 'Junior Developer',
       company: "Bally's Skövde",
-      startDate: 'Dec 2022',
-      endDate: 'Jan 2023',
+      startDate: 'December 2022',
+      endDate: 'January 2023',
     },
     {
       title: 'Junior Developer',
       company: "Bally's Skövde",
-      startDate: 'Jun 2023',
-      endDate: 'Jul 2023',
+      startDate: 'June 2023',
+      endDate: 'July 2023',
     },
     {
       title: 'Full Stack Developer',
       company: "Integrify Remote",
       startDate: 'Jan 2022',
-      endDate: 'Jun 2022',
+      endDate: 'June 2022',
+    },
+    {
+      title: 'Truck Driver',
+      company: "Mathem",
+      startDate: 'June 2019',
+      endDate: 'April 2022',
+    },
+    {
+      title: 'Fitter',
+      company: "Volvo Cars",
+      startDate: 'August 2017',
+      endDate: 'June 2018',
+    },
+    {
+      title: 'Waiter',
+      company: "Scandic Hotels",
+      startDate: 'May 2016',
+      endDate: 'June 2019',
     },
   ];
 
   return (
     <div className="work-experience-section">
-      <h2>Work Experience</h2>
+      <h2 className='work-experience-title'>Work Experience</h2>
       <div className="timeline">
         {jobs.map((job, index) => (
           <TimelineItem key={index} {...job} />

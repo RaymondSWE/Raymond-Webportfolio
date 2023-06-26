@@ -1,27 +1,59 @@
 import React from 'react';
 import './SkillsSection.css';
 // import the images
-import Javascript from '../../img/Javascript.jpg';
-import ReactImg from '../../img/react.jpg';
-import Redux from '../../img/redux.png';
+import JavascriptLogo from '../../img/logo/Javascript.png';
+import ReactLogo from '../../img/logo/React.png';
+import ReduxLogo from '../../img/logo/Redux.png';
+import NodeLogo from '../../img/logo/Node.png'
+import TypescriptLogo from '../../img/logo/Typescript.png'
+import ExpressLogo from '../../img/logo/Express.png'
+import JavaLogo from '../../img/logo/Java.png'
+import Azure from '../../img/logo/Azure.png'
+import Docker from '../../img/logo/Docker.png'
+import Spring from '../../img/logo/Spring.png'
+import Cpp from '../../img/logo/Cpp.png'
+import Git from '../../img/logo/Git.png'
+import Linux from '../../img/logo/Linux.png'
+import Csharp from '../../img/logo/Csharp.png'
+
+
+
+
+
+
+
 
 const SkillsSection = () => {
   const skills = [
-    { name: 'JavaScript', level: 5, image: Javascript },
-    { name: 'React', level: 5, image: ReactImg },
-    { name: 'Redux', level: 2, image: Redux },
+    { name: 'JavaScript', level: 5, icon: JavascriptLogo },
+    { name: 'React', level: 5, icon: ReactLogo },
+    { name: 'Node.js', level: 5, icon: NodeLogo },
+    { name: 'TypeScript', level: 4, icon: TypescriptLogo },  
+    { name: 'Express.js', level: 4, icon: ExpressLogo },  
+    { name: 'Java', level: 4, icon: JavaLogo },
+    { name: 'Redux', level: 3, icon: ReduxLogo },  
+    { name: 'Azure', level: 3, icon: Azure },
+    { name: 'Spring', level: 3, icon: Spring },  
+    { name: 'C++', level: 3, icon: Cpp },  
+    { name: 'Git', level: 3, icon: Git },
+    { name: 'Linux', level: 2, icon: Linux },
+    { name: 'Docker', level: 1, icon: Docker },
+    { name: 'C#', level: 1, icon: Csharp },
+
   ];
 
   return (
     <div id="skills" className="skills-section">
       <h2>Skills</h2>
-      <div className="skills-container">
+      <div className="skills-grid">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
-            <div className="skill-image" style={{ backgroundImage: `url(${skill.image})` }} />
-            <div className="skill-name">{skill.name}</div>
-            <div className="skill-bar">
-              <div className="skill-level" style={{ width: `${skill.level * 20}%` }} />
+            <div className="skill-image" style={{ backgroundImage: `url(${skill.icon})` }} />
+            <div className="skill-content">
+              <div className="skill-name">{skill.name}</div>
+              <div className="skill-bar">
+                <div className="skill-level" style={{ width: `${skill.level * 20}%` }} />
+              </div>
             </div>
           </div>
         ))}
@@ -31,3 +63,5 @@ const SkillsSection = () => {
 };
 
 export default SkillsSection;
+
+

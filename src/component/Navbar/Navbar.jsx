@@ -2,25 +2,34 @@ import React from 'react';
 import './Navbar.css'; 
 
 const Navbar = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    const target = e.target.getAttribute("href");
+    const section = document.querySelector(target);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <a href="#home" className="navbar-logo">Raman Mohammed</a>
         <ul className="navbar-menu">
           <li className="navbar-item">
-            <a href="#about" className="navbar-links">About</a>
+            <a href="#about" className="navbar-links" onClick={handleClick}>About</a>
           </li>
           <li className="navbar-item">
-            <a href="#skills" className="navbar-links">Skills</a>
+            <a href="#skills" className="navbar-links" onClick={handleClick}>Skills</a>
           </li>
           <li className="navbar-item">
-            <a href="#projects" className="navbar-links">Projects</a>
+            <a href="#projects" className="navbar-links" onClick={handleClick}>Projects</a>
           </li>
           <li className="navbar-item">
-            <a href="#education" className="navbar-links">Education</a>
+            <a href="#education" className="navbar-links" onClick={handleClick}>Education</a>
           </li>
           <li className="navbar-item">
-            <a href="#contact" className="navbar-links">Contact</a>
+            <a href="#contact" className="navbar-links" onClick={handleClick}>Contact</a>
           </li>
         </ul>
       </div>

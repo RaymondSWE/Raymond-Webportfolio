@@ -6,21 +6,21 @@ const Education = () => {
   const education = [
     {
       school: 'University Skövde',
-      degree: 'Computer science - specialization system development',
+      degree: "Bachelor's in Computer Science - Specialization System Development",
       startDate: 'August 2021',
       endDate: 'May 2024',
     },
     {
       school: 'University Borås',
-      degree: 'Economic (Unfinished 60 credits)',
+      degree: "Bachelor's in Economics (60 credits)",
       startDate: 'August 2020',
       endDate: 'May 2021',
     },
   ];
 
   return (
-    <div className="education-section">
-      <h2>Education</h2>
+    <div id='education' className="education-section">
+      <h2 className="education-section-title">Education</h2>
       <div className="timeline">
         {education.map((item, index) => (
           <TimelineItem key={index} {...item} />

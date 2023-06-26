@@ -1,7 +1,6 @@
 .education-section {
   padding: 2rem;
   color: #c2c2c2;
-  font-family: 'Orbitron', sans-serif;
 }
 
 .education-section h2 {
@@ -14,6 +13,9 @@
   position: relative;
 }
 
+.education-section-title {
+  font-family: 'Orbitron', sans-serif;
+}
 .education-section h2::after {
   content: "";
   display: block;
