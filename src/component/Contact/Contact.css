@@ -26,19 +26,19 @@
     bottom: -10px;
   }
   
-  .contact-form {
+  .contact-section-contact-form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     margin: auto;
   }
   
-  .contact-form input, .contact-form textarea {
+  .contact-section-contact-form input, .contact-form textarea {
     margin-bottom: 1rem;
     padding: 0.5rem;
   }
   
-  .contact-form button {
+  .contact-section-contact-form button {
     padding: 0.5rem;
     color: #fff;
     background-color: #ff9800;
