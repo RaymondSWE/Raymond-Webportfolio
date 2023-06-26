@@ -47,12 +47,12 @@ const SkillsSection = () => {
       <h2>Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
-          <div key={index} className="skill-card">
-            <div className="skill-image" style={{ backgroundImage: `url(${skill.icon})` }} />
-            <div className="skill-content">
-              <div className="skill-name">{skill.name}</div>
-              <div className="skill-bar">
-                <div className="skill-level" style={{ width: `${skill.level * 20}%` }} />
+          <div key={index} className="skills-section-skill-card">
+            <div className="skills-section-skill-image" style={{ backgroundImage: `url(${skill.icon})` }} />
+            <div className="skills-section-skill-content">
+              <div className="skills-section-skill-name">{skill.name}</div>
+              <div className="skills-section-skill-bar">
+                <div className="skills-section-skill-level" style={{ width: `${skill.level * 20}%` }} />
               </div>
             </div>
           </div>
