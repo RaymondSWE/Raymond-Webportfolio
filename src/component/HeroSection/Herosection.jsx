@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './HeroSection.css';
+import TypingEffect from './TypingEffect';
 
 const HeroSection = () => {
   const openGithubProfile = () => {
@@ -15,7 +16,9 @@ const HeroSection = () => {
   return (
     <div id='about' className="hero-container">
       <div className="hero-background"></div>
-      <div className="glitch" data-text="RAMAN MOHAMMED">RAMAN MOHAMMED</div>
+      <div className='glitch'>
+      <TypingEffect text=" Hey! I'm Raman Mohammed" speed={150} />
+      </div>
       <p className="subtitle">Fullstack Developer</p>
       <p className="hero-story">
         Software Developer with 2 years of experience across various platforms and languages.
