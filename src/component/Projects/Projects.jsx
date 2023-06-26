@@ -5,6 +5,8 @@ import blackjackImage from '../../img/blackjack.png';
 import taskmanagementImage from '../../img/Todo-javaswing.png';
 import raydeployImage from '../../img/RayDeploy.png';
 import webportfolioImage from '../../img/webportfolio.png';
+import { useInView } from 'react-intersection-observer';
+
 
 const Projects = () => {
   const projects = [
@@ -69,6 +71,10 @@ const Projects = () => {
 };
 
 const ProjectCard = ({ project }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   const handleButtonClick = (link) => {
     if (!link) {
@@ -79,7 +85,7 @@ const ProjectCard = ({ project }) => {
   const { title, description, image, liveDemo, githubRepo, technologyStack } = project;
 
   return (
-    <div className="project-card">
+    <div ref={ref} className={`project-card ${inView ? 'in-view' : ''}`}>
       <div className="project-image">
         <img src={image} alt={title} />
       </div>

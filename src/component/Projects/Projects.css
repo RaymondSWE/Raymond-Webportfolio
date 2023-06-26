@@ -45,6 +45,14 @@
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.project-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-card:hover {

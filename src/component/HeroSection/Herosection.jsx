@@ -16,7 +16,7 @@ const HeroSection = () => {
     <div id='about' className="hero-container">
       <div className="hero-background"></div>
       <div className="glitch" data-text="RAMAN MOHAMMED">RAMAN MOHAMMED</div>
-      <p className="subtitle">Web Developer | Machine Learning Enthusiast | Technophile</p>
+      <p className="subtitle">Fullstack Developer</p>
       <p className="hero-story">
         Software Developer with 2 years of experience across various platforms and languages.
         I gained experience in Java, React.js, TypeScript, Node.js, MySQL, and AWS during school
