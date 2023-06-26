@@ -43,7 +43,7 @@ const WorkExperience = () => {
   ];
 
   return (
-    <div className="work-experience-section">
+    <div id="workexperience" className="work-experience-section">
       <h2 className='work-experience-title'>Work Experience</h2>
       <div className="timeline">
         {jobs.map((job, index) => (

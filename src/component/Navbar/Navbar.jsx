@@ -23,6 +23,9 @@ const Navbar = () => {
             <a href="#skills" className="navbar-links" onClick={handleClick}>Skills</a>
           </li>
           <li className="navbar-item">
+            <a href="#workexperience" className="navbar-links" onClick={handleClick}>Work</a>
+          </li>
+          <li className="navbar-item">
             <a href="#projects" className="navbar-links" onClick={handleClick}>Projects</a>
           </li>
           <li className="navbar-item">
