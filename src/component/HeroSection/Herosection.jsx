@@ -17,7 +17,7 @@ const HeroSection = () => {
     <div id='about' className="hero-container">
       <div className="hero-background"></div>
       <div className='glitch'>
-      <TypingEffect text="Hey! I'm Raman Mohammed" speed={175} />
+      <TypingEffect text=" Hi! I'm Raman Mohammed " speed={175} />
       </div>
       <p className="subtitle">Fullstack Developer</p>
       <p className="hero-story">
