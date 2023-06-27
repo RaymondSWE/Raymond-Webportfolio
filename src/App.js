@@ -17,12 +17,11 @@ function App() {
       <div className="section-container">
         <SkillsSection />
       </div>
-
-      <div className="section-container">
-        <WorkExperience />
-      </div>
       <div className="section-container">
         <Projects />
+      </div>
+      <div className="section-container">
+        <WorkExperience />
       </div>
       <div className="section-container">
         <Education />

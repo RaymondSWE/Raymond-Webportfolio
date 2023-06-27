@@ -1,7 +1,7 @@
 .skills-section {
   padding: 2rem 2rem 0 2rem;
+  color: #ff9800;
 }
-
 
 .skills-section h2 {
   text-align: center;
@@ -37,15 +37,15 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
-  background: #333333;
+  background: #212121;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .skills-section-skill-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 5px 10px #ff9800, 0 0 25px #ff9800, 0 0 25px #ff9800;
 }
 
 .skills-section-skill-image {
@@ -78,9 +78,8 @@
 
 .skills-section-skill-level {
   height: 100%;
-  background: #ff9800;
+  background: linear-gradient(to right, #f8f8f8, #ff9800);
 }
-
 
 @media (max-width: 900px) {
   .skills-grid {
