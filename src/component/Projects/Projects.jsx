@@ -6,6 +6,8 @@ import taskmanagementImage from '../../img/Todo-javaswing.png';
 import raydeployImage from '../../img/RayDeploy.png';
 import webportfolioImage from '../../img/webportfolio.png';
 import { useInView } from 'react-intersection-observer';
+import { Carousel } from 'react-responsive-carousel';
+
 
 
 const Projects = () => {
@@ -57,17 +59,19 @@ const Projects = () => {
     },
   ];
   
-
   return (
     <section id='projects' className="projects-section">
       <h2>Projects</h2>
-      <div className="projects-grid">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+      <div className="projects-carousel">
+        <Carousel showThumbs={false} autoPlay={true} interval={3000}>
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </Carousel>
       </div>
     </section>
   );
+
 };
 
 const ProjectCard = ({ project }) => {
