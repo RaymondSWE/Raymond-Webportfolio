@@ -30,14 +30,15 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
   justify-items: center;
 }
 
 .project-card {
-  width: 400px;
+  width: 350px;
+  height: 600px;
   background-color: #222222;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -74,24 +75,31 @@
 
 .project-details {
   padding: 1rem;
+  font-size: 1.2rem;
+
+  
 }
 
 .project-details h3 {
   margin-bottom: 0.5rem;
   color: #ff9800;
-  font-size: 1.3em;
+  
 }
 
 .project-description {
   color: #ccc;
   margin-bottom: 1rem;
   line-height: 1.5;
+  font-size: 0.8rem;
+  
 }
 
 .project-technology {
   color: #ccc;
   margin-bottom: 1rem;
   line-height: 1.5;
+  font-size: 0.8rem;
+
 }
 
 

@@ -33,11 +33,13 @@
 }
 
 .contact-section-contact-form input, .contact-section-contact-form textarea {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
   border-radius: 4px;
   border: none;
   transition: all 0.3s ease-out;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .contact-section-contact-form input:focus, .contact-section-contact-form textarea:focus {
@@ -46,6 +48,7 @@
 }
 
 .contact-section-contact-form button {
+  margin-top: 0.5rem;
   padding: 0.5rem;
   color: #fff;
   background-color: #ff9800;
