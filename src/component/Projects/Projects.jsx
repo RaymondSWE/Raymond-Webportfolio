@@ -17,7 +17,7 @@ const Projects = () => {
       title: 'CSFairTrade',
       description: 'A full-stack trading platform providing a secure and user friendly environment for trading in-game skins in the CS:GO market, estimated over 1 billion euros. I single-handedly developed this platform from scratch, tackling complex challenges of real-time data sync and transaction management.',
       image: csgoImage,
-      technologyStack: 'React.js, Node.js, Express.js, MySQL, Socket.IO, HTTPS, Nginx, Digital Ocean, Azure,',
+      technologyStack: ['React.js', 'Node.js', 'Express.js', 'MySQL', 'Socket.IO', 'HTTPS', 'Nginx', 'Digital Ocean', 'Azure'],
       liveDemo: 'https://csfairtrade.com/',
       githubRepo: null,
     },
@@ -26,7 +26,8 @@ const Projects = () => {
       title: 'Blackjack game',
       description: 'A desktop version of the Blackjack card game, developed in collaboration with a classmate. It was a challenging yet exciting process to transform the game rules into logic and implementing it in Java.',
       image: blackjackImage,
-      technologyStack: 'Java, Java Swing',
+      technologyStack: ['Java', 'Java Swing'],
+
       liveDemo: null,
       githubRepo: 'https://github.com/RaymondSWE/Blackjack-game',
     },
@@ -35,7 +36,7 @@ const Projects = () => {
       title: 'Simple Website',
       description: 'A fundamental project developed while learning web development basics. Following a YouTube tutorial, I created this simple website to gain hands-on experience with HTML, CSS, and JavaScript.',
       image: raydeployImage,
-      technologyStack: 'HTML, CSS and Javascript',
+      technologyStack: ['HTML, CSS and Javascript'],
       liveDemo: 'https://clever-pasca-d05919.netlify.app/',
       githubRepo: 'https://github.com/RaymondSWE/RayDeploy',
     },
@@ -44,7 +45,7 @@ const Projects = () => {
       title: 'Web Portfolio',
       description: 'A personal web portfolio built with React.js over a couple of days, showcasing my skills and experiences in a easy way.',
       image: webportfolioImage,
-      technologyStack: 'React.js',
+      technologyStack: ['React.js'],
       liveDemo: 'http://ramanmohammedportfolio.me/',
       githubRepo: 'https://github.com/RaymondSWE/Raymond-Webportfolio',
     },
@@ -53,7 +54,7 @@ const Projects = () => {
       title: 'Task Management',
       description: 'A task management app developed with Java Swing. The app provides users with the functionality to manage their tasks and organizing them.',
       image: taskmanagementImage,
-      technologyStack: 'Java, Java Swing',
+      technologyStack: ['Java, Java Swing'],
       liveDemo: null,
       githubRepo: 'https://github.com/RaymondSWE/TODO-JavaSwing',
     },
@@ -63,7 +64,8 @@ const Projects = () => {
     <section id='projects' className="projects-section">
       <h2>Projects</h2>
       <div className="projects-carousel">
-        <Carousel showThumbs={false} autoPlay={true} interval={3000}>
+        <Carousel showThumbs={true} autoPlay={true} interval={4000} infiniteLoop={true} stopOnHover={true}
+        swipeable={true} showStatus={false}>
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
@@ -79,6 +81,8 @@ const ProjectCard = ({ project }) => {
     triggerOnce: true,
     threshold: 0.1,
   });
+
+  
 
   const handleButtonClick = (link) => {
     if (!link) {
@@ -97,7 +101,9 @@ const ProjectCard = ({ project }) => {
         <h3>{title}</h3>
         <p className="project-description">{description}</p>
         <h3>Technology</h3>
-        <p className='project-technology'>{technologyStack}</p>
+        <div className='project-technology'>
+          {technologyStack.map((tech, index) => <span key={index}>{tech}</span>)}
+        </div>
         <div className="project-buttons">
           {liveDemo && (
             <a href={liveDemo} target="_blank" rel="noopener noreferrer">

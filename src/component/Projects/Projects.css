@@ -98,14 +98,26 @@
   font-size: 0.8rem;
   
 }
-
 .project-technology {
-  color: #ccc;
-  margin-bottom: 1rem;
-  line-height: 1.5;
-  font-size: 0.8rem;
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
 }
+
+.project-technology span {
+  color: #ffffff; 
+  background: #0066CC; 
+  border-radius: 20px; 
+  padding: 5px 5px; 
+  font-size: 0.75rem; 
+  font-weight: bold; 
+  transition: all 0.3s ease-in-out; 
+}
+
+.project-technology span:hover {
+  background-color: #03386d; 
+}
+
 
 
 .project-buttons {
