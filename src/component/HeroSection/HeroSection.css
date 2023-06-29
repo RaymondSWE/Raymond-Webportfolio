@@ -9,8 +9,8 @@
   position: relative;
   overflow: hidden;
   padding: 20px;
-  background: linear-gradient(145deg, #0f0f0f, #252525);
-  box-shadow: 6px 6px 12px #0b0b0b,
+  background: linear-gradient(90deg, #121212, #1f1e1e);
+  box-shadow: 6px 6px 12px #2b2b2b,
               -6px -6px 12px #2b2b2b;
 }
 
