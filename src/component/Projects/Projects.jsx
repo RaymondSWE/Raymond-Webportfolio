@@ -61,16 +61,7 @@ const Projects = () => {
       liveDemo: "http://ramanmohammedportfolio.me/",
       githubRepo: "https://github.com/RaymondSWE/Raymond-Webportfolio",
     },
-    {
-      id: 5,
-      title: "Task Management",
-      description:
-        "A task management app developed with Java Swing. The app provides users with the functionality to manage their tasks and organizing them.",
-      image: taskmanagementImage,
-      technologyStack: ["Java, Java Swing"],
-      liveDemo: null,
-      githubRepo: "https://github.com/RaymondSWE/TODO-JavaSwing",
-    },
+    
   ];
 
   return (
