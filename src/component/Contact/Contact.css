@@ -1,6 +1,6 @@
 .contact-section {
   padding: 2rem;
-  font-family: 'Orbitron', sans-serif; 
+  font-family: "Orbitron", sans-serif;
 }
 
 .contact-section h2 {
@@ -32,17 +32,18 @@
   margin: auto;
 }
 
-.contact-section-contact-form input, .contact-section-contact-form textarea {
+.contact-section-contact-form input,
+.contact-section-contact-form textarea {
   margin-bottom: 0.5rem;
   padding: 1rem;
   border-radius: 4px;
   border: none;
   transition: all 0.3s ease-out;
-  font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 
-.contact-section-contact-form input:focus, .contact-section-contact-form textarea:focus {
+.contact-section-contact-form input:focus,
+.contact-section-contact-form textarea:focus {
   box-shadow: 0 0 5px #ff9800;
   border: 1px solid #ff9800;
 }

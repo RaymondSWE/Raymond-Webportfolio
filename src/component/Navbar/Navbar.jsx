@@ -12,10 +12,10 @@ const Navbar = () => {
     }
   };
 
-
-  
   useEffect(() => {
-    const listItems = ref.current.querySelectorAll(".navbar-container-navbar-item");
+    const listItems = ref.current.querySelectorAll(
+      ".navbar-container-navbar-item",
+    );
     listItems.forEach((item, index) => {
       item.style.setProperty("--i", index);
     });

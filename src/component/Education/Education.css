@@ -11,11 +11,10 @@
   letter-spacing: 3px;
   font-size: 2em;
   position: relative;
-
 }
 
 .education-section-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 .education-section h2::after {
   content: "";
@@ -27,7 +26,6 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -10px;
-  
 }
 
 .education-section-timeline {
@@ -37,15 +35,13 @@
 }
 
 .education-section-timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   width: 2px;
   height: 100%;
   background: #333;
 }
-
-
 
 .education-section-timeline-item-content h3 {
   font-size: 1.2em;
@@ -60,7 +56,6 @@
   opacity: 1;
   transform: translateY(0);
 }
-
 
 @media only screen and (max-width: 1200px) {
   .education-section-timeline {

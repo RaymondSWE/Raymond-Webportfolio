@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-const TypingEffect = ({ text = '', speed = 100 }) => {
-  const [content, setContent] = useState('');
+const TypingEffect = ({ text = "", speed = 100 }) => {
+  const [content, setContent] = useState("");
 
   useEffect(() => {
     let index = 0;
 
     const intervalId = setInterval(() => {
-      if (index < text.length ) {
-        setContent(prevContent => prevContent + text.charAt(index));
-        console.log(text.charAt(index)); 
-        index++; 
+      if (index < text.length) {
+        setContent((prevContent) => prevContent + text.charAt(index));
+        console.log(text.charAt(index));
+        index++;
       } else {
         clearInterval(intervalId);
       }
@@ -18,12 +18,12 @@ const TypingEffect = ({ text = '', speed = 100 }) => {
 
     return () => {
       clearInterval(intervalId);
-      setContent('');
+      setContent("");
     };
   }, [text, speed]);
 
   useEffect(() => {
-    setContent('');
+    setContent("");
   }, [text]);
 
   return <span>{content}</span>;
