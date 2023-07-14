@@ -153,10 +153,52 @@
 }
 
 
-
+/* Responsive styles */
 @media (max-width: 900px) {
   .skills-grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-section-skill-card {
+    gap: 0.5rem;
+  }
+
+  .skills-section-skill-image {
+    padding-bottom: 30%;
+  }
+
+  .skills-section-skill-content {
+    padding: 0.5rem;
+  }
+
+  .skills-section-skill-name {
+    font-size: 1em;
+  }
+
+  .skills-section-skill-bar {
+    height: 15px;
+  }
+
+  .certification-card {
+    padding: 0.5rem;
+  }
+
+  .certification-card h3 {
+    font-size: 1em;
+  }
+
+  .certification-card time {
+    font-size: 0.8em;
+  }
+
+  .certification-card p {
+    font-size: 0.6em;
+  }
+
+  .certification-card a {
+    padding: 0.25rem 0.5rem;
   }
 }
 

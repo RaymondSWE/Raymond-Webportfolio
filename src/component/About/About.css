@@ -90,3 +90,30 @@
     transform: scale(1);
   }
 }
+
+
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .about-body {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .about-text {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .about-image {
+    padding-left: 0;
+  }
+
+  .image-animation {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

@@ -1,8 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
   const ref = useRef(null);
+  const [active, setActive] = useState(false);
+
   const handleClick = (e) => {
     e.preventDefault();
     const target = e.target.getAttribute("href");
@@ -10,6 +12,10 @@ const Navbar = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleHamburgerClick = () => {
+    setActive(!active);
   };
 
   useEffect(() => {
@@ -27,7 +33,7 @@ const Navbar = () => {
         <a href="#about" className="navbar-container-navbar-logo">
           Raman Mohammed
         </a>
-        <ul className="navbar-container-navbar-menu">
+        <ul className={`navbar-container-navbar-menu ${active ? "active" : ""}`}>
           <li className="navbar-container-navbar-item">
             <a
               href="#about"
@@ -83,9 +89,15 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+        <button onClick={handleHamburgerClick} className="hamburger">
+          <div />
+          <div />
+          <div />
+        </button>
       </div>
     </nav>
   );
+  
 };
 
 export default Navbar;

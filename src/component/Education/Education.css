@@ -65,28 +65,57 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .education-section {
+    padding: 1.5rem;
+  }
+
   .education-section h2 {
     font-size: 1.5em;
   }
 
-  .education-section-timeline-item {
-    justify-content: center;
+  .education-section-timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    justify-content: flex-start;
+    padding-left: 0;
     padding-right: 0;
   }
 
-  .education-section-timeline-item::before {
-    right: calc(50% - 10px);
+  .timeline-item-content {
+    padding: 15px;
   }
 
-  .education-section-timeline-item-content {
-    max-width: 80%;
-    text-align: center;
+  .timeline-item-content h3 {
+    font-size: 1.2em;
   }
 
-  .education-section-timeline::before {
-    left: calc(50% - 1px);
+  .timeline-item-content p {
+    font-size: 1em;
   }
 }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .education-section h2 {
+    font-size: 1.8em;
+  }
+
+  .timeline-item-content h3 {
+    font-size: 1.3em;
+  }
+
+  .timeline-item-content p {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .education-section-timeline {
+    max-width: 90%;
+  }
+}
+
 
 @media only screen and (max-width: 480px) {
   .education-section {

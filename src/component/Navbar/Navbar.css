@@ -93,3 +93,59 @@
     margin-bottom: 0.6rem;
   }
 }
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.hamburger div {
+  width: 2rem;
+  height: 0.25rem;
+  background: #333;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column-reverse;
+  }
+
+  .navbar-container-navbar-logo {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: 15rem;
+
+  }
+
+  .navbar-container-navbar-menu {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-right: 5rem;
+    margin-left: 10rem;
+
+    padding: 1rem;
+    background: #2e2c2c;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .navbar-container-navbar-menu.active {
+    display: flex;
+  }
+}
