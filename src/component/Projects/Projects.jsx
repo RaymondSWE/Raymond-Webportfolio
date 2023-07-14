@@ -61,7 +61,6 @@ const Projects = () => {
       liveDemo: "http://ramanmohammedportfolio.me/",
       githubRepo: "https://github.com/RaymondSWE/Raymond-Webportfolio",
     },
-    
   ];
 
   return (

@@ -1,4 +1,5 @@
 import "./App.css";
+import About from "./component/About/About";
 import Contact from "./component/Contact/Contact";
 import Education from "./component/Education/Education";
 import HeroSection from "./component/HeroSection/Herosection";
@@ -13,6 +14,9 @@ function App() {
       <Navbar />
       <div className="section-container">
         <HeroSection />
+      </div>
+      <div className="section-container">
+        <About />
       </div>
       <div className="section-container">
         <SkillsSection />

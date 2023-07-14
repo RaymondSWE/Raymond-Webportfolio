@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react"; 
+import AOS from "aos"; 
 import "./SkillsSection.css";
 // import the images
 import JavascriptLogo from "../../img/logo/Javascript.png";
@@ -38,12 +39,40 @@ const SkillsSection = () => {
     { name: "C#", level: 1, icon: Csharp },
   ];
 
+  const certifications = [
+    { 
+      name: "Testing React with Jest and React Testing Library (RTL)", 
+      date: "Ongoing", 
+      description: "Comprehensive course on React testing best practices, includes a variety of examples and interactive 'code quizzes'.", 
+      link: "https://ramanmohammedportfolio.me"
+    },
+    {
+      name: "Docker Mastery: with Kubernetes +Swarm from a Docker Captain", 
+      date: "Ongoing", 
+      description: "Comprehensive guide to using Docker, Compose, and Kubernetes. Includes CI examples, configuration best practices, container creation, image registry, and workflow optimization.", 
+      link: "https://ramanmohammedportfolio.me"
+    },
+    {
+      name: "Cypress -Modern Automation Testing from Scratch + Frameworks", 
+      date: "Ongoing", 
+      description: "Master Cypress for web automation, including UI and API testing, with this comprehensive course. Covers JavaScript basics, Cypress framework design, and integration testing.", 
+      link: "https://ramanmohammedportfolio.mel"
+    }
+    
+  ];
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  }, []);
+  
+
   return (
     <div id="skills" className="skills-section">
       <h2>Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
-          <div key={index} className="skills-section-skill-card">
+          <div key={index} className="skills-section-skill-card" data-aos="fade-right">
             <div
               className="skills-section-skill-image"
               style={{ backgroundImage: `url(${skill.icon})` }}
@@ -60,8 +89,22 @@ const SkillsSection = () => {
           </div>
         ))}
       </div>
+      <h2>Certifications</h2>
+      <div className="certifications-grid">
+        {certifications.map((certification, index) => (
+        <div key={index} className="certification-card" data-aos="fade-up">
+        <div className="certification-card-content">
+          <h3>{certification.name}</h3>
+          <time>{certification.date}</time>
+          <p>{certification.description}</p>
+        </div>
+        <a href={certification.link} target="_blank" rel="noopener noreferrer">Download Certificate</a>
+      </div>        
+        ))}
+        </div>
     </div>
   );
 };
 
 export default SkillsSection;
+ 

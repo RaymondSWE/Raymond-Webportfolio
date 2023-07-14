@@ -23,12 +23,17 @@
   width: 200%;
   height: 200%;
   z-index: -1;
-  animation: glitch-bg 5s infinite linear;
+}
+
+.hero-container-title {
+  font-size: 3rem;
+  color: #ff9900;
+  font-family: "Orbitron", sans-serif;
 }
 
 .hero-container-subtitle {
-  font-size: 1.8rem;
-  color: #ff9900;
+  font-size: 2rem;
+  color: #929382;
   margin-top: 0.5rem;
   font-family: "Orbitron", sans-serif;
 }
@@ -107,6 +112,7 @@
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  margin-left: 10px;
   animation: floating 3s ease-in-out infinite;
 }
 
@@ -119,6 +125,17 @@
 
 .hero-container-icon:hover {
   color: #ff9900;
+}
+
+.hero-container-button {
+  margin-top: 2rem; 
+}
+
+.hero-icon-container {
+  position: absolute;
+  bottom: 0; 
+  left: 49.5%; 
+  transform: translateX(-50%); 
 }
 
 .hero-container-glitch {

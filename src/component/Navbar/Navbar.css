@@ -5,7 +5,7 @@
   width: 100%;
   padding: 1rem 2rem;
   z-index: 1000;
-  font-family: "Orbitron", sans-serif; /* A modern, futuristic font */
+  font-family: "Orbitron", sans-serif; 
 }
 
 .navbar-container {
