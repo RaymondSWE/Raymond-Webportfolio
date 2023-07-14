@@ -69,7 +69,9 @@ const SkillsSection = () => {
 
   return (
     <div id="skills" className="skills-section">
-      <h2>Skills</h2>
+      <h2 data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div key={index} className="skills-section-skill-card" data-aos="fade-right">
@@ -89,7 +91,9 @@ const SkillsSection = () => {
           </div>
         ))}
       </div>
-      <h2>Certifications</h2>
+      <h2 data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">Certifications</h2>
       <div className="certifications-grid">
         {certifications.map((certification, index) => (
         <div key={index} className="certification-card" data-aos="fade-up">

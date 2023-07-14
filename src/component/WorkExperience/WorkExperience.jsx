@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react"; 
+import AOS from "aos"; 
 import { useInView } from "react-intersection-observer";
 import "./WorkExperience.css";
 
@@ -42,9 +43,17 @@ const WorkExperience = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  }, []);
+
   return (
     <div id="workexperience" className="work-experience-section">
-      <h2 className="work-experience-title">Work Experience</h2>
+      <h2 className="work-experience-title" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">Work Experience</h2>
       <div className="timeline">
         {jobs.map((job, index) => (
           <TimelineItem key={index} {...job} />

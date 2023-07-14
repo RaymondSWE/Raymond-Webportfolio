@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import "./Education.css";
+import AOS from "aos";
+import 'aos/dist/aos.css'; // You can also load AOS styles here
+
 
 const Education = () => {
   const education = [
@@ -19,9 +22,13 @@ const Education = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div id="education" className="education-section">
-      <h2 className="education-section-title">Education</h2>
+      <h2 className="education-section-title" data-aos="zoom-out-down">Education</h2>
       <div className="education-section-timeline">
         {education.map((item, index) => (
           <TimelineItem key={index} {...item} />

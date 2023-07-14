@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react"; 
+import AOS from "aos"; 
 import "./Projects.css";
 import csgoImage from "../../img/csgo.png";
 import blackjackImage from "../../img/blackjack.png";
@@ -63,9 +64,15 @@ const Projects = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  }, []);
+
   return (
     <section id="projects" className="projects-section">
-      <h2>Projects</h2>
+      <h2 data-aos="fade-down-right">Projects</h2>
       <div className="projects-carousel">
         <Carousel
           showThumbs={true}
