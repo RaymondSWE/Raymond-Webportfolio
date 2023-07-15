@@ -8,15 +8,15 @@ import 'aos/dist/aos.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 const Contact = () => {
-  
   const [contactForm, setContactForm] = useState({
     name: "",
     email: "",
     message: "",
   });
 
+  const [lastEmailTime, setLastEmailTime] = useState(Date.now() - 60000); // Initialize to a time that allows immediate email sending
+  
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -28,23 +28,29 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-    .send(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      contactForm,
-      process.env.REACT_APP_PUBLIC_KEY,
-    )
-    .then(
-      (response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        toast.success("Email sent successfully! You will get respond within 24 hours.");
-      },
-      (err) => {
-        console.error("FAILED...", err);
-        toast.error("Failed to send email.");
-      },
-    );
+    // Check if a minute has passed since last email
+    if (Date.now() - lastEmailTime >= 60000) { 
+      emailjs
+      .send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        contactForm,
+        process.env.REACT_APP_PUBLIC_KEY,
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          toast.success("Email sent successfully! You will get respond within 24 hours.");
+          setLastEmailTime(Date.now()); // Update last email time
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          toast.error("Failed to send email.");
+        },
+      );
+    } else {
+      toast.error("You can send only one email per minute. Please wait.");
+    }
   };
 
   return (
