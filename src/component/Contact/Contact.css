@@ -1,6 +1,8 @@
 .contact-section {
   padding: 2rem;
   font-family: "Orbitron", sans-serif;
+  overflow-x: hidden; 
+
 }
 
 .contact-section h2 {
@@ -44,6 +46,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden; 
+
 }
 
 .contact-section-contact-form label {
