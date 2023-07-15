@@ -68,7 +68,7 @@
 
 @media only screen and (max-width: 768px) {
   .hero-container {
-    height: 100vh;
+    height: 70vh;
   }
 
   .hero-container-subtitle {
@@ -81,7 +81,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .hero-container-hero-container {
+  .hero-container {
     height: 100vh;
     padding: 10px;
   }

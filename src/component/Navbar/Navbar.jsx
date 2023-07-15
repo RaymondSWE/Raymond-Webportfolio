@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container" ref={ref}>
-        <a href="#about" className="navbar-container-navbar-logo">
+        <a href="#hero" className="navbar-container-navbar-logo">
           Raman Mohammed
         </a>
         <ul className={`navbar-container-navbar-menu ${active ? "active" : ""}`}>

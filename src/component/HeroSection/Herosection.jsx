@@ -20,7 +20,7 @@ export default function HeroSection() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    const target = e.target.getAttribute("href");
+    const target = e.target.closest("a").getAttribute("href");
     const location = document.querySelector(target);
     if (location) {
       location.scrollIntoView({ behavior: "smooth" });
@@ -28,7 +28,7 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="hero-container">
+    <div className="hero-container" id="hero">
       <h1 className="hero-container-title" data-aos="zoom-in-up">
         Welcome
       </h1>
@@ -37,13 +37,12 @@ export default function HeroSection() {
         data-aos-delay="700"
         data-aos="zoom-in"
       >
-        {" "}
         <Typewriter
           options={{
             strings: [
               "✋I'm Raman Mohammed",
-              "I'm an enthusiast Full-Stack developer",
-              "You can contact me through Linkedin or email",
+              "I'm an enthusiast Full-Stack developer 💻",
+              "You can contact me through Linkedin or email📧",
             ],
             delay: 150,
             pauseFor: 1500,
@@ -65,14 +64,10 @@ export default function HeroSection() {
           onClick={openLinkedInProfile}
         />
       </div>
-      <button
-        className="hero-container-button"
-        data-aos="zoom-out-up"
-        data-aos-delay="1400"
-        onClick={handleClick}
-      >
-        <a href="#contact">Contact Me</a>
-      </button>
+      <button className="hero-container-button" data-aos="zoom-out-up" data-aos-delay="1400">
+    <a href="#contact" onClick={handleClick}>Contact Me</a>
+</button>
+
 
       <div
         className="hero-icon-container"
@@ -80,7 +75,7 @@ export default function HeroSection() {
         data-aos-offset="20"
         data-aos-delay="2000"
       >
-        <a href="#about" className="hero-icon">
+        <a href="#about" className="hero-icon" onClick={handleClick}>
           <svg
             width="24"
             height="24"

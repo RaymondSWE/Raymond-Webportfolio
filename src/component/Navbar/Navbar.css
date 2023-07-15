@@ -118,6 +118,11 @@
   transform-origin: 1px;
 }
 @media (max-width: 768px) {
+
+  .navbar {
+    width: 50%;
+
+  }
   .navbar-container {
     flex-direction: column-reverse;
   }

@@ -4,9 +4,13 @@ import Lottie from "lottie-react";
 import "./Contact.css";
 import topAnimationData from "../../img/animation_contact.json";
 import AOS from "aos";
-import 'aos/dist/aos.css'; // You can also load AOS styles here
+import 'aos/dist/aos.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Contact = () => {
+  
   const [contactForm, setContactForm] = useState({
     name: "",
     email: "",
@@ -25,24 +29,27 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        contactForm,
-        process.env.REACT_APP_PUBLIC_KEY,
-      )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (err) => {
-          console.error("FAILED...", err);
-        },
-      );
+    .send(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      contactForm,
+      process.env.REACT_APP_PUBLIC_KEY,
+    )
+    .then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        toast.success("Email sent successfully! You will get respond within 24 hours.");
+      },
+      (err) => {
+        console.error("FAILED...", err);
+        toast.error("Failed to send email.");
+      },
+    );
   };
 
   return (
     <div id="contact" className="contact-section">
+          <ToastContainer />
       <h2 data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">Contact</h2>

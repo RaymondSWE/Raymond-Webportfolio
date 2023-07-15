@@ -86,3 +86,40 @@
   background-color: #ff9800;
   color: #fff;
 }
+
+/* For screens less than 1200px */
+@media only screen and (max-width: 1200px) {
+  .contact-form-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .contact-section-contact-form,
+  .animation-wrapper {
+    margin-top: 1rem;
+  }
+}
+
+/* For screens less than 900px */
+@media only screen and (max-width: 900px) {
+  .contact-section-contact-form {
+    max-width: 400px;
+  }
+}
+
+/* For screens less than 600px */
+@media only screen and (max-width: 600px) {
+  .contact-section-contact-form {
+    max-width: 300px;
+  }
+
+  .contact-section-contact-form input,
+  .contact-section-contact-form textarea {
+    font-size: 0.8rem;
+  }
+
+  .contact-section-contact-form label {
+    font-size: 0.8rem;
+  }
+}
