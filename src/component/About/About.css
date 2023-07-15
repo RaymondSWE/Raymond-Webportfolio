@@ -120,6 +120,7 @@
     width: 80%;
     margin: 0 auto;
   }
+  
 }
 
 /* For screens less than 900px */
@@ -134,7 +135,9 @@
 
   .about-description {
     font-size: 0.8rem;
+    margin: 10px;
   }
+
 }
 
 /* For screens less than 600px */
