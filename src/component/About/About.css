@@ -4,6 +4,7 @@
   justify-content: space-between;
   font-size: 1rem;
   font-weight: 400;
+  overflow-x: hidden; 
 }
 
 .about-container h2 {

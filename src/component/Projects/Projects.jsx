@@ -15,7 +15,7 @@ const Projects = () => {
       id: 1,
       title: "CSFairTrade",
       description:
-        "A full-stack trading platform providing a secure and user friendly environment for trading in-game skins in the CS:GO market, estimated over 1 billion euros. I single-handedly developed this platform from scratch, tackling complex challenges of real-time data sync and transaction management.",
+        "A full-stack trading platform providing a secure and user friendly environment for trading in-game skins in the CS:GO market, estimated over 1 billion euros. I single-handedly developed this platform from scratch, tackling complex challenges of real-time data sync and transaction management. A more indepth description can be found on LinkedIn",
       image: csgoImage,
       technologyStack: [
         "React.js",

@@ -111,7 +111,7 @@
 .hamburger div {
   width: 2rem;
   height: 0.25rem;
-  background: #333;
+  background: #8b8383;
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
@@ -120,11 +120,12 @@
 @media (max-width: 768px) {
 
   .navbar {
-    width: 50%;
+    width: 100%; 
 
   }
   .navbar-container {
     flex-direction: column-reverse;
+    
   }
 
   .navbar-container-navbar-logo {
@@ -134,6 +135,8 @@
   .hamburger {
     display: flex;
     margin-left: 15rem;
+    margin-right: 5rem;
+
 
   }
 
