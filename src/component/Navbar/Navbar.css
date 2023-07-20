@@ -5,7 +5,7 @@
   width: 100%;
   padding: 1rem 2rem;
   z-index: 1000;
-  font-family: "Orbitron", sans-serif; 
+  font-family: "Orbitron", sans-serif;
 }
 
 .navbar-container {
@@ -94,7 +94,6 @@
   }
 }
 
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -118,14 +117,11 @@
   transform-origin: 1px;
 }
 @media (max-width: 768px) {
-
   .navbar {
-    width: 100%; 
-
+    width: 100%;
   }
   .navbar-container {
     flex-direction: column-reverse;
-    
   }
 
   .navbar-container-navbar-logo {
@@ -136,8 +132,6 @@
     display: flex;
     margin-left: 15rem;
     margin-right: 1rem;
-
-
   }
 
   .navbar-container-navbar-menu {
@@ -150,11 +144,10 @@
     padding: 1rem;
     background: #2e2c2c;
     border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
 
   .navbar-container-navbar-menu.active {
     display: flex;
   }
 }
-

@@ -34,11 +34,6 @@ button {
   border-radius: 12px;
 }
 
-button:hover {
-  background-color: #ff9800;
-  color: #212121;
-}
-
 /* If there are any links, we can give them a glowing effect for a more futuristic look */
 a {
   color: #ff9800;
@@ -53,7 +48,7 @@ a:hover {
     0 0 40px #ff9800;
 }
 
-/* Styles for h1 heading tag. You can modify this for other headings if needed */
+/* Styles for h1 heading tag.*/
 h1 {
   color: #c2c2c2;
   font-weight: 400;
@@ -78,4 +73,23 @@ textarea {
   box-sizing: border-box;
   background-color: #212121;
   color: #c2c2c2;
+}
+
+
+/* scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #212121;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff9800;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ffaa80;
 }

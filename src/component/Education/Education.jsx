@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
 import "./Education.css";
 import AOS from "aos";
-import 'aos/dist/aos.css'; // You can also load AOS styles here
-
+import "aos/dist/aos.css"; // You can also load AOS styles here
 
 const Education = () => {
   const education = [
     {
       school: "University Skövde",
-      degree:
-        "Bachelor's in Computer Science",
+      degree: "Bachelor's in Computer Science",
       startDate: "August 2021",
       endDate: "May 2024",
     },
@@ -28,7 +25,9 @@ const Education = () => {
 
   return (
     <div id="education" className="education-section">
-      <h2 className="education-section-title" data-aos="zoom-out-down">Education</h2>
+      <h2 className="education-section-title" data-aos="zoom-out-down">
+        Education
+      </h2>
       <div className="education-section-timeline">
         {education.map((item, index) => (
           <TimelineItem key={index} {...item} />
@@ -39,13 +38,8 @@ const Education = () => {
 };
 
 const TimelineItem = ({ school, degree, startDate, endDate }) => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   return (
-    <div ref={ref} className={`timeline-item ${inView ? "in-view" : ""}`}>
+    <div className="timeline-item in-view" data-aos="flip-right">
       <div className="timeline-item-content">
         <span className="tag" style={{ background: "#ff9800" }}>
           {startDate} - {endDate}

@@ -33,7 +33,9 @@ const Navbar = () => {
         <a href="#hero" className="navbar-container-navbar-logo">
           Raman Mohammed
         </a>
-        <ul className={`navbar-container-navbar-menu ${active ? "active" : ""}`}>
+        <ul
+          className={`navbar-container-navbar-menu ${active ? "active" : ""}`}
+        >
           <li className="navbar-container-navbar-item">
             <a
               href="#about"
@@ -97,7 +99,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-  
 };
 
 export default Navbar;

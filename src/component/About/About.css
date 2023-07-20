@@ -4,7 +4,7 @@
   justify-content: space-between;
   font-size: 1rem;
   font-weight: 400;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .about-container h2 {
@@ -33,9 +33,9 @@
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
   align-items: center;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 .about-text {
@@ -44,15 +44,15 @@
   flex-grow: 1;
   max-width: 20rem;
   gap: 0.5rem;
-  margin-left: 1rem;  
-  margin-right: 2rem;  
+  margin-left: 1rem;
+  margin-right: 2rem;
 }
 
 .about-image {
   position: relative;
   flex-grow: 1;
   min-width: 15rem;
-  padding-left: 2rem;  
+  padding-left: 2rem;
   align-self: center;
 }
 
@@ -73,10 +73,9 @@
   color: #f59e0b;
 }
 
-
 .image-animation {
   animation: zoom 1s ease-in-out infinite;
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -92,10 +91,7 @@
   }
 }
 
-
-
 /* Responsive styles */
-
 
 /* For screens less than 1200px */
 @media only screen and (max-width: 1200px) {
@@ -120,7 +116,6 @@
     width: 80%;
     margin: 0 auto;
   }
-  
 }
 
 /* For screens less than 900px */
@@ -137,7 +132,6 @@
     font-size: 0.8rem;
     margin: 10px;
   }
-
 }
 
 /* For screens less than 600px */

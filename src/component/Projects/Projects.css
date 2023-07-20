@@ -1,10 +1,10 @@
 @import "~react-responsive-carousel/lib/styles/carousel.min.css";
 
 .projects-section {
-  padding: 2rem;
   color: #fff;
   background: #121212;
   margin: auto;
+  overflow-x: hidden;
 }
 
 .projects-section h2 {
@@ -32,20 +32,14 @@
 
 .project-card {
   width: 350px;
-  height: 600px;
   background-color: #222222;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out;
   opacity: 0;
-  transform: translateY(20px);
-  margin-bottom: 3rem;
 }
 
 .project-card.in-view {
@@ -56,6 +50,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 800px;
+}
+
+.projects-carousel {
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto;
 }
 
 .project-card:hover {
@@ -63,10 +64,9 @@
 }
 
 .project-image {
-  position: relative;
+  width: 100%;
+  height: 250px;
   overflow: hidden;
-  height: 300px;
-  max-height: 500px;
 }
 
 .project-image img {
@@ -87,7 +87,6 @@
 
 .project-description {
   color: #ccc;
-  margin-bottom: 1rem;
   line-height: 1.5;
   font-size: 0.8rem;
 }
@@ -120,21 +119,53 @@
 }
 
 .project-buttons button {
-  background-color: #ff9800;
-  border: none;
-  color: #fff;
-  padding: 10px 20px;
+  background: linear-gradient(
+    90deg,
+    #ffaa80,
+    #ff8a60
+  ); 
+  border: 1px solid #ff9f70; 
+  color: #333; 
+  padding: 10px 25px;
   margin-right: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition-duration: 0.4s;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   cursor: pointer;
+  border-radius: 25px;
+  transition:
+    background 0.3s,
+    box-shadow 0.2s,
+    transform 0.2s;
 }
 
 .project-buttons button:hover {
-  background-color: #ff7800;
+  background: linear-gradient(
+    90deg,
+    #ff8a60,
+    #ffaa80
+  ); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transform: translateY(-2px); 
+}
+
+.more-info-button button {
+  background: linear-gradient(90deg, #ff8a60, #ffaa80);
+  border: 1px solid #ff9f70;
+  color: #333;
+  transition:
+    background 0.3s,
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.more-info-button button:hover {
+  background: linear-gradient(90deg, #ffaa80, #ff8a60);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 .project-more-info {
@@ -149,13 +180,11 @@
 }
 
 .project-more-info h4 {
-  margin-bottom: 0.5rem;
   color: #ff9800;
   font-size: 1.1em;
 }
 
 .project-more-info p {
-  margin-bottom: 1rem;
   line-height: 1.5;
 }
 
@@ -175,17 +204,31 @@
   }
 
   .project-card {
-    width: 250px;
+    width: 150px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  .project-card {
+    width: 100%;
   }
 
-  .project-card {
-    width: 250px;
+  .project-image {
+    height: 200px;
+  }
+
+  .project-details {
+    font-size: 1rem;
+  }
+
+  .project-technology span {
+    padding: 3px 8px;
+    font-size: 0.7rem;
+  }
+
+  .project-buttons button {
+    padding: 8px 20px;
+    font-size: 14px;
   }
 }
 

@@ -82,7 +82,7 @@
 
 @media only screen and (max-width: 480px) {
   .hero-container {
-    height: 100vh;
+    height: 70vh;
     padding: 10px;
   }
 
@@ -128,14 +128,20 @@
 }
 
 .hero-container-button {
-  margin-top: 2rem; 
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.hero-container-button a {
+  text-align: center;
+  width: 100%;
 }
 
 .hero-icon-container {
   position: absolute;
-  bottom: 0; 
-  left: 49.5%; 
-  transform: translateX(-50%); 
+  bottom: 0;
+  left: 49.5%;
+  transform: translateX(-50%);
 }
 
 .hero-container-glitch {

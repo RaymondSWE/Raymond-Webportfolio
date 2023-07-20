@@ -34,8 +34,8 @@ export default function About() {
       <div className="about-body">
         <div className="about-text">
           <h3 className="about-name" data-aos={"fade-left"}>
-            I'm <span className="highlight-text">Raman Mohammed,</span> a technology
-            enthusiast
+            I'm <span className="highlight-text">Raman Mohammed,</span> a
+            technology enthusiast
           </h3>
           <p className="about-description" data-aos={"fade-left"}>
             Software Developer with 2 years of experience across various

@@ -1,6 +1,5 @@
-import React, { useEffect } from "react"; 
-import AOS from "aos"; 
-import { useInView } from "react-intersection-observer";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import "./WorkExperience.css";
 
 const WorkExperience = () => {
@@ -14,8 +13,8 @@ const WorkExperience = () => {
     {
       title: "Junior Developer",
       company: "Bally's Skövde",
-      startDate: "June 2023",
-      endDate: "July 2023",
+      startDate: "June 2022",
+      endDate: "July 2022",
     },
     {
       title: "Full Stack Developer",
@@ -39,21 +38,26 @@ const WorkExperience = () => {
       title: "Waiter",
       company: "Scandic Hotels",
       startDate: "May 2016",
-      endDate: "June 2019",
+      endDate: "June 2018",
     },
   ];
 
   useEffect(() => {
     AOS.init({
-      duration: 2000
+      duration: 2000,
     });
   }, []);
 
   return (
     <div id="workexperience" className="work-experience-section">
-      <h2 className="work-experience-title" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">Work Experience</h2>
+      <h2
+        className="work-experience-title"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        Work Experience
+      </h2>
       <div className="timeline">
         {jobs.map((job, index) => (
           <TimelineItem key={index} {...job} />
@@ -64,14 +68,9 @@ const WorkExperience = () => {
 };
 
 const TimelineItem = ({ title, company, description, startDate, endDate }) => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   return (
     <>
-      <div ref={ref} className={`timeline-item ${inView ? "in-view" : ""}`}>
+      <div className="timeline-item in-view" data-aos="flip-right">
         <div className="timeline-item-content">
           <span className="tag" style={{ background: "#ff9800" }}>
             {startDate} - {endDate}

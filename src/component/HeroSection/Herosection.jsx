@@ -64,10 +64,15 @@ export default function HeroSection() {
           onClick={openLinkedInProfile}
         />
       </div>
-      <button className="hero-container-button" data-aos="zoom-out-up" data-aos-delay="1400">
-    <a href="#contact" onClick={handleClick}>Contact Me</a>
-</button>
-
+      <button
+        className="hero-container-button"
+        data-aos="zoom-out-up"
+        data-aos-delay="1400"
+      >
+        <a href="#contact" onClick={handleClick}>
+          Contact Me
+        </a>
+      </button>
 
       <div
         className="hero-icon-container"
@@ -75,7 +80,7 @@ export default function HeroSection() {
         data-aos-offset="20"
         data-aos-delay="2000"
       >
-        <a href="#about" className="hero-icon" onClick={handleClick}>
+        <a href="#about" className="hero-icon-svg" onClick={handleClick}>
           <svg
             width="24"
             height="24"
