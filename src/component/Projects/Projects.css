@@ -126,7 +126,7 @@
   ); 
   border: 1px solid #ff9f70; 
   color: #333; 
-  padding: 10px 25px;
+  padding: 10px 15px;
   margin-right: 10px;
   text-align: center;
   text-decoration: none;
@@ -160,6 +160,11 @@
     background 0.3s,
     box-shadow 0.2s,
     transform 0.2s;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    
 }
 
 .more-info-button button:hover {

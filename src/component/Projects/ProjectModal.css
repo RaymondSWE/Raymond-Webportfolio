@@ -66,6 +66,31 @@
   transform: translateY(-2px);
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.project-dates {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-out;
+}
+
+.project-dates p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
 
 
 @media screen and (max-width: 768px) {

@@ -18,6 +18,8 @@ const Projects = () => {
     {
       id: 1,
       title: "CSFairTrade",
+      startDate: "2021-12-25",
+      endDate: "Ongoing",
       description:
         "A full-stack trading platform providing a secure and user friendly environment for trading in-game skins in the CS:GO market, estimated over 1 billion euros.",
       detailedDescription: `
@@ -26,9 +28,9 @@ const Projects = () => {
           💼 User Authentication: I've integrated the Steam API's OAuth 2.0 for a smooth user registration process. Upon signing in via Steam, user data is stored in a session and saved to the database, ensuring a smooth user experience.
 
           🎮 Platform: CSFairTrade provides an interface that enables users to directly manage their inventories. It retrieves user inventory data, aggregates data from all bots, and accesses the current price list. Despite the limitations of Steam's API requests, I've developed a solution that stores and displays data using MySQL. Currently, this database is hosted on Azure. The platform's design is an event-driven and REST API architecture.
-          🧪 Testing and Coverage: The project has undergone extensive testing using React Testing Library and Jest. The current focus is on refactoring and writing proper tests for each component. The project has achieved a test coverage of 45% for statements and 48% for lines. The coverage report provides insights into which files and lines are not covered by the tests, helping in identifying areas that require additional testing. Please take into consideration that I'm still a junior and I am working on increasing the test coverage. 
+          🧪 Testing and Coverage: The project has undergone testing using React Testing Library and Jest. The current focus is on refactoring and writing proper tests for each component. The project has achieved a test coverage of 45% for statements and 48% for lines. The coverage report provides insights into which files and lines are not covered by the tests, helping in identifying areas that require additional testing. Please take into consideration that I'm still a junior and I am working on increasing the test coverage. 
 
-          🚀 Deployment: CSFairTrade is deployed on DigitalOcean droplets using PM2, with unique IPs allocated for both frontend and backend. We manage the CI/CD pipeline through GitHub Actions. All traffic is SSL-secured and directed via Nginx. Both unit and functional tests are in place for stability, and firewalls enhance security. 
+          🚀 Deployment: CSFairTrade is deployed on DigitalOcean droplets using PM2, with unique IPs allocated for both frontend and backend. We manage the CI/CD pipeline through GitHub Actions. All traffic is SSL-secured and directed via Nginx. Both unit- and functional tests are in place for stability. Firewalls has also been implemented to enhance security. 
 
           🏆CSFairTrade represents a personal achievement for me, involving numerous hours of learning and understanding various technologies outside of my formal education. The project required me to tackle challenges including working with APIs, implementing a user authentication process, integrating payment gateways, business logic and even setting up a fully functional CI/CD pipeline.
         `,
@@ -53,6 +55,8 @@ const Projects = () => {
     {
       id: 2,
       title: "Blackjack game",
+      startDate: "2022-03-04",
+      endDate: "2022-04-20",
       description:
         "A desktop version of the Blackjack card game, developed in collaboration with a classmate. It was a challenging yet exciting process to transform the game rules into logic and implementing it in Java.",
       detailedDescription: `
@@ -73,6 +77,8 @@ const Projects = () => {
     {
       id: 3,
       title: "Simple Website",
+      startDate: "2021-10-26",
+      endDate: "2021-10-26",
       description:
         "The project was developed while following a YouTube tutorial to grasp the fundamentals of web development. This website serves as my learning milestone as a beginner developer, the beginning of my developer journey into modern web development techniques, including CSS Grid and Flexbox.",
       detailedDescription: `
@@ -80,13 +86,13 @@ const Projects = () => {
 
   🛠️Modern Techniques: The tutorial emphasizes the use of modern web techniques such as CSS Grid for layout design, Flexbox for alignment, and animations for enhanced user experience.
 
-  📝 Content Layout: The home page boasts a navbar, a form for demo requests, stats with Font Awesome icons, a mock npm install section, supported programming languages, and a footer.
+  📝 Content Layout: The home page contains a navbar, a form for demo requests, stats with Font Awesome icons, a mock npm install section, supported programming languages, and a footer.
 
   📱 Responsiveness: The website is built with responsiveness in mind, ensuring it looks and functions seamlessly across devices of varying screen sizes. The design adjusts for tablet and mobile views, changing the direction of animations and optimizing the menu for smaller screens.
 
   🎨 Styling: The tutorial delves deep into styling, starting with the navbar. It introduces a container class to constrain content width, ensuring a clean and organized look on larger screens. The instructor also touches upon the importance of a consistent color scheme, typography, and more.
 
-  📚 Learning Outcome: This project is perfect for those looking to solidify their understanding of HTML, CSS, and JavaScript. It offers a practical approach to learning, ensuring that learners not only understand the theory but also know how to implement it in real-world scenarios.
+  📚 Learning Outcome: This project is beginner frinedly for those seeking to get into web development. It goes through the basics of  HTML, CSS, and JavaScript. It offers a practical approach to learning, ensuring that learners not only understand the theory but also know how to implement it in real-world scenarios.
 `,
 
       image: raydeployImage,
@@ -97,13 +103,15 @@ const Projects = () => {
     {
       id: 4,
       title: "Web Portfolio",
+      startDate: "2023-06-25",
+      endDate: "Ongoing",
       description:
         "My personal web portfolio is designed to be a comprehensive showcase of my skills, experiences, and projects. As a developer, I understand the importance of presenting oneself in a digital format that is both user friendly and informative.",
       detailedDescription: `
       
         🌐 The website's frontend is developed using React.js, one of the most popular JavaScript libraries for building interactive user interfaces. For enhanced animations and page transitions, I integrated Framer Motion and AOS (Animate on Scroll) library. Icons from Font Awesome library add visual appeal and better representation of various sections. 
       
-        📝 The 'Skills' section provides a graphical representation of my technical expertise, while the 'Work Experience' and 'Education' sections chronologically depict my professional and academic journey. My project works, including live demo links and GitHub repositories, are detailed under the 'Projects' section.
+        📝 The 'Skills' section provides a graphical representation of my technical expertise, while the 'Work Experience' and 'Education' sections chronologically showcasing my professional and academic journey. My project works, including live demo links and GitHub repositories, are detailed under the 'Projects' section.
       
         🚀 Deployment: The website is hosted and deployed using hostinger (for basic static page). For form submissions in the 'Contact' section, I integrated EmailJS for sending direct emails without the need for a backend server.
       

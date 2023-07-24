@@ -82,8 +82,9 @@
 
 .skills-section-skill-level {
   height: 100%;
-  background: linear-gradient(to right, #f8f8f8, #ff9800);
+  background: linear-gradient(to right, #ffaa80, #ff8a60);
 }
+
 
 .certifications-grid {
   display: grid;
@@ -139,7 +140,7 @@
   ); 
   border: 1px solid #ff9f70; 
   color: #333; 
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 25px;
   transition:
     background 0.3s,

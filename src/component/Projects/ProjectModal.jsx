@@ -13,7 +13,10 @@ const ProjectModal = ({ isOpen, onRequestClose, project }) => {
       overlayClassName="project-modal-overlay"
     >
       <h2>{project?.title}</h2>
-
+      <div className="project-dates">
+        <p><strong>Start Date:</strong> {project?.startDate}</p>
+        <p><strong>End Date:</strong> {project?.endDate}</p>
+      </div>
       {project &&
         project.detailedDescription &&
         project.detailedDescription
