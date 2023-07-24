@@ -7,6 +7,7 @@ import blackjackImage from "../../img/blackjack.png";
 import taskmanagementImage from "../../img/Todo-javaswing.png";
 import raydeployImage from "../../img/RayDeploy.png";
 import webportfolioImage from "../../img/webportfolio.png";
+import massageAppImage from "../../img/massageapp.png"
 import { useInView } from "react-intersection-observer";
 import { Carousel } from "react-responsive-carousel";
 import ProjectModal from "./ProjectModal";
@@ -84,7 +85,7 @@ const Projects = () => {
       detailedDescription: `
   🌐 Overview: The website is designed as a fictitious cloud hosting platform. The design inspiration is drawn from Heroku, and the website comprises three main pages: home, features, and docs.
 
-  🛠️Modern Techniques: The tutorial emphasizes the use of modern web techniques such as CSS Grid for layout design, Flexbox for alignment, and animations for enhanced user experience.
+  🛠️ Modern Techniques: The tutorial emphasizes the use of modern web techniques such as CSS Grid for layout design, Flexbox for alignment, and animations for enhanced user experience.
 
   📝 Content Layout: The home page contains a navbar, a form for demo requests, stats with Font Awesome icons, a mock npm install section, supported programming languages, and a footer.
 
@@ -124,7 +125,28 @@ const Projects = () => {
       technologyStack: ["React.js", "CSS", "HTML", "Hostinger"],
       liveDemo: "http://ramanmohammedportfolio.me/",
       githubRepo: "https://github.com/RaymondSWE/Raymond-Webportfolio",
-    },
+    },{
+      id: 5,
+      title: "Massage Application for Company Employees",
+      startDate: "2023-06-05",
+      endDate: "2023-07-12",
+      description: "Developed a massage booking system for Bally's employees during my internship.",
+      detailedDescription: `
+    
+      🤝 Collaboration: I collaborated with other students in a team to develop a Massage application for Bally's employees. My primary responsibility involved designing the database and implementing the backend logic for the application.
+
+      🛠️ Tech Stack: We utilized MySQL, React, and Spring Boot to create the application.
+      
+      📚 Features & Reflection: The application enabled users to book, and if necessary, rebook a single massage appointment. After the appointment ends, they could then book another for the upcoming weeks. Administrators had the capacity to manage appointments, as in creating, modifying, or deleting them as needed. Although this was my first full-stack project, I would say the outcome was good and not a disaster.
+      
+      🔐 Authentication: While Okta was integrated user authentication, we encountered challenges. These were later resolved by a senior developer. I was informed later on that the issues was from Okta's end.
+      
+      🚀 Growth: This project emphasized the value of teamwork and improved my problem solving skills. Reflecting on it, I recognized the significance of clean coding and the need to prioritize its principles. While I did maintain good naming conventions, some parts of the codebase could benefit from refactoring to better follow with clean code principles like DRY (Don't Repeat Yourself), KISS (Keep It Simple), and SRP (Single Responsibility Principle).      `,
+      image: massageAppImage,  // Replace null with an appropriate image link if available
+      technologyStack: ["MySQL", "React", "Material UI", "Spring Boot", "Liquibase"],
+      liveDemo: "https://massage.silverspin.com/",  
+      githubRepo: null  
+    },    
   ];
 
   useEffect(() => {
