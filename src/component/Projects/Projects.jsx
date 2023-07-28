@@ -114,7 +114,7 @@ const Projects = () => {
       
         📝 The 'Skills' section provides a graphical representation of my technical expertise, while the 'Work Experience' and 'Education' sections chronologically showcasing my professional and academic journey. My project works, including live demo links and GitHub repositories, are detailed under the 'Projects' section.
       
-        🚀 Deployment: The website is hosted and deployed using hostinger (for basic static page). For form submissions in the 'Contact' section, I integrated EmailJS for sending direct emails without the need for a backend server.
+        🚀 Deployment: The website is hosted and deployed using hostinger. For form submissions in the 'Contact' section, I integrated EmailJS for sending direct emails without the need for a backend server.
       
         🛠️ The site's responsive design ensures optimal viewing across various device sizes. The 'Typewriter effect' on the landing page, implemented using the 'typewriter-effect' library, offers a dynamic introduction to visitors.
       
@@ -128,8 +128,8 @@ const Projects = () => {
     },{
       id: 5,
       title: "Massage Application for Company Employees",
-      startDate: "2023-06-05",
-      endDate: "2023-07-12",
+      startDate: "2022-06-05",
+      endDate: "2022-07-12",
       description: "Developed a massage booking system for Bally's employees during my internship.",
       detailedDescription: `
     

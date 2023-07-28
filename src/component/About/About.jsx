@@ -41,13 +41,13 @@ export default function About() {
             Software Developer with 2 years of experience across various
             platforms and languages. I gained experience in Java, React.js,
             TypeScript, Node.js, MySQL and AWS during school and bootcamp, which
-            I also applied in real-world projects.
+            I also applied in real world projects.
           </p>
           <p className="about-description" data-aos={"fade-right"}>
             I've shown competence in both self managed and team enviroment,
             using the modern tools to create good software systems. With a
-            foundation in computer science and experience, I excel in front-end,
-            back-end development, database design, and cloud services. Always
+            foundation in computer science and experience, I excel in frontend,
+            backend development, database design, and cloud services. Always
             open to learn more.
           </p>
         </div>
