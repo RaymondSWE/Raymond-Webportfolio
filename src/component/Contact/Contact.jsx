@@ -7,9 +7,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelope, faComment } from '@fortawesome/free-solid-svg-icons';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser,
+  faEnvelope,
+  faComment,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   const [contactForm, setContactForm] = useState({
@@ -61,35 +64,62 @@ const Contact = () => {
   return (
     <div id="contact" className="contact-section">
       <ToastContainer />
-      <h2 className="contact-section-title" data-aos="zoom-out-down" >Contact</h2>
+      <h2 className="contact-section-title" data-aos="zoom-out-down">
+        Contact
+      </h2>
       <div className="contact-form-wrapper">
-        <form className="contact-section-contact-form"data-aos="flip-left" onSubmit={handleSubmit}>
-        <label>
-          <FontAwesomeIcon icon={faUser} /> 
-          <input type="text" name="name" onChange={handleChange} placeholder=" " />
-          <span>Name</span>
-        </label>
-        <label>
-          <FontAwesomeIcon icon={faEnvelope} /> 
-          <input type="email" name="email" onChange={handleChange} placeholder=" " />
-          <span>Email</span>
-        </label>
-        <label>
-          <FontAwesomeIcon icon={faComment} />
-          <textarea name="message" onChange={handleChange} placeholder=" "></textarea>
-          <span>Message</span>
-        </label>
+        <form
+          className="contact-section-contact-form"
+          data-aos="flip-left"
+          onSubmit={handleSubmit}
+        >
+          <label>
+            <FontAwesomeIcon icon={faUser} />
+            <input
+              type="text"
+              name="name"
+              onChange={handleChange}
+              placeholder=" "
+            />
+            <span>Name</span>
+          </label>
+          <label>
+            <FontAwesomeIcon icon={faEnvelope} />
+            <input
+              type="email"
+              name="email"
+              onChange={handleChange}
+              placeholder=" "
+            />
+            <span>Email</span>
+          </label>
+          <label>
+            <FontAwesomeIcon icon={faComment} />
+            <textarea
+              name="message"
+              onChange={handleChange}
+              placeholder=" "
+            ></textarea>
+            <span>Message</span>
+          </label>
           <button type="submit">Send</button>
         </form>
-        <div className="animation-wrapper" data-aos="fade-left"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
-          <Lottie animationData={topAnimationData} autoplay loop style={{ width: "300px", margin: "0 auto" }} />
+        <div
+          className="animation-wrapper"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
+          <Lottie
+            animationData={topAnimationData}
+            autoplay
+            loop
+            style={{ width: "300px", margin: "0 auto" }}
+          />
         </div>
       </div>
     </div>
   );
-  
 };
 
 export default Contact;

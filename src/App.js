@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 import "./App.css";
 import About from "./component/About/About";
 import Contact from "./component/Contact/Contact";
@@ -17,7 +17,6 @@ function App() {
     // Record an initial pageview
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
-  
 
   return (
     <>

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "./SkillsSection.css";
-import Certifications from "./Certifications";  
+import Certifications from "./Certifications";
 
 // import the images
 import JavascriptLogo from "../../img/logo/Javascript.png";

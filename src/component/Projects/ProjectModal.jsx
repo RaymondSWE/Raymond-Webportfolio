@@ -14,8 +14,12 @@ const ProjectModal = ({ isOpen, onRequestClose, project }) => {
     >
       <h2>{project?.title}</h2>
       <div className="project-dates">
-        <p><strong>Start Date:</strong> {project?.startDate}</p>
-        <p><strong>End Date:</strong> {project?.endDate}</p>
+        <p>
+          <strong>Start Date:</strong> {project?.startDate}
+        </p>
+        <p>
+          <strong>End Date:</strong> {project?.endDate}
+        </p>
       </div>
       {project &&
         project.detailedDescription &&

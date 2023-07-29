@@ -50,10 +50,7 @@ const WorkExperience = () => {
 
   return (
     <div id="workexperience" className="work-experience-section">
-      <h2
-        className="work-experience-title"
-        data-aos="zoom-out-down"
-      >
+      <h2 className="work-experience-title" data-aos="zoom-out-down">
         Work Experience
       </h2>
       <div className="timeline">

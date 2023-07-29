@@ -8,7 +8,6 @@
     -6px -6px 12px #2b2b2b;
   color: #ff9800;
   font-family: "Orbitron", sans-serif;
-
 }
 
 .contact-section h2 {
@@ -43,7 +42,6 @@
   margin: 0 auto;
   max-width: 960px;
   margin-bottom: 2em;
-
 }
 
 .contact-section-contact-form {
@@ -53,9 +51,9 @@
   padding: 2em;
   border-radius: 10px;
   background: #272727;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-  
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .contact-section-contact-form input,
@@ -85,17 +83,19 @@
   letter-spacing: 0.5px;
   cursor: pointer;
   border-radius: 25px;
-  transition: background 0.3s, box-shadow 0.2s, transform 0.2s;
+  transition:
+    background 0.3s,
+    box-shadow 0.2s,
+    transform 0.2s;
   margin-top: 1em;
   border: none;
   font-family: "Orbitron", sans-serif;
-
 }
 
 .contact-section-contact-form button:hover {
   background: linear-gradient(45deg, #ffaa80, #ff9800);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-  transform: translateY(-2px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 .animation-wrapper {
