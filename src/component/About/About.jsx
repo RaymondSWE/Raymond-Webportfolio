@@ -28,7 +28,7 @@ export default function About() {
 
   return (
     <div id="about" className="about-container">
-      <h2 className="about-container-title" data-aos={"slide-down"}>
+      <h2 className="about-container-title" data-aos="zoom-out-down">
         About Me
       </h2>
       <div className="about-body">

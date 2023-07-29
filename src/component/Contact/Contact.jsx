@@ -61,9 +61,9 @@ const Contact = () => {
   return (
     <div id="contact" className="contact-section">
       <ToastContainer />
-      <h2 className="contact-section-title" >Contact</h2>
+      <h2 className="contact-section-title" data-aos="zoom-out-down" >Contact</h2>
       <div className="contact-form-wrapper">
-        <form className="contact-section-contact-form" onSubmit={handleSubmit}>
+        <form className="contact-section-contact-form"data-aos="flip-left" onSubmit={handleSubmit}>
         <label>
           <FontAwesomeIcon icon={faUser} /> 
           <input type="text" name="name" onChange={handleChange} placeholder=" " />
@@ -81,7 +81,9 @@ const Contact = () => {
         </label>
           <button type="submit">Send</button>
         </form>
-        <div className="animation-wrapper">
+        <div className="animation-wrapper" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
           <Lottie animationData={topAnimationData} autoplay loop style={{ width: "300px", margin: "0 auto" }} />
         </div>
       </div>

@@ -113,7 +113,7 @@
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .education-section-timeline {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 
@@ -122,11 +122,7 @@
     padding: 1rem;
   }
 
-  .education-section h2 {
-    font-size: 1.2em;
-  }
 
-  .education-section-timeline-item-content {
-    padding: 15px;
-  }
+
+
 }

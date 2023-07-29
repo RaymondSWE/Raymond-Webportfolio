@@ -52,9 +52,7 @@ const WorkExperience = () => {
     <div id="workexperience" className="work-experience-section">
       <h2
         className="work-experience-title"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
+        data-aos="zoom-out-down"
       >
         Work Experience
       </h2>

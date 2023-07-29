@@ -83,7 +83,7 @@
 
 .skills-section-skill-level {
   height: 100%;
-  background: linear-gradient(to right, #ffaa80, #ff8a60);
+  background: linear-gradient(45deg, #ff9800, #ffaa80);
 }
 
 /* Certification Design */
@@ -110,7 +110,7 @@
 }
 
 .certification-card h3 {
-  font-size: 1.3em;
+  font-size: 2em;
   border-bottom: 2px solid #ff9800;
   padding-bottom: 8px;
 }
@@ -131,7 +131,7 @@
 
 .certification-card a {
   align-self: center;
-  background: linear-gradient(90deg, #ffaa80, #ff8a60);
+  background: linear-gradient(45deg, #ff9800, #ffaa80);
   border: 1px solid #ff9f70;
   color: #333;
   padding: 10px 15px;
@@ -148,7 +148,7 @@
 }
 
 .certification-card a:hover {
-  background: linear-gradient(90deg, #ff8a60, #ffaa80);
+  background: linear-gradient(45deg, #ffaa80, #ff9800);
   color: #212121;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);

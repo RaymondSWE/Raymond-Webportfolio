@@ -16,9 +16,22 @@
   color: #ff9800;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 2.2em;
+  font-size: 2em;
   margin-bottom: 2em;
 }
+
+.contact-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #ff9800;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
 .contact-section-title {
   font-family: "Orbitron", sans-serif;
 }
