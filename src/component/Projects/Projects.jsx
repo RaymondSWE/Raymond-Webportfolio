@@ -122,7 +122,7 @@ const Projects = () => {
       `,
 
       image: webportfolioImage,
-      technologyStack: ["React.js", "CSS", "HTML", "Hostinger"],
+      technologyStack: ["React.js", "CSS", "HTML", "Hostinger", " Google Analytics"],
       liveDemo: "http://ramanmohammedportfolio.me/",
       githubRepo: "https://github.com/RaymondSWE/Raymond-Webportfolio",
     },{

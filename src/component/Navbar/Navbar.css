@@ -130,15 +130,14 @@
 
   .hamburger {
     display: flex;
-    margin-left: 15rem;
+    margin-left: 18rem;
     margin-right: 1rem;
   }
 
   .navbar-container-navbar-menu {
     display: none;
     flex-direction: column;
-    margin-top: 1rem;
-    margin-right: 5rem;
+    margin-right: 2rem;
     margin-left: 10rem;
 
     padding: 1rem;

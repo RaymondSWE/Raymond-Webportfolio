@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import "./App.css";
 import About from "./component/About/About";
 import Contact from "./component/Contact/Contact";
@@ -9,6 +11,14 @@ import SkillsSection from "./component/SkillsSection/SkillsSection";
 import WorkExperience from "./component/WorkExperience/WorkExperience";
 
 function App() {
+  useEffect(() => {
+    // Initialize Google Analytics
+    ReactGA.initialize(process.env.REACT_APP_PUBLIC_GOOGLE_ANALYTICS);
+    // Record an initial pageview
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+  
+
   return (
     <>
       <Navbar />
