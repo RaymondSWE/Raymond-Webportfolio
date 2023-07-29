@@ -22,6 +22,7 @@
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  
 }
 
 .project-modal-content h2 {
@@ -87,7 +88,7 @@
 
 .project-dates p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 768px) {

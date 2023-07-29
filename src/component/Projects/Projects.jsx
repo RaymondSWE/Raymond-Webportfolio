@@ -108,19 +108,21 @@ const Projects = () => {
       title: "Web Portfolio",
       startDate: "2023-06-25",
       endDate: "Ongoing",
-      description:
-        "My personal web portfolio is designed to be a comprehensive showcase of my skills, experiences, and projects. As a developer, I understand the importance of presenting oneself in a digital format that is both user friendly and informative.",
+      description: "My personal web portfolio is designed to be a comprehensive showcase of my skills, experiences, and projects. As a developer, I understand the importance of presenting oneself in a digital format that is both user friendly and informative.",
       detailedDescription: `
-      
-        🌐 The website's frontend is developed using React.js, one of the most popular JavaScript libraries for building interactive user interfaces. For enhanced animations and page transitions, I integrated Framer Motion and AOS (Animate on Scroll) library. Icons from Font Awesome library add visual appeal and better representation of various sections. 
-      
-        📝 The 'Skills' section provides a graphical representation of my technical expertise, while the 'Work Experience' and 'Education' sections chronologically showcasing my professional and academic journey. My project works, including live demo links and GitHub repositories, are detailed under the 'Projects' section.
-      
-        🚀 Deployment: The website is hosted and deployed using hostinger. For form submissions in the 'Contact' section, I integrated EmailJS for sending direct emails without the need for a backend server.
-      
-        🛠️ The site's responsive design ensures optimal viewing across various device sizes. The 'Typewriter effect' on the landing page, implemented using the 'typewriter-effect' library, offers a dynamic introduction to visitors.
-      
-        Overall, this portfolio stands as a testament to my dedication to of web development and my continuous eagerness of learning in the field.
+          🌐 The website's frontend is developed using React.js, one of the most popular JavaScript libraries for building interactive user interfaces. For enhanced animations and page transitions, I integrated Framer Motion and AOS (Animate on Scroll) library. Icons from Font Awesome library add visual appeal and better representation of various sections. 
+    
+          📝 The 'Skills' section provides a graphical representation of my technical expertise, while the 'Work Experience' and 'Education' sections chronologically showcasing my professional and academic journey. My project works, including live demo links and GitHub repositories, are detailed under the 'Projects' section.
+    
+          🚀 Deployment: The website is hosted and deployed using hostinger. For form submissions in the 'Contact' section, I integrated EmailJS for sending direct emails without the need for a backend server.
+    
+          🛠️ The site's responsive design ensures optimal viewing across various device sizes. The 'Typewriter effect' on the landing page, implemented using the 'typewriter-effect' library, offers a dynamic introduction to visitors.
+    
+          🔍 SEO Enhancements: I've integrated a variety of SEO techniques to optimize the site's visibility on search engines. This includes the use of meta tags, schema markup, canonical links, and Open Graph tags for better display on various social media platforms. The inclusion of relevant keywords and alt attributes for images, further boost the site's search engine rankings.
+    
+          📊 Google Analytics: To gain insights into user behavior, site traffic, and other vital metrics, I've incorporated Google Analytics into the website. I can monitor real-time user interactions, assess traffic sources etc.
+    
+          Overall, this portfolio stands as a testament to my dedication to the field of web development and my continuous eagerness for learning.
       `,
 
       image: webportfolioImage,
