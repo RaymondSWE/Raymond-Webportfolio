@@ -12,7 +12,9 @@ import { useInView } from "react-intersection-observer";
 import { Carousel } from "react-responsive-carousel";
 import ProjectModal from "./ProjectModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { faInfoCircle, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 
 const Projects = () => {
   const projects = [
@@ -226,14 +228,14 @@ const ProjectCard = ({ project }) => {
           {liveDemo && (
             <a href={liveDemo} target="_blank" rel="noopener noreferrer">
               <button onClick={() => handleButtonClick(liveDemo)}>
-                Live Demo
+                <FontAwesomeIcon icon={faGlobe} /> Live Demo
               </button>
             </a>
           )}
           {githubRepo && (
             <a href={githubRepo} target="_blank" rel="noopener noreferrer">
               <button onClick={() => handleButtonClick(githubRepo)}>
-                GitHub
+                <FontAwesomeIcon icon={faGithub} /> GitHub
               </button>
             </a>
           )}

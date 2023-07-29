@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const Certifications = ({ certifications }) => {
   return (
@@ -23,7 +25,7 @@ const Certifications = ({ certifications }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download Certificate
+              <FontAwesomeIcon icon={faDownload} /> Install Certificate
             </a>
           </div>
         ))}

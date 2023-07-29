@@ -127,6 +127,11 @@
   transition: all 0.3s;
 }
 
+.contact-section-contact-form button svg {
+  margin-right: 5px;
+}
+
+
 .contact-section-contact-form input:not(:placeholder-shown) + span,
 .contact-section-contact-form textarea:not(:placeholder-shown) + span,
 .contact-section-contact-form input:focus + span,

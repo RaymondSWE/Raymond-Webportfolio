@@ -3,6 +3,7 @@ import GraphemeSplitter from "grapheme-splitter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./HeroSection.css";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function HeroSection() {
   const stringSplitter = (string) => {
@@ -65,14 +66,15 @@ export default function HeroSection() {
         />
       </div>
       <button
-        className="hero-container-button"
-        data-aos="zoom-out-up"
-        data-aos-delay="1400"
-      >
-        <a href="#contact" onClick={handleClick}>
-          Contact Me
-        </a>
-      </button>
+          className="hero-container-button"
+          data-aos="zoom-out-up"
+          data-aos-delay="1400"
+        >
+          <FontAwesomeIcon icon={faEnvelope} /> 
+          <a href="#contact" onClick={handleClick}>
+            Contact Me
+          </a>
+        </button>
 
       <div
         className="hero-icon-container"
