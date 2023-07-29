@@ -46,6 +46,7 @@ const TimelineItem = ({ school, degree, startDate, endDate }) => {
         </span>
         <h3>{school}</h3>
         <p>{degree}</p>
+        
       </div>
     </div>
   );
