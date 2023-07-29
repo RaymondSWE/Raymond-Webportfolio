@@ -42,7 +42,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background: linear-gradient(90deg, #ff8a60, #ffaa80);
+  background: linear-gradient(45deg, #ff9800, #ffaa80);
   border: 1px solid #ff9f70;
   color: #333;
   padding: 10px 25px;
@@ -61,7 +61,7 @@
 }
 
 .modal-close-btn:hover {
-  background: linear-gradient(90deg, #ffaa80, #ff8a60);
+  background: linear-gradient(45deg, #ffaa80, #ff9800);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
