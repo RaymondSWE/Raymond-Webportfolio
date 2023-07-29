@@ -7,6 +7,8 @@
     6px 6px 12px #2b2b2b,
     -6px -6px 12px #2b2b2b;
   color: #ff9800;
+  font-family: "Orbitron", sans-serif;
+
 }
 
 .contact-section h2 {
@@ -16,6 +18,9 @@
   letter-spacing: 3px;
   font-size: 2.2em;
   margin-bottom: 2em;
+}
+.contact-section-title {
+  font-family: "Orbitron", sans-serif;
 }
 
 .contact-form-wrapper {
@@ -36,6 +41,7 @@
   border-radius: 10px;
   background: #272727;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
   
 }
 
@@ -69,6 +75,8 @@
   transition: background 0.3s, box-shadow 0.2s, transform 0.2s;
   margin-top: 1em;
   border: none;
+  font-family: "Orbitron", sans-serif;
+
 }
 
 .contact-section-contact-form button:hover {

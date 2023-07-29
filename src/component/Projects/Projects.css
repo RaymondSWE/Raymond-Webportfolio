@@ -122,9 +122,11 @@
   align-items: center;
   margin-top: 01rem;
   margin-bottom: 1rem;
+
 }
 
 .project-buttons button {
+  font-family: "Orbitron", sans-serif;
   background: linear-gradient(
     90deg,
     #ffaa80,
@@ -145,6 +147,7 @@
     background 0.3s,
     box-shadow 0.2s,
     transform 0.2s;
+    
 }
 
 .project-buttons button:hover {
@@ -158,6 +161,7 @@
 }
 
 .more-info-button button {
+  font-family: "Orbitron", sans-serif;
   background: linear-gradient(90deg, #ff8a60, #ffaa80);
   border: 1px solid #ff9f70;
   color: #333;
