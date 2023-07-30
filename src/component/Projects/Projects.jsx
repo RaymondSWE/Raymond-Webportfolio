@@ -79,32 +79,6 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Simple Website",
-      startDate: "2021-10-26",
-      endDate: "2021-10-26",
-      description:
-        "The project was developed while following a YouTube tutorial to grasp the fundamentals of web development. This website serves as my learning milestone as a beginner developer, the beginning of my developer journey into modern web development techniques, including CSS Grid and Flexbox.",
-      detailedDescription: `
-  🌐 Overview: The website is designed as a fictitious cloud hosting platform. The design inspiration is drawn from Heroku, and the website comprises three main pages: home, features, and docs.
-
-  🛠️ Modern Techniques: The tutorial emphasizes the use of modern web techniques such as CSS Grid for layout design, Flexbox for alignment, and animations for enhanced user experience.
-
-  📝 Content Layout: The home page contains a navbar, a form for demo requests, stats with Font Awesome icons, a mock npm install section, supported programming languages, and a footer.
-
-  📱 Responsiveness: The website is built with responsiveness in mind, ensuring it looks and functions seamlessly across devices of varying screen sizes. The design adjusts for tablet and mobile views, changing the direction of animations and optimizing the menu for smaller screens.
-
-  🎨 Styling: The tutorial delves deep into styling, starting with the navbar. It introduces a container class to constrain content width, ensuring a clean and organized look on larger screens. The instructor also touches upon the importance of a consistent color scheme, typography, and more.
-
-  📚 Learning Outcome: This project is beginner frinedly for those seeking to get into web development. It goes through the basics of  HTML, CSS, and JavaScript. It offers a practical approach to learning, ensuring that learners not only understand the theory but also know how to implement it in real-world scenarios.
-`,
-
-      image: raydeployImage,
-      technologyStack: ["HTML", "Javascript", "CSS"],
-      liveDemo: "https://clever-pasca-d05919.netlify.app/",
-      githubRepo: "https://github.com/RaymondSWE/RayDeploy",
-    },
-    {
-      id: 4,
       title: "Web Portfolio",
       startDate: "2023-06-25",
       endDate: "Ongoing",
@@ -137,12 +111,12 @@ const Projects = () => {
       githubRepo: "https://github.com/RaymondSWE/Raymond-Webportfolio",
     },
     {
-      id: 5,
+      id: 4,
       title: "Massage Application for Company Employees",
       startDate: "2022-06-05",
       endDate: "2022-07-12",
       description:
-        "Developed a massage booking system for Bally's employees during my internship.",
+      "Developed a CMS-based massage booking system for Bally's employees during my internship.",
       detailedDescription: `
     
       🤝 Collaboration: I collaborated with other students in a team to develop a Massage application for Bally's employees. My primary responsibility involved designing the database and implementing the backend logic for the application.
@@ -164,6 +138,32 @@ const Projects = () => {
       ],
       liveDemo: "https://massage.silverspin.com/",
       githubRepo: null,
+    },     
+    {
+      id: 5,
+      title: "Simple Website",
+      startDate: "2021-10-26",
+      endDate: "2021-10-26",
+      description:
+        "The project was developed while following a YouTube tutorial to grasp the fundamentals of web development.",
+      detailedDescription: `
+  🌐 Overview: The website is designed as a fictitious cloud hosting platform. The design inspiration is drawn from Heroku, and the website comprises three main pages: home, features, and docs.
+
+  🛠️ Modern Techniques: The tutorial emphasizes the use of modern web techniques such as CSS Grid for layout design, Flexbox for alignment, and animations for enhanced user experience.
+
+  📝 Content Layout: The home page contains a navbar, a form for demo requests, stats with Font Awesome icons, a mock npm install section, supported programming languages, and a footer.
+
+  📱 Responsiveness: The website is built with responsiveness in mind, ensuring it looks and functions seamlessly across devices of varying screen sizes. The design adjusts for tablet and mobile views, changing the direction of animations and optimizing the menu for smaller screens.
+
+  🎨 Styling: The tutorial delves deep into styling, starting with the navbar. It introduces a container class to constrain content width, ensuring a clean and organized look on larger screens. The instructor also touches upon the importance of a consistent color scheme, typography, and more.
+
+  📚 Learning Outcome: This project is beginner frinedly for those seeking to get into web development. It goes through the basics of  HTML, CSS, and JavaScript. It offers a practical approach to learning, ensuring that learners not only understand the theory but also know how to implement it in real-world scenarios.
+`,
+
+      image: raydeployImage,
+      technologyStack: ["HTML", "Javascript", "CSS"],
+      liveDemo: "https://clever-pasca-d05919.netlify.app/",
+      githubRepo: "https://github.com/RaymondSWE/RayDeploy",
     },
   ];
 
@@ -178,10 +178,9 @@ const Projects = () => {
       <h2 data-aos="fade-down-right">Projects</h2>
       <div className="projects-carousel" data-aos="fade-down-left">
         <Carousel
-          showThumbs={false} // Disable the thumbs navigation
-          showIndicators={false} // Disable the dots navigation
-          autoPlay={true}
-          interval={4000}
+          showIndicators={true} // Disable the dots navigation
+          autoPlay={false}
+          interval={8000}
           infiniteLoop={false}
           stopOnHover={true}
           swipeable={true}

@@ -39,6 +39,8 @@
   flex-direction: column;
   align-items: center;
   opacity: 0;
+  margin-bottom: 50px; 
+
 }
 
 .project-card.in-view {

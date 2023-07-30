@@ -25,6 +25,8 @@ import Figma from "../../img/logo/Figma.png"
 import Tailwind from "../../img/logo/Tailwind.png"
 import HTML from "../../img/logo/HTML.png"
 import CSS from "../../img/logo/CSS.png"
+import Nginx from "../../img/logo/Nginx.png"
+
 
 
 
@@ -46,11 +48,12 @@ const SkillsSection = () => {
     { name: "Azure", level: 2, icon: Azure },
     { name: "Linux", level: 2, icon: Linux },
     { name: "Jest", level: 2, icon: JestLogo },
-    { name: "Cypress", level: 2, icon: CypressLogo },
+    { name: "Cypress", level: 1, icon: CypressLogo },
     { name: "Docker", level: 1, icon: Docker },
     { name: "C#", level: 1, icon: Csharp },
     { name: "Figma", level: 1, icon: Figma },
     { name: "TailwindCSS", level: 1, icon: Tailwind },
+    { name: "Nginx", level: 1, icon: Nginx },
 
 
   ];
