@@ -112,20 +112,20 @@
   font-weight: bold;
   border-bottom: 2px solid #ff9800;
   padding-bottom: 1rem;
+  margin-bottom: 1rem; 
+
 }
 
 .certification-card time {
   display: block;
   color: #ffaa80;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .certification-card p {
   color: #b5b5b5;
   line-height: 1.5;
   font-size: 0.9em;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .certification-card a {
