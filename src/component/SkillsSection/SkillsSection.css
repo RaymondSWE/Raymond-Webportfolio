@@ -29,9 +29,11 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  margin-bottom: 10rem;
+
 }
 
 .skills-section-skill-card {
@@ -42,15 +44,10 @@
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
+  
 }
 
-.skills-section-skill-card:hover {
-  transform: scale(1.05);
-  box-shadow:
-    0 5px 10px #ff9800,
-    0 0 25px #ff9800,
-    0 0 25px #ff9800;
-}
+
 
 .skills-section-skill-image {
   width: 100%;
@@ -88,144 +85,90 @@
 
 /* Certification Design */
 .certifications-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 2rem;
   justify-content: center;
 }
 
 .certification-card {
-  background: #272727;
-  height: auto;
-  border-radius: 12px;
-  overflow: hidden;
-  padding: 1rem;
-  transition: all 0.3s ease-in-out;
-  color: #ff9800;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  row-gap: 12px;
+  background: #222222;
+  border-radius: 5%;
+  padding: 1.5rem;
+  width: 300px;
+  transition: all 0.3s ease;
+  position: relative; 
+  margin-top: 2rem;
+
+}
+
+.certification-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .certification-card h3 {
-  font-size: 1.2em;
+  color: #ff9800;
+  font-weight: bold;
   border-bottom: 2px solid #ff9800;
-  padding-bottom: 8px;
+  padding-bottom: 1rem;
 }
 
 .certification-card time {
-  font-size: 1.05em;
-  color: #ffa74d;
-  font-style: italic;
+  display: block;
+  color: #ffaa80;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .certification-card p {
-  color: #bbb;
-  margin: 0;
-  font-size: 0.85em;
-  text-align: justify;
-  line-height: 1.4em;
+  color: #b5b5b5;
+  line-height: 1.5;
+  font-size: 0.9em;
+  margin-bottom: 2rem;
 }
 
 .certification-card a {
-  align-self: center;
+  position: absolute;   
+  bottom: 10px;         
+  left: 0;
+  right: 0;
   background: linear-gradient(45deg, #ff9800, #ffaa80);
   border: 1px solid #ff9f70;
   color: #333;
   padding: 10px 15px;
-  border-radius: 25px;
+  border-radius: 20px;
   transition: all 0.3s ease-in-out;
   font-size: 0.9em;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: bold;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 1rem;
+  text-align: center;  
   width: 80%;
-  text-align: center;
+  margin: 0 auto;     
 }
 
 .certification-card a:hover {
   background: linear-gradient(45deg, #ffaa80, #ff9800);
-  color: #212121;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
 
-/* Hover Animation for Certification Card */
-@keyframes float {
-  0% {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(0px);
-  }
-  50% {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-  }
-  100% {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(0px);
-  }
-}
-
-.certification-card:hover {
-  animation: float 1.5s infinite;
-}
-
 /* Responsive Styles */
-@media (max-width: 900px) {
-  .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .skills-section-skill-card {
-    gap: 0.5rem;
-  }
-
-  .skills-section-skill-image {
-    padding-bottom: 30%;
-  }
-
-  .skills-section-skill-content {
-    padding: 0.5rem;
-  }
-
-  .skills-section-skill-name {
-    font-size: 1em;
-  }
-
-  .skills-section-skill-bar {
-    height: 15px;
-  }
-
-  .certification-card {
-    padding: 0.75rem;
-  }
-
-  .certification-card h3 {
-    font-size: 1.15em;
-  }
-
-  .certification-card time {
-    font-size: 0.95em;
-  }
-
-  .certification-card p {
-    font-size: 0.8em;
-  }
-
-  .certification-card a {
-    padding: 8px 12px;
-    font-size: 0.85em;
+@media (max-width: 768px) {
+  .skills-grid, .certifications-grid {
+    justify-content: space-between;
   }
 }
 
 @media (max-width: 600px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .skills-section, .certifications-grid {
+    padding: 2rem 1rem;
+  }
+
+  .skills-section-skill-card, .certification-card {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }

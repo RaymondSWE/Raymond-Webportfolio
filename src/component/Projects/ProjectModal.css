@@ -41,6 +41,8 @@
 
 .modal-close-btn {
   position: absolute;
+  font-family: "Orbitron", sans-serif;
+
   top: 10px;
   right: 10px;
   background: linear-gradient(45deg, #ff9800, #ffaa80);

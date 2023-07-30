@@ -182,7 +182,7 @@ const Projects = () => {
           showIndicators={false} // Disable the dots navigation
           autoPlay={true}
           interval={4000}
-          infiniteLoop={true}
+          infiniteLoop={false}
           stopOnHover={true}
           swipeable={true}
           showStatus={false}

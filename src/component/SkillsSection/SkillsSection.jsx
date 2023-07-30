@@ -20,17 +20,27 @@ import Linux from "../../img/logo/Linux.png";
 import Csharp from "../../img/logo/Csharp.png";
 import JestLogo from "../../img/logo/Jest.png";
 import CypressLogo from "../../img/logo/Cypress.png";
+import Github from "../../img/logo/Github.png"
+import Figma from "../../img/logo/Figma.png"
+import Tailwind from "../../img/logo/Tailwind.png"
+import HTML from "../../img/logo/HTML.png"
+import CSS from "../../img/logo/CSS.png"
+
+
 
 const SkillsSection = () => {
   const skills = [
-    { name: "JavaScript", level: 5, icon: JavascriptLogo },
-    { name: "React", level: 5, icon: ReactLogo },
-    { name: "Node.js", level: 5, icon: NodeLogo },
+    { name: "HTML", level: 5, icon: HTML },
+    { name: "CSS", level: 4, icon: CSS },
+    { name: "React", level: 4, icon: ReactLogo },
+    { name: "JavaScript", level: 3, icon: JavascriptLogo },
+    { name: "Node.js", level: 4, icon: NodeLogo },
     { name: "Express.js", level: 4, icon: ExpressLogo },
     { name: "Git", level: 4, icon: Git },
+    { name: "Github", level: 4, icon: Github },
     { name: "Java", level: 3, icon: JavaLogo },
-    { name: "TypeScript", level: 3, icon: TypescriptLogo },
     { name: "Redux", level: 3, icon: ReduxLogo },
+    { name: "TypeScript", level: 2, icon: TypescriptLogo },
     { name: "Spring", level: 2, icon: Spring },
     { name: "C++", level: 2, icon: Cpp },
     { name: "Azure", level: 2, icon: Azure },
@@ -39,6 +49,10 @@ const SkillsSection = () => {
     { name: "Cypress", level: 2, icon: CypressLogo },
     { name: "Docker", level: 1, icon: Docker },
     { name: "C#", level: 1, icon: Csharp },
+    { name: "Figma", level: 1, icon: Figma },
+    { name: "TailwindCSS", level: 1, icon: Tailwind },
+
+
   ];
 
   const certifications = [
@@ -57,7 +71,7 @@ const SkillsSection = () => {
       link: "https://ramanmohammedportfolio.me",
     },
     {
-      name: "Cypress -Modern Automation Testing from Scratch + Frameworks",
+      name: "Cypress -Modern Automation Testing",
       date: "Ongoing",
       description:
         "Master Cypress for web automation, including UI and API testing, with this comprehensive course. Covers JavaScript basics, Cypress framework design, and integration testing.",
