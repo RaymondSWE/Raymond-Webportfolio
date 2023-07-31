@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ReactGA from "react-ga";
 import "./App.css";
 import About from "./component/About/About";
@@ -9,6 +9,7 @@ import Navbar from "./component/Navbar/Navbar";
 import Projects from "./component/Projects/Projects";
 import SkillsSection from "./component/SkillsSection/SkillsSection";
 import WorkExperience from "./component/WorkExperience/WorkExperience";
+import Loader from "./component/Loader/Loader.jsx";
 
 function App() {
   useEffect(() => {
@@ -18,10 +19,26 @@ function App() {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); 
+    
+    
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
+
+
   return (
     <>
       <Navbar />
-      <div className="section-container">
+      <div className="hero-section-container">
         <HeroSection />
       </div>
       <div className="section-container">

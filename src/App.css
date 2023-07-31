@@ -1,4 +1,9 @@
 .section-container {
   margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.hero-section-container {
+  margin-top: 10rem;
   margin-bottom: 20rem;
 }
