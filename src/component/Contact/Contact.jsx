@@ -9,6 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faEnvelope, faComment, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import SVGBackground from "../SVGBackground/SVGBackground";
 
 
 const Contact = () => {
@@ -118,6 +119,8 @@ const Contact = () => {
           />
         </div>
       </div>
+      
+
     </div>
   );
 };

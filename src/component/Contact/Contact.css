@@ -19,6 +19,8 @@
   margin-bottom: 2em;
 }
 
+
+
 .contact-section h2::after {
   content: "";
   display: block;
@@ -38,7 +40,7 @@
 .contact-form-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
   margin: 0 auto;
   max-width: 960px;
   margin-bottom: 2em;

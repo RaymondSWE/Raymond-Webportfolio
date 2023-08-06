@@ -36,6 +36,7 @@ const Projects = () => {
           🚀 Deployment: CSFairTrade is deployed on DigitalOcean droplets using PM2, with unique IPs allocated for both frontend and backend. We manage the CI/CD pipeline through GitHub Actions. All traffic is SSL-secured and directed via Nginx. Both unit- and functional tests are in place for stability. Firewalls has also been implemented to enhance security. 
 
           🏆CSFairTrade represents a personal achievement for me, involving numerous hours of learning and understanding various technologies outside of my formal education. The project required me to tackle challenges including working with APIs, implementing a user authentication process, integrating payment gateways, business logic and even setting up a fully functional CI/CD pipeline.
+
         `,
 
       image: csgoImage,
@@ -54,6 +55,7 @@ const Projects = () => {
       ],
       liveDemo: "https://csfairtrade.com/",
       githubRepo: null,
+      demoVideo: "https://www.youtube.com/watch?v=fYdAn0O2g0Q",
     },
     {
       id: 2,
