@@ -8,9 +8,6 @@ import Volvo from "../../img/logo/Volvo.jpg";
 import Scandic from "../../img/logo/Scandic.png";
 
 
-
-
-
 const WorkExperience = () => {
   const jobs = [
     {

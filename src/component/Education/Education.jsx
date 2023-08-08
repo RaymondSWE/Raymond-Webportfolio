@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Education.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also load AOS styles here
+import Skovde from '../../img/logo/UniversitySkovde.png'
+import Boras from '../../img/logo/BorasLogo.jpg'
+
 
 const Education = () => {
   const education = [
@@ -10,14 +13,16 @@ const Education = () => {
       degree: "Bachelor's in Computer Science",
       startDate: "August 2021",
       endDate: "May 2024",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      logo: Skovde 
     },
     {
       school: "University Borås",
       degree: "Bachelor's in Economics (60 credits)",
       startDate: "August 2020",
       endDate: "May 2021",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      logo: Boras 
     },
   ];
 
@@ -39,9 +44,10 @@ const Education = () => {
   );
 };
 
-const TimelineItem = ({ school, degree, description, startDate, endDate }) => {
+const TimelineItem = ({ school, degree, description, startDate, endDate, logo }) => {
   return (
     <div className="timeline-item in-view" data-aos="flip-right">
+      <img src={logo} alt={school} className="education-logo" />
       <div className="timeline-item-content">
         <span className="tag" style={{ background: "#ff9800" }}>
           {startDate} - {endDate}
