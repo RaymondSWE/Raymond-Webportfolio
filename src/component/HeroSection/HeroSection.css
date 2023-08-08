@@ -134,6 +134,17 @@
 }
 
 
+.animated-svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 
 .hero-container-icon:hover {

@@ -10,12 +10,14 @@ const Education = () => {
       degree: "Bachelor's in Computer Science",
       startDate: "August 2021",
       endDate: "May 2024",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       school: "University Borås",
       degree: "Bachelor's in Economics (60 credits)",
       startDate: "August 2020",
       endDate: "May 2021",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
   ];
 
@@ -37,7 +39,7 @@ const Education = () => {
   );
 };
 
-const TimelineItem = ({ school, degree, startDate, endDate }) => {
+const TimelineItem = ({ school, degree, description, startDate, endDate }) => {
   return (
     <div className="timeline-item in-view" data-aos="flip-right">
       <div className="timeline-item-content">
@@ -46,6 +48,7 @@ const TimelineItem = ({ school, degree, startDate, endDate }) => {
         </span>
         <h3>{school}</h3>
         <p>{degree}</p>
+        <p>{description}</p>
       </div>
     </div>
   );

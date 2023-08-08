@@ -26,6 +26,9 @@ const Projects = () => {
       description:
         "A full-stack trading platform providing a secure and user friendly environment for trading in-game skins in the CS:GO market, estimated over 1 billion euros.",
       detailedDescription: `
+      
+          📈 Market Comparison: Similar platforms like SkinBaron and DMarket have shown the potential of digital asset trading platforms, each generating revenues of $10 million and upwards. CSFairTrade is aimed at capturing a share of this market by offering an enhanced user experience.
+  
           🛠️ Technology Stack: CSFairTrade utilizes a modern web tech stack with React.js for an interactive frontend, Node.js and Express.js for the backend, and MySQL for data management in an MVC architecture. I've also integrated Socket.IO for real time bidirectional communication between users and bots, complemented with HTTPS requests for data display and manipulation. 
 
           💼 User Authentication: I've integrated the Steam API's OAuth 2.0 for a smooth user registration process. Upon signing in via Steam, user data is stored in a session and saved to the database, ensuring a smooth user experience.
@@ -52,6 +55,8 @@ const Projects = () => {
         "Azure",
         "React testing library",
         "Jest",
+        "Postman",
+        
       ],
       liveDemo: "https://csfairtrade.com/",
       githubRepo: null,
