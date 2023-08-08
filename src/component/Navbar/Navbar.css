@@ -35,11 +35,26 @@
 .navbar-container-navbar-links {
   color: #c2c2c2;
   text-decoration: none;
+  position: relative;
+  overflow: hidden; 
 }
 
-.navbar-container-navbar-links:hover {
-  color: #ff9800;
+.navbar-container-navbar-links::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%; 
+  height: 2px; 
+  background-color: #ff9800; 
+  transition: width 0.3s; 
 }
+
+.navbar-container-navbar-links:hover::before {
+  width: 100%; 
+}
+
+
 
 @keyframes slideBottom {
   from {
