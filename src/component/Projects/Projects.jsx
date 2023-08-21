@@ -24,7 +24,7 @@ const Projects = () => {
       startDate: "2021-12-25",
       endDate: "Ongoing",
       description:
-        "A full-stack trading platform providing a secure and user friendly environment for trading in-game skins in the CS:GO market, estimated over 1 billion euros.",
+        "A full-stack trading platform providing a secure and user friendly environment for trading ingame skins in the CS:GO market, estimated over 1 billion euros.",
       detailedDescription: `
       
           📈 Market Comparison: Similar platforms like SkinBaron and DMarket have shown the potential of digital asset trading platforms, each generating revenues of $10 million and upwards. CSFairTrade is aimed at capturing a share of this market by offering an enhanced user experience.
@@ -69,7 +69,7 @@ const Projects = () => {
       startDate: "2023-08-12",
       endDate: "Ongoing",
       description:
-        "A comprehensive trading platform designed for Rust in-game skins.  SnipeSkins aims to provide a seamless experience for trading digital assets in the expanding Rust market.",
+        "A comprehensive trading platform designed for Rust ingame skins.  SnipeSkins aims to provide a seamless experience for trading digital assets in the expanding Rust market.",
 
       detailedDescription: `
       📈 Market Positioning: Drawing inspiration from leading platforms such as RustSkins.com, the site aspires to offer an enhanced user experience, ensuring an easy way of trading for the game enthusiast community.
@@ -78,11 +78,9 @@ const Projects = () => {
 
       🛠️ Technology Stack: The platform consist of latest technologies. At its core, Node.js powers backend operations, while Next.js, enhanced with server side rendering, ensures a dynamic frontend experience. Prisma handles data efficiently, and real time interactions are driven by Socket.io. Furthermore, the entire project is dockerized, ensuring consistency across various environments. Additionally, we utilize a monorepo structure with NextJS, which simplifies the management of the codebase and promotes code reusability.
       
-      💼 User Interaction: Players can log in using their Steam accounts, seamlessly integrating their in-game inventories with the marketplace. Once onboarded, they can list items for sale, set pricing strategies, or browse and purchase skins listed by others.
+      💼 User Interaction: Players can log in using their Steam accounts, seamlessly integrating their ingame inventories with the marketplace. Once onboarded, they can list items for sale, set pricing strategies, or browse and purchase skins listed by others.
 
       🎮 Features: Beyond integrating Steam API, SnipeSkins showcases an expansive marketplace, different payment methods and cashout options.  
-
-      🚀 Deployment & Security: Echoing the infrastructure of CSFairTrade, RustSkinsTrade is hosted on a robust platform, ensuring optimal performance and security for its users. Payments are SSL secured, and advanced firewalls further bolster the platform's security.
 
       `,
 
@@ -108,6 +106,37 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "Booking Application for Company Employees",
+      startDate: "2022-06-05",
+      endDate: "2022-07-12",
+      description:
+        "Developed a CMS-based massage booking system for Bally's employees during my internship.",
+      detailedDescription: `
+    
+      🤝 Collaboration: I collaborated with other students in a team to develop a Massage application for Bally's employees. My primary responsibility involved designing the database and implementing the backend logic for the application.
+
+      🛠️ Tech Stack: We utilized MySQL, React, and Spring Boot to create the application.
+      
+      📚 Features & Reflection: The application enabled users to book, and if necessary, rebook a single massage appointment. After the appointment ends, they could then book another for the upcoming weeks. Administrators had the capacity to manage appointments, as in creating, modifying, or deleting them as needed. Although this was my first full-stack project, I would say the outcome was good and not a disaster.
+      
+      🔐 Authentication: While Okta was integrated user authentication, we encountered challenges. These were later resolved by a senior developer. I was informed later on that the issues was from Okta's end.
+      
+      🚀 Growth: This project emphasized the value of teamwork and improved my problem solving skills. Reflecting on it, I recognized the significance of clean coding and the need to prioritize its principles. While I did maintain good naming conventions, some parts of the codebase could benefit from refactoring to better follow with clean code principles like DRY (Don't Repeat Yourself), KISS (Keep It Simple), and SRP (Single Responsibility Principle).      `,
+      image: massageAppImage, 
+      technologyStack: [
+        "MySQL",
+        "React",
+        "Material UI",
+        "Spring Boot",
+        "Liquibase",
+        "Scrum",
+        "HTTP"
+      ],
+      liveDemo: "https://massage.silverspin.com/",
+      githubRepo: null,
+    },
+    {
+      id: 4,
       title: "Blackjack game",
       startDate: "2022-03-04",
       endDate: "2022-04-20",
@@ -129,7 +158,7 @@ const Projects = () => {
       githubRepo: "https://github.com/RaymondSWE/Blackjack-game",
     },
     {
-      id: 4,
+      id: 5,
       title: "Web Portfolio",
       startDate: "2023-06-25",
       endDate: "Ongoing",
@@ -162,36 +191,7 @@ const Projects = () => {
       liveDemo: "http://ramanmohammedportfolio.me/",
       githubRepo: "https://github.com/RaymondSWE/Raymond-Webportfolio",
     },
-    {
-      id: 5,
-      title: "Booking Application for Company Employees",
-      startDate: "2022-06-05",
-      endDate: "2022-07-12",
-      description:
-        "Developed a CMS-based massage booking system for Bally's employees during my internship.",
-      detailedDescription: `
     
-      🤝 Collaboration: I collaborated with other students in a team to develop a Massage application for Bally's employees. My primary responsibility involved designing the database and implementing the backend logic for the application.
-
-      🛠️ Tech Stack: We utilized MySQL, React, and Spring Boot to create the application.
-      
-      📚 Features & Reflection: The application enabled users to book, and if necessary, rebook a single massage appointment. After the appointment ends, they could then book another for the upcoming weeks. Administrators had the capacity to manage appointments, as in creating, modifying, or deleting them as needed. Although this was my first full-stack project, I would say the outcome was good and not a disaster.
-      
-      🔐 Authentication: While Okta was integrated user authentication, we encountered challenges. These were later resolved by a senior developer. I was informed later on that the issues was from Okta's end.
-      
-      🚀 Growth: This project emphasized the value of teamwork and improved my problem solving skills. Reflecting on it, I recognized the significance of clean coding and the need to prioritize its principles. While I did maintain good naming conventions, some parts of the codebase could benefit from refactoring to better follow with clean code principles like DRY (Don't Repeat Yourself), KISS (Keep It Simple), and SRP (Single Responsibility Principle).      `,
-      image: massageAppImage, 
-      technologyStack: [
-        "MySQL",
-        "React",
-        "Material UI",
-        "Spring Boot",
-        "Liquibase",
-        "Scrum",
-      ],
-      liveDemo: "https://massage.silverspin.com/",
-      githubRepo: null,
-    },
     {
       id: 6,
       title: "Simple Website",
