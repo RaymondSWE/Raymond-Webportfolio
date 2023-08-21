@@ -110,7 +110,7 @@ const Projects = () => {
       startDate: "2022-06-05",
       endDate: "2022-07-12",
       description:
-        "Developed a CMS-based massage booking system for Bally's employees during my internship.",
+        "Developed a appointment management system for Bally's employees during my internship with other interns.",
       detailedDescription: `
     
       🤝 Collaboration: I collaborated with other students in a team to develop a Massage application for Bally's employees. My primary responsibility involved designing the database and implementing the backend logic for the application.
