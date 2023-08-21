@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./HeroSection.css";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { a as animated, Spring } from 'react-spring';
+import { a as animated, Spring } from "react-spring";
 
 export default function HeroSection() {
   const stringSplitter = (string) => {
@@ -31,15 +31,12 @@ export default function HeroSection() {
 
   const AnimatedDiv = animated.div;
 
-
-
   return (
     <div className="hero-container" id="hero">
-
       <h1 className="hero-container-title" data-aos="zoom-in-up">
         Welcome
       </h1>
-      
+
       <div
         className="hero-container-subtitle"
         data-aos-delay="700"
@@ -73,15 +70,15 @@ export default function HeroSection() {
         />
       </div>
       <button
-          className="hero-container-button"
-          data-aos="zoom-out-up"
-          data-aos-delay="1400"
-        >
-          <FontAwesomeIcon icon={faEnvelope} /> 
-          <a href="#contact" onClick={handleClick}>
-            Contact Me
-          </a>
-        </button>
+        className="hero-container-button"
+        data-aos="zoom-out-up"
+        data-aos-delay="1400"
+      >
+        <FontAwesomeIcon icon={faEnvelope} />
+        <a href="#contact" onClick={handleClick}>
+          Contact Me
+        </a>
+      </button>
 
       <div
         className="hero-icon-container"
@@ -103,8 +100,6 @@ export default function HeroSection() {
           </svg>
         </a>
       </div>
-
-
     </div>
   );
 }

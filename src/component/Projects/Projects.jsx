@@ -8,13 +8,13 @@ import taskmanagementImage from "../../img/Todo-javaswing.png";
 import raydeployImage from "../../img/RayDeploy.png";
 import webportfolioImage from "../../img/webportfolio.png";
 import massageAppImage from "../../img/massageapp.png";
+import snipeskinsImage from "../../img/snipeskins.jpg";
 import { useInView } from "react-intersection-observer";
 import { Carousel } from "react-responsive-carousel";
 import ProjectModal from "./ProjectModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-
 
 const Projects = () => {
   const projects = [
@@ -56,7 +56,8 @@ const Projects = () => {
         "React testing library",
         "Jest",
         "Postman",
-        
+        "Steam Modules"
+
       ],
       liveDemo: "https://csfairtrade.com/",
       githubRepo: null,
@@ -64,6 +65,48 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "SnipeSkins",
+      startDate: "2023-08-12",
+      endDate: "Ongoing",
+      description:
+        "A comprehensive trading platform designed for Rust in-game skins. Inspired by the functionality of RustSkins.com, RustSkinsTrade aims to provide a seamless experience for trading digital assets in the expanding Rust market.",
+
+      detailedDescription: `
+      📈 Market Positioning: Drawing inspiration from leading platforms such as RustSkins.com, the site aspires to offer an enhanced user experience, ensuring an easy way of trading for the game enthusiast community.
+
+      🏅 Recognition & Teamwork: My work on CSFairTrade led to me being approached for SnipeSkins, a testament to my technical skills and contribution to the gaming community. Throughout the development process of SnipeSkins, I had the privilege of collaborating with two senior developers with over 6+ years of experience. This partnership not only enhanced the project but also improved my communication and teamwork skills.
+
+      🛠️ Technology Stack: The platform consist of latest technologies. At its core, Node.js powers backend operations, while Next.js, enhanced with server side rendering, ensures a dynamic frontend experience. Prisma handles data efficiently, and real time interactions are driven by Socket.io. Furthermore, the entire project is dockerized, ensuring consistency across various environments. Additionally, we utilize a monorepo structure with NextJS, which simplifies the management of the codebase and promotes code reusability.
+      
+      💼 User Interaction: Players can log in using their Steam accounts, seamlessly integrating their in-game inventories with the marketplace. Once onboarded, they can list items for sale, set pricing strategies, or browse and purchase skins listed by others.
+
+      🎮 Features: Beyond integrating Steam API, SnipeSkins showcases an expansive marketplace, different payment methods and cashout options.  
+
+      🚀 Deployment & Security: Echoing the infrastructure of CSFairTrade, RustSkinsTrade is hosted on a robust platform, ensuring optimal performance and security for its users. Payments are SSL secured, and advanced firewalls further bolster the platform's security.
+
+      `,
+
+      image: snipeskinsImage, 
+      technologyStack: [
+        "Next.js",
+        "Node.js",
+        "Prisma",
+        "Socket.io",
+        "Redis",
+        "TailwindCSS",
+        "Zen",
+        "Sumsub",
+        "Docker",
+        "Steam Modules",
+        "Postman",
+        "Web3",
+
+      ],
+      liveDemo: "https://snipeskins.com/", 
+      githubRepo: null,
+    },
+    {
+      id: 3,
       title: "Blackjack game",
       startDate: "2022-03-04",
       endDate: "2022-04-20",
@@ -85,11 +128,12 @@ const Projects = () => {
       githubRepo: "https://github.com/RaymondSWE/Blackjack-game",
     },
     {
-      id: 3,
+      id: 4,
       title: "Web Portfolio",
       startDate: "2023-06-25",
       endDate: "Ongoing",
-      description: "My personal web portfolio is designed to be a comprehensive showcase of my skills, experiences, and projects. As a developer, I understand the importance of presenting oneself in a digital format that is both user friendly and informative.",
+      description:
+        "My personal web portfolio is designed to be a comprehensive showcase of my skills, experiences, and projects. As a developer, I understand the importance of presenting oneself in a digital format that is both user friendly and informative.",
       detailedDescription: `
           🌐 The website's frontend is developed using React.js, one of the most popular JavaScript libraries for building interactive user interfaces. For enhanced animations and page transitions, I integrated Framer Motion and AOS (Animate on Scroll) library. Icons from Font Awesome library add visual appeal and better representation of various sections. 
     
@@ -118,12 +162,12 @@ const Projects = () => {
       githubRepo: "https://github.com/RaymondSWE/Raymond-Webportfolio",
     },
     {
-      id: 4,
-      title: "Massage Application for Company Employees",
+      id: 5,
+      title: "Booking Application for Company Employees",
       startDate: "2022-06-05",
       endDate: "2022-07-12",
       description:
-      "Developed a CMS-based massage booking system for Bally's employees during my internship.",
+        "Developed a CMS-based massage booking system for Bally's employees during my internship.",
       detailedDescription: `
     
       🤝 Collaboration: I collaborated with other students in a team to develop a Massage application for Bally's employees. My primary responsibility involved designing the database and implementing the backend logic for the application.
@@ -135,19 +179,20 @@ const Projects = () => {
       🔐 Authentication: While Okta was integrated user authentication, we encountered challenges. These were later resolved by a senior developer. I was informed later on that the issues was from Okta's end.
       
       🚀 Growth: This project emphasized the value of teamwork and improved my problem solving skills. Reflecting on it, I recognized the significance of clean coding and the need to prioritize its principles. While I did maintain good naming conventions, some parts of the codebase could benefit from refactoring to better follow with clean code principles like DRY (Don't Repeat Yourself), KISS (Keep It Simple), and SRP (Single Responsibility Principle).      `,
-      image: massageAppImage, // Replace null with an appropriate image link if available
+      image: massageAppImage, 
       technologyStack: [
         "MySQL",
         "React",
         "Material UI",
         "Spring Boot",
         "Liquibase",
+        "Scrum",
       ],
       liveDemo: "https://massage.silverspin.com/",
       githubRepo: null,
-    },     
+    },
     {
-      id: 5,
+      id: 6,
       title: "Simple Website",
       startDate: "2021-10-26",
       endDate: "2021-10-26",
@@ -185,7 +230,7 @@ const Projects = () => {
       <h2 data-aos="fade-down-right">Projects</h2>
       <div className="projects-carousel" data-aos="fade-down-left">
         <Carousel
-          showIndicators={true} // Disable the dots navigation
+          showIndicators={true} 
           autoPlay={false}
           interval={8000}
           infiniteLoop={false}

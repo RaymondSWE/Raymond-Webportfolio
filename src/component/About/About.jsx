@@ -38,10 +38,10 @@ export default function About() {
             technology enthusiast
           </h3>
           <p className="about-description" data-aos={"fade-left"}>
-            Software Developer with 2 years of experience across various
-            platforms and languages. I gained experience in Java, React.js,
-            TypeScript, Node.js, MySQL and AWS during school and bootcamp, which
-            I also applied in real world projects.
+            Software Developer with 2 and a half years of experience across
+            various platforms and languages. I gained experience in Java,
+            React.js, TypeScript, Node.js, MySQL and AWS during school and
+            bootcamp, which I also applied in real world projects.
           </p>
           <p className="about-description" data-aos={"fade-right"}>
             I've shown competence in both self managed and team enviroment,

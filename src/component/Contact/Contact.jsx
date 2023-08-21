@@ -8,8 +8,12 @@ import "aos/dist/aos.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faEnvelope, faComment, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faUser,
+  faEnvelope,
+  faComment,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   const [contactForm, setContactForm] = useState({
@@ -118,8 +122,6 @@ const Contact = () => {
           />
         </div>
       </div>
-      
-
     </div>
   );
 };

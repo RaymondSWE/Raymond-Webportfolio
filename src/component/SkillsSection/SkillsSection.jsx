@@ -20,15 +20,13 @@ import Linux from "../../img/logo/Linux.png";
 import Csharp from "../../img/logo/Csharp.png";
 import JestLogo from "../../img/logo/Jest.png";
 import CypressLogo from "../../img/logo/Cypress.png";
-import Github from "../../img/logo/Github.png"
-import Figma from "../../img/logo/Figma.png"
-import Tailwind from "../../img/logo/Tailwind.png"
-import HTML from "../../img/logo/HTML.png"
-import CSS from "../../img/logo/CSS.png"
-import Nginx from "../../img/logo/Nginx.png"
-
-
-
+import Github from "../../img/logo/Github.png";
+import Figma from "../../img/logo/Figma.png";
+import Tailwind from "../../img/logo/Tailwind.png";
+import HTML from "../../img/logo/HTML.png";
+import CSS from "../../img/logo/CSS.png";
+import Nginx from "../../img/logo/Nginx.png";
+import Postman from "../../img/logo/Postman.png";
 
 const SkillsSection = () => {
   const skills = [
@@ -42,6 +40,7 @@ const SkillsSection = () => {
     { name: "Github", level: 4, icon: Github },
     { name: "Java", level: 3, icon: JavaLogo },
     { name: "Redux", level: 3, icon: ReduxLogo },
+    { name: "Postman", level: 2, icon: Postman },
     { name: "TypeScript", level: 2, icon: TypescriptLogo },
     { name: "Spring", level: 2, icon: Spring },
     { name: "C++", level: 2, icon: Cpp },
@@ -51,11 +50,9 @@ const SkillsSection = () => {
     { name: "Cypress", level: 1, icon: CypressLogo },
     { name: "Docker", level: 1, icon: Docker },
     { name: "C#", level: 1, icon: Csharp },
-    { name: "Figma", level: 1, icon: Figma },
     { name: "TailwindCSS", level: 1, icon: Tailwind },
     { name: "Nginx", level: 1, icon: Nginx },
-
-
+    { name: "Figma", level: 0.5, icon: Figma },
   ];
 
   const certifications = [

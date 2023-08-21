@@ -1,0 +1,88 @@
+/* WorkExperienceModal.css */
+
+.workexperience-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+  }
+  
+  .workexperience-modal-content {
+    position: relative;
+    background: linear-gradient(to right, #222222, #343746);
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 165, 0, 0.5) rgba(0, 0, 0, 0.5);
+  }
+  
+  .workexperience-modal-content::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .workexperience-modal-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .workexperience-modal-content::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 165, 0, 0.5);
+    border-radius: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-close-btn {
+    position: absolute;
+    font-family: "Orbitron", sans-serif;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(45deg, #ff9800, #ffaa80);
+    border: 1px solid #ff9f70;
+    color: #333;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition:
+      background 0.3s,
+      box-shadow 0.2s,
+      transform 0.2s;
+  }
+  
+  .modal-close-btn:hover {
+    background: linear-gradient(45deg, #ffaa80, #ff9800);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .workexperience-modal-content {
+      width: 95%;
+      max-width: 500px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .workexperience-modal-content {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 0;
+    }
+  }
+  

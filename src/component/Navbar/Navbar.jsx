@@ -1,5 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
+import {
+  faUser,
+  faTools,
+  faProjectDiagram,
+  faBriefcase,
+  faUniversity,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   const ref = useRef(null);
@@ -42,7 +51,7 @@ const Navbar = () => {
               className="navbar-container-navbar-links"
               onClick={handleClick}
             >
-              About
+              <FontAwesomeIcon icon={faUser} /> About
             </a>
           </li>
           <li className="navbar-container-navbar-item">
@@ -51,7 +60,7 @@ const Navbar = () => {
               className="navbar-container-navbar-links"
               onClick={handleClick}
             >
-              Skills
+              <FontAwesomeIcon icon={faTools} /> Skills
             </a>
           </li>
           <li className="navbar-container-navbar-item">
@@ -60,7 +69,7 @@ const Navbar = () => {
               className="navbar-container-navbar-links"
               onClick={handleClick}
             >
-              Projects
+              <FontAwesomeIcon icon={faProjectDiagram} /> Projects
             </a>
           </li>
           <li className="navbar-container-navbar-item">
@@ -69,7 +78,7 @@ const Navbar = () => {
               className="navbar-container-navbar-links"
               onClick={handleClick}
             >
-              Work
+              <FontAwesomeIcon icon={faBriefcase} /> Work
             </a>
           </li>
           <li className="navbar-container-navbar-item">
@@ -78,7 +87,7 @@ const Navbar = () => {
               className="navbar-container-navbar-links"
               onClick={handleClick}
             >
-              Education
+              <FontAwesomeIcon icon={faUniversity} /> Education
             </a>
           </li>
           <li className="navbar-container-navbar-item">
@@ -87,7 +96,7 @@ const Navbar = () => {
               className="navbar-container-navbar-links"
               onClick={handleClick}
             >
-              Contact
+              <FontAwesomeIcon icon={faEnvelope} /> Contact
             </a>
           </li>
         </ul>
