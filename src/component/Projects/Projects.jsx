@@ -48,7 +48,7 @@ const Projects = () => {
         "Node.js",
         "Express.js",
         "MySQL",
-        "Socket.IO",
+        "Socket.io",
         "HTTPS",
         "Nginx",
         "Digital Ocean",
@@ -69,7 +69,7 @@ const Projects = () => {
       startDate: "2023-08-12",
       endDate: "Ongoing",
       description:
-        "A comprehensive trading platform designed for Rust in-game skins. Inspired by the functionality of RustSkins.com, RustSkinsTrade aims to provide a seamless experience for trading digital assets in the expanding Rust market.",
+        "A comprehensive trading platform designed for Rust in-game skins.  SnipeSkins aims to provide a seamless experience for trading digital assets in the expanding Rust market.",
 
       detailedDescription: `
       📈 Market Positioning: Drawing inspiration from leading platforms such as RustSkins.com, the site aspires to offer an enhanced user experience, ensuring an easy way of trading for the game enthusiast community.
@@ -100,6 +100,7 @@ const Projects = () => {
         "Steam Modules",
         "Postman",
         "Web3",
+        "HTTPS"
 
       ],
       liveDemo: "https://snipeskins.com/", 

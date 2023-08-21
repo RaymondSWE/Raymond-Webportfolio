@@ -6,6 +6,8 @@
   padding: 1rem 2rem;
   z-index: 1000;
   font-family: "Orbitron", sans-serif;
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
 }
 
 .navbar-container {
@@ -37,18 +39,23 @@
   text-decoration: none;
   position: relative;
   overflow: hidden; 
+
 }
+
 
 .navbar-container-navbar-links::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 0%; 
   height: 2px; 
   background-color: #ff9800; 
   transition: width 0.3s; 
 
+}
+.navbar-container-navbar-links:hover {
+  color: #ff9800;
 }
 
 .navbar-container-navbar-links:hover::before {
