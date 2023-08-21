@@ -74,7 +74,7 @@ const Projects = () => {
       detailedDescription: `
       📈 Market Positioning: Drawing inspiration from leading platforms such as RustSkins.com, the site aspires to offer an enhanced user experience, ensuring an easy way of trading for the game enthusiast community.
 
-      🏅 Recognition & Teamwork: My work on CSFairTrade led to me being approached for SnipeSkins, a testament to my technical skills and contribution to the gaming community. Throughout the development process of SnipeSkins, I had the privilege of collaborating with two senior developers with over 6+ years of experience. This partnership not only enhanced the project but also improved my communication and teamwork skills.
+      🏅 Recognition & Teamwork: My work on CSFairTrade led to me being approached for SnipeSkins, a testament to my technical skills and contribution to the gaming community. Throughout the development process of SnipeSkins, I had the privilege of collaborating with two senior developers with over 6+ years of experience.
 
       🛠️ Technology Stack: The platform consist of latest technologies. At its core, Node.js powers backend operations, while Next.js, enhanced with server side rendering, ensures a dynamic frontend experience. Prisma handles data efficiently, and real time interactions are driven by Socket.io. Furthermore, the entire project is dockerized, ensuring consistency across various environments. Additionally, we utilize a monorepo structure with NextJS, which simplifies the management of the codebase and promotes code reusability.
       
