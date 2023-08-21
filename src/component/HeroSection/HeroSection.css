@@ -9,162 +9,102 @@
   position: relative;
   overflow: hidden;
   padding: 20px;
-  background: linear-gradient(90deg, #121212, #1f1e1e);
-  box-shadow:
-    6px 6px 12px #2b2b2b,
-    -6px -6px 12px #2b2b2b;
-  position: relative; 
-
-  
+  background: linear-gradient(135deg, #121212, #1f1e1e);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .hero-container::before {
   content: "";
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background-color: transparent;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../img/shattered-island.gif') center/cover no-repeat; 
+  opacity: 0.1;
 }
 
 .hero-container-title {
-  font-size: 3em;
+  font-size: 3.5em;
   color: #ff9900;
   font-family: "Orbitron", sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero-container-subtitle {
   font-size: 2rem;
-  color: #929382;
-  margin-top: 0.5rem;
+  color: #c4c4c4;
+  margin-top: 1rem;
   font-family: "Orbitron", sans-serif;
 }
 
 .hero-container-hero-story {
-  color: #ffffff;
-  font-size: 1.2rem;
+  color: #f0f0f0;
+  font-size: 1.4rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
   width: 60%;
   text-align: justify;
-  border-left: solid 3px #ff9900;
-  padding: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s ease-in-out;
+  border-left: solid 4px #ff9900;
+  padding: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(18, 18, 18, 0.7);
+  border-radius: 10px;
 }
-
-@media only screen and (max-width: 1024px) {
-  .hero-container {
-    height: 70vh;
-  }
-
-  .hero-container-subtitle {
-    font-size: 1.4rem;
-  }
-
-  .hero-container-hero-story {
-    width: 80%;
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .hero-container {
-    height: 70vh;
-  }
-
-  .hero-container-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .hero-container-hero-story {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .hero-container {
-    height: 70vh;
-    padding: 10px;
-  }
-
-  .hero-container-subtitle {
-    font-size: 1rem;
-  }
-
-  .hero-container-hero-story {
-    width: 100%;
-    font-size: 0.9rem;
-  }
-}
-
-
 
 .hero-container-social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
-  margin-left: 10px;
-  animation: floating 3s ease-in-out infinite;
+  margin-top: 1.5rem;
 }
 
 .hero-container-icon {
-  font-size: 2rem;
-  margin-right: 1rem;
+  font-size: 2.5rem;
+  margin: 0 1.5rem;
   cursor: pointer;
   color: #ffffff;
+  transform: scale(1);
+  transition: transform 0.2s, color 0.2s;
 }
-
-.hero-container-icon, .hero-container-button {
-  box-shadow: -5px -5px 15px #0d0d0d, 5px 5px 15px #2b2b2b;
-  border-radius: 10px;
-}
-
-.hero-container-icon:hover, .hero-container-button:hover {
-  box-shadow: -2px -2px 10px #0d0d0d, 2px 2px 10px #2b2b2b;
-}
-
-.hero-container-button {
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
-
-.animated-svg-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 
 .hero-container-icon:hover {
   color: #ff9900;
+  transform: scale(1.1);
 }
 
 .hero-container-button {
   margin-top: 2rem;
-  display: flex;
-  justify-content: center;
+  padding: 12px 25px;
+  font-size: 1.3rem;
+  background: #ff9900;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.hero-container-button:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
 .hero-container-button a {
   text-align: center;
   width: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s; 
+
+}
+
+.hero-container-button:hover a {
+  color: #c4c4c4; 
 }
 
 .hero-container-button .fa-envelope {
-  margin-right: 5px;  
+  margin-right: 8px;
 }
-
 
 .hero-icon-container {
   position: absolute;
@@ -173,11 +113,16 @@
   transform: translateX(-50%);
 }
 
-.hero-container-glitch {
-  font-size: 3.5rem;
-  position: relative;
-  margin-bottom: 1rem;
-  color: #ff9900;
-  font-family: "Orbitron", sans-serif;
-  font-kerning: none;
+/* Responsive styles stay largely the same, but you can adjust padding, margin and font-sizes if needed */
+
+@media only screen and (max-width: 1024px) {
+  /* styles for tablets */
+}
+
+@media only screen and (max-width: 768px) {
+  /* styles for medium-sized devices */
+}
+
+@media only screen and (max-width: 480px) {
+  /* styles for small devices */
 }

@@ -2,13 +2,14 @@
   padding: 20px;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
-  background: linear-gradient(90deg, #121212, #1f1e1e);
-  box-shadow:
-    6px 6px 12px #2b2b2b,
-    -6px -6px 12px #2b2b2b;
+  background: linear-gradient(135deg, #121212, #1f1e1e),
+              linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
   color: #ff9800;
   font-family: "Orbitron", sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
 }
+
 
 .contact-section h2 {
   text-align: center;
@@ -43,7 +44,7 @@
   gap: 1rem;
   margin: 0 auto;
   max-width: 960px;
-  margin-bottom: 2em;
+  margin-bottom: 15em;
 }
 
 .contact-section-contact-form {
