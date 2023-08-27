@@ -15,6 +15,8 @@ import ProjectModal from "./ProjectModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { toast } from 'react-toastify';
+
 
 const Projects = () => {
   const projects = [
@@ -248,7 +250,7 @@ const ProjectCard = ({ project }) => {
 
   const handleButtonClick = (link) => {
     if (!link) {
-      alert("This link is not available.");
+      toast.error("This link is not available.");
     }
   };
 
@@ -271,14 +273,15 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className="project-links">
           <div>
-            <a href={githubRepo} target="_blank" rel="noopener noreferrer">
+            <a href={githubRepo} target="_blank" rel="noopener noreferrer"   onClick={() => handleButtonClick(githubRepo)}
+>
               <button className="link-button">
                 <FontAwesomeIcon icon={faGithub} /> GitHub
               </button>
             </a>
           </div>
           <div>
-            <a href={liveDemo} target="_blank" rel="noopener noreferrer">
+            <a href={liveDemo} target="_blank" rel="noopener noreferrer" onClick={() => handleButtonClick(liveDemo)}>
               <button className="link-button">
                 <FontAwesomeIcon icon={faGlobe} /> Live Preview
               </button>
