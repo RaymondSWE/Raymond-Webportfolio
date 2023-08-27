@@ -56,7 +56,7 @@ function App() {
       <div className="section-container">
         <Education />
       </div>
-      <div className="navbar-section-container">
+      <div className="section-container">
         <Contact />
       </div>
     </>

@@ -29,7 +29,7 @@ const Projects = () => {
       
           📈 Market Comparison: Similar platforms like SkinBaron and DMarket have shown the potential of digital asset trading platforms, each generating revenues of $10 million and upwards. CSFairTrade is aimed at capturing a share of this market by offering an enhanced user experience.
   
-          🛠️ Technology Stack: CSFairTrade utilizes a modern web tech stack with React.js for an interactive frontend, Node.js and Express.js for the backend, and MySQL for data management in an MVC architecture. I've also integrated Socket.IO for real time bidirectional communication between users and bots, complemented with HTTPS requests for data display and manipulation. 
+          🛠️ Technology Stack: CSFairTrade utilizes a modern web tech stack with React.js for an interactive frontend, Node.js and Express.js for the backend, and MySQL for data management in an MVC architecture. I've also integrated Socket.IO for real time bidirectional communication between users and bots, complemented with HTTPS requests for data display and manipulation. Sequelize for ORM
 
           💼 User Authentication: I've integrated the Steam API's OAuth 2.0 for a smooth user registration process. Upon signing in via Steam, user data is stored in a session and saved to the database, ensuring a smooth user experience.
 
@@ -53,10 +53,11 @@ const Projects = () => {
         "Nginx",
         "Digital Ocean",
         "Azure",
-        "React testing library",
         "Jest",
         "Postman",
-        "Steam Modules"
+        "Steam Modules",
+        "Sequelize", 
+        "Linux (Ubuntu)",
 
       ],
       liveDemo: "https://csfairtrade.com/",
@@ -110,7 +111,7 @@ const Projects = () => {
       startDate: "2022-06-05",
       endDate: "2022-07-12",
       description:
-        "Developed a appointment management system for Bally's employees during my internship with other interns.",
+        "Developed a appointment management system for Bally's employees during my internship with other interns. Providing a system for the workers for their daily massage.",
       detailedDescription: `
     
       🤝 Collaboration: I collaborated with other students in a team to develop a Massage application for Bally's employees. My primary responsibility involved designing the database and implementing the backend logic for the application.
@@ -229,20 +230,10 @@ const Projects = () => {
   return (
     <section id="projects" className="projects-section">
       <h2 data-aos="fade-down-right">Projects</h2>
-      <div className="projects-carousel" data-aos="fade-down-left">
-        <Carousel
-          showIndicators={true} 
-          autoPlay={false}
-          interval={8000}
-          infiniteLoop={false}
-          stopOnHover={true}
-          swipeable={true}
-          showStatus={false}
-        >
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </Carousel>
+      <div className="projects-grid" data-aos="fade-down-left">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
     </section>
   );
@@ -265,48 +256,47 @@ const ProjectCard = ({ project }) => {
     project;
 
   return (
-    <div ref={ref} className={`project-card ${inView ? "in-view" : ""}`}>
-      <div className="project-image">
-        <img src={image} alt={title} />
-      </div>
-      <div className="project-details">
-        <h3>{title}</h3>
-        <p className="project-description">{description}</p>
-        <h3>Technology</h3>
-        <div className="project-technology">
-          {technologyStack.map((tech, index) => (
-            <span key={index}>{tech}</span>
-          ))}
+      <div ref={ref} className={`project-card ${inView ? "in-view" : ""}`}>
+        <div className="project-image">
+          <img src={image} alt={title} />
         </div>
-        <div className="project-buttons">
-          {liveDemo && (
-            <a href={liveDemo} target="_blank" rel="noopener noreferrer">
-              <button onClick={() => handleButtonClick(liveDemo)}>
-                <FontAwesomeIcon icon={faGlobe} /> Live Demo
-              </button>
-            </a>
-          )}
-          {githubRepo && (
+        <div className="project-details">
+          <h3>{title}</h3>
+          <p className="project-description">{description}</p>
+          <div className="project-technology">
+            {technologyStack.map((tech, index) => (
+              <span key={index}>{tech}</span>
+            ))}
+          </div>
+        </div>
+        <div className="project-links">
+          <div>
             <a href={githubRepo} target="_blank" rel="noopener noreferrer">
-              <button onClick={() => handleButtonClick(githubRepo)}>
+              <button className="link-button">
                 <FontAwesomeIcon icon={faGithub} /> GitHub
               </button>
             </a>
-          )}
+          </div>
+          <div>
+            <a href={liveDemo} target="_blank" rel="noopener noreferrer">
+              <button className="link-button">
+                <FontAwesomeIcon icon={faGlobe} /> Live Preview
+              </button>
+            </a>
+          </div>
         </div>
         <div className="more-info-button">
           <button onClick={() => setModalOpen(true)}>
             <FontAwesomeIcon icon={faInfoCircle} /> More Info
           </button>
         </div>
+        <ProjectModal
+          isOpen={isModalOpen}
+          onRequestClose={() => setModalOpen(false)}
+          project={project}
+        />
       </div>
-      <ProjectModal
-        isOpen={isModalOpen}
-        onRequestClose={() => setModalOpen(false)}
-        project={project}
-      />
-    </div>
-  );
+    );
 };
 
 export default Projects;

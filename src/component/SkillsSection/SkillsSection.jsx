@@ -27,6 +27,11 @@ import HTML from "../../img/logo/HTML.png";
 import CSS from "../../img/logo/CSS.png";
 import Nginx from "../../img/logo/Nginx.png";
 import Postman from "../../img/logo/Postman.png";
+import NextJS from "../../img/logo/nextjs.png";
+import Prisma from "../../img/logo/prisma.png"
+import mysql from "../../img/logo/mysql.png"
+import TRPCLogo from "../../img/trpc.svg";
+
 
 const SkillsSection = () => {
   const skills = [
@@ -36,10 +41,13 @@ const SkillsSection = () => {
     { name: "JavaScript", level: 3, icon: JavascriptLogo },
     { name: "Node.js", level: 4, icon: NodeLogo },
     { name: "Express.js", level: 4, icon: ExpressLogo },
+    { name: "MySQL", level: 4, icon: mysql },
+    { name: "Prisma", level: 4, icon: Prisma },
     { name: "Git", level: 4, icon: Git },
     { name: "Github", level: 4, icon: Github },
     { name: "Java", level: 3, icon: JavaLogo },
     { name: "Redux", level: 3, icon: ReduxLogo },
+    { name: "NextJS", level: 2, icon: NextJS },
     { name: "Postman", level: 2, icon: Postman },
     { name: "TypeScript", level: 2, icon: TypescriptLogo },
     { name: "Spring", level: 2, icon: Spring },
@@ -53,6 +61,8 @@ const SkillsSection = () => {
     { name: "TailwindCSS", level: 1, icon: Tailwind },
     { name: "Nginx", level: 1, icon: Nginx },
     { name: "Figma", level: 0.5, icon: Figma },
+    { name: "tRPC", level: 0.5, icon: TRPCLogo },
+
   ];
 
   const certifications = [
