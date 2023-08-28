@@ -34,37 +34,41 @@ import TRPCLogo from "../../img/trpc.svg";
 
 
 const SkillsSection = () => {
-  const skills = [
+  const languages = [
     { name: "HTML", level: 5, icon: HTML },
     { name: "CSS", level: 4, icon: CSS },
-    { name: "React", level: 4, icon: ReactLogo },
     { name: "JavaScript", level: 3, icon: JavascriptLogo },
+    { name: "Java", level: 3, icon: JavaLogo },
+    { name: "C++", level: 2, icon: Cpp },
+    { name: "C#", level: 1, icon: Csharp },
+    { name: "TypeScript", level: 2, icon: TypescriptLogo },
+  ];
+
+  const frameworks = [
+    { name: "React", level: 4, icon: ReactLogo },
     { name: "Node.js", level: 4, icon: NodeLogo },
     { name: "Express.js", level: 4, icon: ExpressLogo },
-    { name: "MySQL", level: 4, icon: mysql },
-    { name: "Prisma", level: 4, icon: Prisma },
-    { name: "Git", level: 4, icon: Git },
-    { name: "Github", level: 4, icon: Github },
-    { name: "Java", level: 3, icon: JavaLogo },
     { name: "Redux", level: 3, icon: ReduxLogo },
     { name: "NextJS", level: 2, icon: NextJS },
-    { name: "Postman", level: 2, icon: Postman },
-    { name: "TypeScript", level: 2, icon: TypescriptLogo },
     { name: "Spring", level: 2, icon: Spring },
-    { name: "C++", level: 2, icon: Cpp },
+    { name: "TailwindCSS", level: 1, icon: Tailwind },
+    { name: "Prisma", level: 4, icon: Prisma },
+  ];
+
+  const others = [
+    { name: "MySQL", level: 4, icon: mysql },
+    { name: "Git", level: 4, icon: Git },
+    { name: "Github", level: 4, icon: Github },
+    { name: "Postman", level: 2, icon: Postman },
     { name: "Azure", level: 2, icon: Azure },
     { name: "Linux", level: 2, icon: Linux },
     { name: "Jest", level: 2, icon: JestLogo },
     { name: "Cypress", level: 1, icon: CypressLogo },
     { name: "Docker", level: 1, icon: Docker },
-    { name: "C#", level: 1, icon: Csharp },
-    { name: "TailwindCSS", level: 1, icon: Tailwind },
     { name: "Nginx", level: 1, icon: Nginx },
     { name: "Figma", level: 0.5, icon: Figma },
     { name: "tRPC", level: 0.5, icon: TRPCLogo },
-
   ];
-
   const certifications = [
     {
       name: "Testing React with Jest and React Testing Library (RTL)",
@@ -88,13 +92,37 @@ const SkillsSection = () => {
       link: "https://ramanmohammedportfolio.mel",
     },
   ];
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
     });
   }, []);
 
-  return (
+  const renderSkill = (skill, index) => (
+    <div
+      key={index}
+      className="skills-section-skill-card"
+      data-aos="fade-right"
+    >
+      <div
+        className="skills-section-skill-image"
+        style={{ backgroundImage: `url(${skill.icon})` }}
+      />
+      <div className="skills-section-skill-content">
+        <div className="skills-section-skill-name">{skill.name}</div>
+        <div className="skills-section-skill-bar">
+          <div
+            className="skills-section-skill-level"
+            style={{ width: `${skill.level * 20}%` }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+  
+
+ return (
     <div id="skills" className="skills-section">
       <h2
         data-aos="flip-left"
@@ -103,28 +131,17 @@ const SkillsSection = () => {
       >
         Skills
       </h2>
+      <h3>Languages</h3>
       <div className="skills-grid">
-        {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="skills-section-skill-card"
-            data-aos="fade-right"
-          >
-            <div
-              className="skills-section-skill-image"
-              style={{ backgroundImage: `url(${skill.icon})` }}
-            />
-            <div className="skills-section-skill-content">
-              <div className="skills-section-skill-name">{skill.name}</div>
-              <div className="skills-section-skill-bar">
-                <div
-                  className="skills-section-skill-level"
-                  style={{ width: `${skill.level * 20}%` }}
-                />
-              </div>
-            </div>
-          </div>
-        ))}
+        {languages.map(renderSkill)}
+      </div>
+      <h3>Frameworks</h3>
+      <div className="skills-grid">
+        {frameworks.map(renderSkill)}
+      </div>
+      <h3>Others</h3>
+      <div className="skills-grid">
+        {others.map(renderSkill)}
       </div>
       <Certifications certifications={certifications} />
     </div>
