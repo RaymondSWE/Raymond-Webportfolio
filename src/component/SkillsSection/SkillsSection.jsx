@@ -31,6 +31,13 @@ import NextJS from "../../img/logo/nextjs.png";
 import Prisma from "../../img/logo/prisma.png"
 import mysql from "../../img/logo/mysql.png"
 import TRPCLogo from "../../img/trpc.svg";
+import REST from "../../img/logo/REST.png"
+import Ubuntu from "../../img/logo/ubuntu.png"
+import Bootstrap from "../../img/logo/bootstrap.png"
+import vscode from "../../img/logo/vscode.png"
+import intellj from "../../img/logo/intellj.svg"
+import datagrip from "../../img/logo/datagrip.svg"
+
 
 
 const SkillsSection = () => {
@@ -39,29 +46,38 @@ const SkillsSection = () => {
     { name: "CSS", level: 4, icon: CSS },
     { name: "JavaScript", level: 3, icon: JavascriptLogo },
     { name: "Java", level: 3, icon: JavaLogo },
+    { name: "TypeScript", level: 2, icon: TypescriptLogo },
     { name: "C++", level: 2, icon: Cpp },
     { name: "C#", level: 1, icon: Csharp },
-    { name: "TypeScript", level: 2, icon: TypescriptLogo },
   ];
 
   const frameworks = [
     { name: "React", level: 4, icon: ReactLogo },
     { name: "Node.js", level: 4, icon: NodeLogo },
+    { name: "Prisma", level: 4, icon: Prisma },
     { name: "Express.js", level: 4, icon: ExpressLogo },
     { name: "Redux", level: 3, icon: ReduxLogo },
     { name: "NextJS", level: 2, icon: NextJS },
     { name: "Spring", level: 2, icon: Spring },
-    { name: "TailwindCSS", level: 1, icon: Tailwind },
-    { name: "Prisma", level: 4, icon: Prisma },
+    { name: "Bootstrap", level: 3, icon: Bootstrap },
+    { name: "TailwindCSS", level: 2, icon: Tailwind },
+
+
   ];
 
   const others = [
+    { name: "VsCode", level: 5, icon: vscode },
     { name: "MySQL", level: 4, icon: mysql },
     { name: "Git", level: 4, icon: Git },
     { name: "Github", level: 4, icon: Github },
+    { name: "REST", level: 4, icon: REST },
+    { name: "Intellj", level: 2.5, icon: intellj },
+    { name: "Datagrip", level: 2.5, icon: datagrip },
+
     { name: "Postman", level: 2, icon: Postman },
     { name: "Azure", level: 2, icon: Azure },
     { name: "Linux", level: 2, icon: Linux },
+    { name: "Ubuntu", level: 2, icon: Ubuntu },
     { name: "Jest", level: 2, icon: JestLogo },
     { name: "Cypress", level: 1, icon: CypressLogo },
     { name: "Docker", level: 1, icon: Docker },
@@ -139,7 +155,7 @@ const SkillsSection = () => {
       <div className="skills-grid">
         {frameworks.map(renderSkill)}
       </div>
-      <h3>Others</h3>
+      <h3>Others Tools</h3>
       <div className="skills-grid">
         {others.map(renderSkill)}
       </div>

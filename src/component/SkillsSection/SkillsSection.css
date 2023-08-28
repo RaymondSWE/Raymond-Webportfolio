@@ -30,6 +30,18 @@
   bottom: -10px;
 }
 
+.skills-section h3 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  color: #ff9800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1em;
+  font-family: "Orbitron", sans-serif;
+}
+
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
