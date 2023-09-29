@@ -9,6 +9,7 @@ import raydeployImage from "../../img/RayDeploy.png";
 import webportfolioImage from "../../img/webportfolio.png";
 import massageAppImage from "../../img/massageapp.png";
 import snipeskinsImage from "../../img/snipeskins.jpg";
+import queueStudentImage from "../../img/queue-student.png"
 import { useInView } from "react-intersection-observer";
 import { Carousel } from "react-responsive-carousel";
 import ProjectModal from "./ProjectModal";
@@ -117,18 +118,18 @@ const Projects = () => {
         "Developed an Event-driven queue system for students and supervisors with Zeromq, Springboot and Python",
       detailedDescription: `
     
-      🤝 Collaboration: I teamed up to develop a Distributed Queue System for students supervisor. Both contributors focused on creating a structured workflow, implementing server and client-side functionalities, and maintaining project documentation.
+      🤝 Collaboration: I teamed up with another student to develop a Distributed Queue System for students supervisor in the course "Distributed system". Both of us focused on creating a structured workflow, implementing server and client side functionalities, and maintaining project documentation.
 
-      🛠️ Tech Stack: The project using technologies such as Java 17, Python 3.12, Maven, Spring Boot, ZeroMQ, and Tkinter, showcasing a blend of technologies with a user-friendly desktop interface.
+      🛠️ Tech Stack: The project using technologies such as Java 17, Python 3.12, Maven, Spring Boot, ZeroMQ, and Tkinter, showcasing a blend of technologies with a good user design desktop interface.
 
-      📚 Features & Reflection: The Distributed Queue System is built with an event-driven architecture, featuring a Pub/Sub and Request/Respond pattern through ZeroMQ sockets. It incorporates mechanisms like heartbeats for maintaining client presence in the queue and facilitates communication between students, supervisors, and the server. 
+      📚 Features & Reflection: The Distributed Queue System is built with an event-driven architecture, featuring a Pub/Sub and Request/Respond pattern through ZeroMQ sockets. It incorporates mechanisms like heartbeats for maintaining client presence in the queue and used in communication between students, supervisors, and the server. The system can even connect with external API if wished by user.
 
-      🚀 Growth: The experience of developing this project showcases the importance of structured workflows, code reviews, and a well organized codebase. I have learned the how to build properly event-driven architecture and balancing between different technologies. Looking forward, I want to implement more advanced concepts and tools, like implementing CI/CD pipelines and evaluating another libraries for GUI development(such as PySide)
+      🚀 Growth: The experience of developing this project showcases the importance of structured workflows, code reviews, and a well organized codebase. I have learned the how to build properly event-driven architecture and balancing between different technologies. This is my secound event-driven project, first one was with Socket.IO with NodeJS (CSFairTrade). CSfairtrade event driven strucutre  was a bit more complicated which included communication between external API (having accounts as bots in Steam API) communicating with users, such as trading etc. But it was fun seeing the difference of implementation of these two different sockets in different langauges. Looking forward, I want to implement more advanced concepts and tools, like implementing CI/CD pipelines and evaluating another libraries for GUI development (such as PySide).
 
       📘 Documentation & Architecture: The documentation provides a readme file that consist overview of the project, covering aspects from installation to API endpoints. The system adopts an event-driven architecture, with detailed explanations of the components, such as Event Object, Event Listener, Service Folder, Config Files, and Workers. The project also provides a thorough enumeration of dependencies and their roles in the project.
 
     `,
-      image: massageAppImage,
+      image: queueStudentImage,
       technologyStack: [
         "Sonarlint",
         "Github",
