@@ -15,8 +15,7 @@ import ProjectModal from "./ProjectModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { toast } from 'react-toastify';
-
+import { toast } from "react-toastify";
 
 const Projects = () => {
   const projects = [
@@ -58,9 +57,11 @@ const Projects = () => {
         "Jest",
         "Postman",
         "Steam Modules",
-        "Sequelize", 
+        "Sequelize",
         "Linux (Ubuntu)",
-
+        "Event-driven architecture",
+        "Github",
+        "Prettier",
       ],
       liveDemo: "https://csfairtrade.com/",
       githubRepo: null,
@@ -87,7 +88,7 @@ const Projects = () => {
 
       `,
 
-      image: snipeskinsImage, 
+      image: snipeskinsImage,
       technologyStack: [
         "Next.js",
         "Node.js",
@@ -101,11 +102,49 @@ const Projects = () => {
         "Steam Modules",
         "Postman",
         "Web3",
-        "HTTPS"
-
+        "HTTPS",
+        "Github",
       ],
-      liveDemo: "https://snipeskins.com/", 
+      liveDemo: "https://snipeskins.com/",
       githubRepo: null,
+    },
+    {
+      id: 3,
+      title: "Distributed Queue System,",
+      startDate: "2023-09-05",
+      endDate: "2023-09-29",
+      description:
+        "Developed an Event-driven queue system for students and supervisors with Zeromq, Springboot and Python",
+      detailedDescription: `
+    
+      🤝 Collaboration: I teamed up to develop a Distributed Queue System for students supervisor. Both contributors focused on creating a structured workflow, implementing server and client-side functionalities, and maintaining project documentation.
+
+      🛠️ Tech Stack: The project using technologies such as Java 17, Python 3.12, Maven, Spring Boot, ZeroMQ, and Tkinter, showcasing a blend of technologies with a user-friendly desktop interface.
+
+      📚 Features & Reflection: The Distributed Queue System is built with an event-driven architecture, featuring a Pub/Sub and Request/Respond pattern through ZeroMQ sockets. It incorporates mechanisms like heartbeats for maintaining client presence in the queue and facilitates communication between students, supervisors, and the server. 
+
+      🚀 Growth: The experience of developing this project showcases the importance of structured workflows, code reviews, and a well organized codebase. I have learned the how to build properly event-driven architecture and balancing between different technologies. Looking forward, I want to implement more advanced concepts and tools, like implementing CI/CD pipelines and evaluating another libraries for GUI development(such as PySide)
+
+      📘 Documentation & Architecture: The documentation provides a readme file that consist overview of the project, covering aspects from installation to API endpoints. The system adopts an event-driven architecture, with detailed explanations of the components, such as Event Object, Event Listener, Service Folder, Config Files, and Workers. The project also provides a thorough enumeration of dependencies and their roles in the project.
+
+    `,
+      image: massageAppImage,
+      technologyStack: [
+        "Sonarlint",
+        "Github",
+        "Linux",
+        "Spring Boot",
+        "Java",
+        "ZeroMQ",
+        "Python",
+        "Lombok",
+        "Tkinter",
+        "Sockets",
+        "Event-driven architecture",
+      ],
+      liveDemo: "https://www.youtube.com/watch?v=m-omLSKbUtc",
+      githubRepo: "https://github.com/RaymondSWE/DistributedQueue",
+      demoVideo: "https://www.youtube.com/watch?v=m-omLSKbUtc",
     },
     {
       id: 3,
@@ -125,7 +164,7 @@ const Projects = () => {
       🔐 Authentication: While Okta was integrated user authentication, we encountered challenges. These were later resolved by a senior developer. I was informed later on that the issues was from Okta's end.
       
       🚀 Growth: This project emphasized the value of teamwork and improved my problem solving skills. Reflecting on it, I recognized the significance of clean coding and the need to prioritize its principles. While I did maintain good naming conventions, some parts of the codebase could benefit from refactoring to better follow with clean code principles like DRY (Don't Repeat Yourself), KISS (Keep It Simple), and SRP (Single Responsibility Principle).      `,
-      image: massageAppImage, 
+      image: massageAppImage,
       technologyStack: [
         "MySQL",
         "React",
@@ -133,7 +172,10 @@ const Projects = () => {
         "Spring Boot",
         "Liquibase",
         "Scrum",
-        "HTTP"
+        "HTTP",
+        "Gitlab",
+        "VsCode",
+        "IntellJ",
       ],
       liveDemo: "https://massage.silverspin.com/",
       githubRepo: null,
@@ -156,7 +198,7 @@ const Projects = () => {
         🌐 Design Choice: The MVC pattern was chosen because of its robustness in maintaining a clean separation between the frontend and backend. One alternative was to let the graphical user interface handle both game logic and display, but this would complicate code management.
       `,
       image: blackjackImage,
-      technologyStack: ["Java", "Java Swing"],
+      technologyStack: ["Java", "Java Swing", "Github", "Eclipse"],
       liveDemo: null,
       githubRepo: "https://github.com/RaymondSWE/Blackjack-game",
     },
@@ -194,7 +236,7 @@ const Projects = () => {
       liveDemo: "http://ramanmohammedportfolio.me/",
       githubRepo: "https://github.com/RaymondSWE/Raymond-Webportfolio",
     },
-    
+
     {
       id: 6,
       title: "Simple Website",
@@ -258,48 +300,57 @@ const ProjectCard = ({ project }) => {
     project;
 
   return (
-      <div ref={ref} className={`project-card ${inView ? "in-view" : ""}`}>
-        <div className="project-image">
-          <img src={image} alt={title} />
-        </div>
-        <div className="project-details">
-          <h3>{title}</h3>
-          <p className="project-description">{description}</p>
-          <div className="project-technology">
-            {technologyStack.map((tech, index) => (
-              <span key={index}>{tech}</span>
-            ))}
-          </div>
-        </div>
-        <div className="project-links">
-          <div>
-            <a href={githubRepo} target="_blank" rel="noopener noreferrer"   onClick={() => handleButtonClick(githubRepo)}
->
-              <button className="link-button">
-                <FontAwesomeIcon icon={faGithub} /> GitHub
-              </button>
-            </a>
-          </div>
-          <div>
-            <a href={liveDemo} target="_blank" rel="noopener noreferrer" onClick={() => handleButtonClick(liveDemo)}>
-              <button className="link-button">
-                <FontAwesomeIcon icon={faGlobe} /> Live Preview
-              </button>
-            </a>
-          </div>
-        </div>
-        <div className="more-info-button">
-          <button onClick={() => setModalOpen(true)}>
-            <FontAwesomeIcon icon={faInfoCircle} /> More Info
-          </button>
-        </div>
-        <ProjectModal
-          isOpen={isModalOpen}
-          onRequestClose={() => setModalOpen(false)}
-          project={project}
-        />
+    <div ref={ref} className={`project-card ${inView ? "in-view" : ""}`}>
+      <div className="project-image">
+        <img src={image} alt={title} />
       </div>
-    );
+      <div className="project-details">
+        <h3>{title}</h3>
+        <p className="project-description">{description}</p>
+        <div className="project-technology">
+          {technologyStack.map((tech, index) => (
+            <span key={index}>{tech}</span>
+          ))}
+        </div>
+      </div>
+      <div className="project-links">
+        <div>
+          <a
+            href={githubRepo}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => handleButtonClick(githubRepo)}
+          >
+            <button className="link-button">
+              <FontAwesomeIcon icon={faGithub} /> GitHub
+            </button>
+          </a>
+        </div>
+        <div>
+          <a
+            href={liveDemo}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => handleButtonClick(liveDemo)}
+          >
+            <button className="link-button">
+              <FontAwesomeIcon icon={faGlobe} /> Live Preview
+            </button>
+          </a>
+        </div>
+      </div>
+      <div className="more-info-button">
+        <button onClick={() => setModalOpen(true)}>
+          <FontAwesomeIcon icon={faInfoCircle} /> More Info
+        </button>
+      </div>
+      <ProjectModal
+        isOpen={isModalOpen}
+        onRequestClose={() => setModalOpen(false)}
+        project={project}
+      />
+    </div>
+  );
 };
 
 export default Projects;

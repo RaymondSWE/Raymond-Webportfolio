@@ -28,17 +28,16 @@ import CSS from "../../img/logo/CSS.png";
 import Nginx from "../../img/logo/Nginx.png";
 import Postman from "../../img/logo/Postman.png";
 import NextJS from "../../img/logo/nextjs.png";
-import Prisma from "../../img/logo/prisma.png"
-import mysql from "../../img/logo/mysql.png"
+import Prisma from "../../img/logo/prisma.png";
+import mysql from "../../img/logo/mysql.png";
 import TRPCLogo from "../../img/trpc.svg";
-import REST from "../../img/logo/REST.png"
-import Ubuntu from "../../img/logo/ubuntu.png"
-import Bootstrap from "../../img/logo/bootstrap.png"
-import vscode from "../../img/logo/vscode.png"
-import intellj from "../../img/logo/intellj.svg"
-import datagrip from "../../img/logo/datagrip.svg"
-
-
+import REST from "../../img/logo/REST.png";
+import Ubuntu from "../../img/logo/ubuntu.png";
+import Bootstrap from "../../img/logo/bootstrap.png";
+import vscode from "../../img/logo/vscode.png";
+import intellj from "../../img/logo/intellj.svg";
+import datagrip from "../../img/logo/datagrip.svg";
+import socketIO from "../../img/logo/socketIO.png";
 
 const SkillsSection = () => {
   const languages = [
@@ -61,19 +60,17 @@ const SkillsSection = () => {
     { name: "Spring", level: 2, icon: Spring },
     { name: "Bootstrap", level: 3, icon: Bootstrap },
     { name: "TailwindCSS", level: 2, icon: Tailwind },
-
-
   ];
 
   const others = [
     { name: "VsCode", level: 5, icon: vscode },
     { name: "MySQL", level: 4, icon: mysql },
-    { name: "Git", level: 4, icon: Git },
-    { name: "Github", level: 4, icon: Github },
+    { name: "Git & Github", level: 4, icon: Git },
     { name: "REST", level: 4, icon: REST },
+    { name: "Github Action", level: 3, icon: Github },
+    { name: "SocketIO (Websocket)", level: 3, icon: socketIO },
     { name: "Intellj", level: 2.5, icon: intellj },
     { name: "Datagrip", level: 2.5, icon: datagrip },
-
     { name: "Postman", level: 2, icon: Postman },
     { name: "Azure", level: 2, icon: Azure },
     { name: "Linux", level: 2, icon: Linux },
@@ -136,9 +133,8 @@ const SkillsSection = () => {
       </div>
     </div>
   );
-  
 
- return (
+  return (
     <div id="skills" className="skills-section">
       <h2
         data-aos="flip-left"
@@ -148,17 +144,11 @@ const SkillsSection = () => {
         Skills
       </h2>
       <h3>Languages</h3>
-      <div className="skills-grid">
-        {languages.map(renderSkill)}
-      </div>
+      <div className="skills-grid">{languages.map(renderSkill)}</div>
       <h3>Frameworks</h3>
-      <div className="skills-grid">
-        {frameworks.map(renderSkill)}
-      </div>
+      <div className="skills-grid">{frameworks.map(renderSkill)}</div>
       <h3>Others Tools</h3>
-      <div className="skills-grid">
-        {others.map(renderSkill)}
-      </div>
+      <div className="skills-grid">{others.map(renderSkill)}</div>
       <Certifications certifications={certifications} />
     </div>
   );

@@ -16,7 +16,7 @@ const Certifications = ({ certifications }) => {
         {certifications.map((certification, index) => (
           <div key={index} className="certification-card" data-aos="fade-up">
             <div className="certification-card-content">
-              <h3>{certification.name}</h3>
+              <h4 className="certification-card-title">{certification.name}</h4>
               <time>{certification.date}</time>
               <p>{certification.description}</p>
             </div>
