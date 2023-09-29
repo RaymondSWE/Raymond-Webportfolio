@@ -38,15 +38,20 @@ import vscode from "../../img/logo/vscode.png";
 import intellj from "../../img/logo/intellj.svg";
 import datagrip from "../../img/logo/datagrip.svg";
 import socketIO from "../../img/logo/socketIO.png";
+import pythonLogo from "../../img/logo/python.png";
+import zeromqLogo from "../../img/logo/zeromq.svg"
+import pycharmLogo from "../../img/logo/pycharm.svg"
+
 
 const SkillsSection = () => {
   const languages = [
     { name: "HTML", level: 5, icon: HTML },
     { name: "CSS", level: 4, icon: CSS },
-    { name: "JavaScript", level: 3, icon: JavascriptLogo },
-    { name: "Java", level: 3, icon: JavaLogo },
-    { name: "TypeScript", level: 2, icon: TypescriptLogo },
-    { name: "C++", level: 2, icon: Cpp },
+    { name: "JavaScript", level: 4, icon: JavascriptLogo },
+    { name: "Java", level: 4, icon: JavaLogo },
+    { name: "TypeScript", level: 3, icon: TypescriptLogo },
+    { name: "Python", level: 2, icon: pythonLogo },
+    { name: "C++", level: 1, icon: Cpp },
     { name: "C#", level: 1, icon: Csharp },
   ];
 
@@ -55,9 +60,9 @@ const SkillsSection = () => {
     { name: "Node.js", level: 4, icon: NodeLogo },
     { name: "Prisma", level: 4, icon: Prisma },
     { name: "Express.js", level: 4, icon: ExpressLogo },
-    { name: "Redux", level: 3, icon: ReduxLogo },
+    { name: "Redux", level: 4, icon: ReduxLogo },
+    { name: "Spring", level: 3, icon: Spring },
     { name: "NextJS", level: 2, icon: NextJS },
-    { name: "Spring", level: 2, icon: Spring },
     { name: "Bootstrap", level: 3, icon: Bootstrap },
     { name: "TailwindCSS", level: 2, icon: Tailwind },
   ];
@@ -68,8 +73,10 @@ const SkillsSection = () => {
     { name: "Git & Github", level: 4, icon: Git },
     { name: "REST", level: 4, icon: REST },
     { name: "Github Action", level: 3, icon: Github },
+    { name: "ZeroMQ", level: 3.5, icon: zeromqLogo },
     { name: "SocketIO (Websocket)", level: 3, icon: socketIO },
     { name: "Intellj", level: 2.5, icon: intellj },
+    { name: "Pycharm", level: 2.5, icon: pycharmLogo },
     { name: "Datagrip", level: 2.5, icon: datagrip },
     { name: "Postman", level: 2, icon: Postman },
     { name: "Azure", level: 2, icon: Azure },
