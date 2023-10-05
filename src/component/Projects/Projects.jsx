@@ -77,18 +77,17 @@ const Projects = () => {
         "A comprehensive trading platform designed for Rust ingame skins.  SnipeSkins aims to provide a seamless experience for trading digital assets in the expanding Rust market.",
 
       detailedDescription: `
-      📈 Market Positioning: Drawing inspiration from leading platforms such as RustSkins.com, the site aspires to offer an enhanced user experience, ensuring an easy way of trading for the game enthusiast community.
+      📈 Market Positioning: Drawing inspiration from platforms such as RustSkins.com, the site aspires to offer an enhanced user experience, ensuring an easy way of trading for the game enthusiast community.
 
       🏅 Recognition & Teamwork: My work on CSFairTrade led to me being approached for SnipeSkins, a testament to my technical skills and contribution to the gaming community. Throughout the development process of SnipeSkins, I had the privilege of collaborating with two senior developers with over 6+ years of experience.
 
-      🛠️ Technology Stack: The platform consist of latest technologies. At its core, Node.js powers backend operations, while Next.js, enhanced with server side rendering, ensures a dynamic frontend experience. Prisma handles data efficiently, and real time interactions are driven by Socket.io. Furthermore, the entire project is dockerized, ensuring consistency across various environments. Additionally, we utilize a monorepo structure with NextJS, which simplifies the management of the codebase and promotes code reusability.
+      🛠️ Technology Stack: The platform consist of latest technologies. Node.js powers backend operations, while Next.js, enhanced with server side rendering, ensures a dynamic frontend experience. Prisma handles data, and real time interactions are driven by Socket.io. Furthermore, the entire project is dockerized, ensuring consistency across various environments. Additionally, we utilize a monorepo structure with NextJS, which simplifies the management of the codebase and promotes code reusability.
       
       💼 User Interaction: Players can log in using their Steam accounts, seamlessly integrating their ingame inventories with the marketplace. Once onboarded, they can list items for sale, set pricing strategies, or browse and purchase skins listed by others.
 
       🎮 Features: Beyond integrating Steam API, SnipeSkins showcases an expansive marketplace, different payment methods and cashout options.  
 
       `,
-
       image: snipeskinsImage,
       technologyStack: [
         "Next.js",
@@ -111,7 +110,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Distributed Queue System,",
+      title: "Distributed Queue System For Students",
       startDate: "2023-09-05",
       endDate: "2023-09-29",
       description:
@@ -124,9 +123,9 @@ const Projects = () => {
 
       📚 Features & Reflection: The Distributed Queue System is built with an event-driven architecture, featuring a Pub/Sub and Request/Respond pattern through ZeroMQ sockets. It incorporates mechanisms like heartbeats for maintaining client presence in the queue and used in communication between students, supervisors, and the server. The system can even connect with external API if wished by user.
 
-      🚀 Growth: The experience of developing this project showcases the importance of structured workflows, code reviews, and a well organized codebase. I have learned the how to build properly event-driven architecture and balancing between different technologies. This is my secound event-driven project, first one was with Socket.IO with NodeJS (CSFairTrade). CSfairtrade event driven strucutre  was a bit more complicated which included communication between external API (having accounts as bots in Steam API) communicating with users, such as trading etc. But it was fun seeing the difference of implementation of these two different sockets in different langauges. Looking forward, I want to implement more advanced concepts and tools, like implementing CI/CD pipelines and evaluating another libraries for GUI development (such as PySide).
+      🚀 Growth: The experience of developing this project showcases the workflows, code reviews, and a well organized codebase. I have learned the how to build properly event-driven architecture and balancing between different technologies. This is my second event-driven project, first one was with Socket.IO with NodeJS (CSFairTrade). CSfairtrade event driven strucutre  was a bit more complicated which included communication between external API (having accounts as bots in Steam API) communicating with users, such as trading etc. But it was fun seeing the difference of implementation of these two different sockets in different langauges. Looking forward, I want to implement more advanced concepts and tools, like implementing CI/CD pipelines and evaluating another libraries for GUI development (such as PySide).
 
-      📘 Documentation & Architecture: The documentation provides a readme file that consist overview of the project, covering aspects from installation to API endpoints. The system adopts an event-driven architecture, with detailed explanations of the components, such as Event Object, Event Listener, Service Folder, Config Files, and Workers. The project also provides a thorough enumeration of dependencies and their roles in the project.
+      📘 Documentation & Architecture: The documentation provides a readme file that consist overview of the project, covering aspects from installation to API endpoints. The system adopts an event-driven architecture, with detailed explanations of the components, such as Event Object, Event Listener, Service Folder, Config Files, and Workers.
 
     `,
       image: queueStudentImage,
@@ -149,7 +148,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Booking Application for Company Employees",
+      title: "Booking Application For Company Employees",
       startDate: "2022-06-05",
       endDate: "2022-07-12",
       description:
