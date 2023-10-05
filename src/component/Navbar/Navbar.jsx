@@ -14,23 +14,26 @@ const Navbar = () => {
   const ref = useRef(null);
   const [active, setActive] = useState(false);
 
-  const handleClick = (e) => {
+  const navItems = [
+    { icon: faUser, label: "About", href: "#about" },
+    { icon: faTools, label: "Skills", href: "#skills" },
+    { icon: faProjectDiagram, label: "Projects", href: "#projects" },
+    { icon: faBriefcase, label: "Work", href: "#workexperience" },
+    { icon: faUniversity, label: "Education", href: "#education" },
+    { icon: faEnvelope, label: "Contact", href: "#contact" },
+  ];
+
+  const handleClick = (e, href) => {
     e.preventDefault();
-    const target = e.target.getAttribute("href");
-    const section = document.querySelector(target);
+    const section = document.querySelector(href);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      setActive(false);  
     }
   };
 
-  const handleHamburgerClick = () => {
-    setActive(!active);
-  };
-
   useEffect(() => {
-    const listItems = ref.current.querySelectorAll(
-      ".navbar-container-navbar-item",
-    );
+    const listItems = ref.current.querySelectorAll(".navbar-container-navbar-item");
     listItems.forEach((item, index) => {
       item.style.setProperty("--i", index);
     });
@@ -42,65 +45,16 @@ const Navbar = () => {
         <a href="#hero" className="navbar-container-navbar-logo">
           Raman Mohammed
         </a>
-        <ul
-          className={`navbar-container-navbar-menu ${active ? "active" : ""}`}
-        >
-          <li className="navbar-container-navbar-item">
-            <a
-              href="#about"
-              className="navbar-container-navbar-links"
-              onClick={handleClick}
-            >
-              <FontAwesomeIcon icon={faUser} /> About
-            </a>
-          </li>
-          <li className="navbar-container-navbar-item">
-            <a
-              href="#skills"
-              className="navbar-container-navbar-links"
-              onClick={handleClick}
-            >
-              <FontAwesomeIcon icon={faTools} /> Skills
-            </a>
-          </li>
-          <li className="navbar-container-navbar-item">
-            <a
-              href="#projects"
-              className="navbar-container-navbar-links"
-              onClick={handleClick}
-            >
-              <FontAwesomeIcon icon={faProjectDiagram} /> Projects
-            </a>
-          </li>
-          <li className="navbar-container-navbar-item">
-            <a
-              href="#workexperience"
-              className="navbar-container-navbar-links"
-              onClick={handleClick}
-            >
-              <FontAwesomeIcon icon={faBriefcase} /> Work
-            </a>
-          </li>
-          <li className="navbar-container-navbar-item">
-            <a
-              href="#education"
-              className="navbar-container-navbar-links"
-              onClick={handleClick}
-            >
-              <FontAwesomeIcon icon={faUniversity} /> Education
-            </a>
-          </li>
-          <li className="navbar-container-navbar-item">
-            <a
-              href="#contact"
-              className="navbar-container-navbar-links"
-              onClick={handleClick}
-            >
-              <FontAwesomeIcon icon={faEnvelope} /> Contact
-            </a>
-          </li>
+        <ul className={`navbar-container-navbar-menu ${active ? "active" : ""}`}>
+          {navItems.map((item, index) => (
+            <li key={index} className="navbar-container-navbar-item" style={{ "--i": index }}>
+              <a href={item.href} className="navbar-container-navbar-links" onClick={(e) => handleClick(e, item.href)}>
+                <FontAwesomeIcon icon={item.icon} /> {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
-        <button onClick={handleHamburgerClick} className="hamburger">
+        <button onClick={() => setActive(!active)} className="hamburger" aria-label="Menu Toggle">
           <div />
           <div />
           <div />
