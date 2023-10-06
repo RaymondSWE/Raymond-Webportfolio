@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
+import HamburgerMenu from 'react-hamburger-menu';
+
 import {
   faUser,
   faTools,
@@ -39,29 +41,42 @@ const Navbar = () => {
     });
   }, []);
 
+  
+
   return (
     <nav className="navbar">
       <div className="navbar-container" ref={ref}>
         <a href="#hero" className="navbar-container-navbar-logo">
           Raman Mohammed
         </a>
-        <ul className={`navbar-container-navbar-menu ${active ? "active" : ""}`}>
-          {navItems.map((item, index) => (
-            <li key={index} className="navbar-container-navbar-item" style={{ "--i": index }}>
-              <a href={item.href} className="navbar-container-navbar-links" onClick={(e) => handleClick(e, item.href)}>
-                <FontAwesomeIcon icon={item.icon} /> {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <button onClick={() => setActive(!active)} className="hamburger" aria-label="Menu Toggle">
-          <div />
-          <div />
-          <div />
-        </button>
+        <div className="menu-container">
+          <ul className={`navbar-container-navbar-menu ${active ? "active" : ""}`}>
+            {navItems.map((item, index) => (
+              <li key={index} className="navbar-container-navbar-item" style={{ "--i": index }}>
+                <a href={item.href} className="navbar-container-navbar-links" onClick={(e) => handleClick(e, item.href)}>
+                  <FontAwesomeIcon icon={item.icon} /> {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+            <div className="hamburger-wrapper">
+              <HamburgerMenu
+                  isOpen={active}
+                  menuClicked={() => setActive(!active)}
+                  width={25}
+                  height={15}
+                  strokeWidth={1}
+                  rotate={0}
+                  color='orange'
+                  borderRadius={0}
+                  animationDuration={0.5}
+              />
+          </div>
+        </div>
       </div>
     </nav>
-  );
+);
+
 };
 
 export default Navbar;

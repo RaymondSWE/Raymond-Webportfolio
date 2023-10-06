@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .navbar-container-navbar-logo {
@@ -26,7 +27,7 @@
 .navbar-container-navbar-menu {
   list-style: none;
   display: flex;
-  margin-right: 100px;
+  margin-right: 5rem;
 }
 
 .navbar-container-navbar-item {
@@ -69,6 +70,16 @@
   margin-right: 0.5rem;  
 }
 
+.hamburger-wrapper {
+  display: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  z-index: 1001;
+  position: absolute; 
+  top: 0.5rem; 
+  right: 2rem; 
+}
+
 
 
 @keyframes slideBottom {
@@ -82,7 +93,6 @@
     opacity: 1;
   }
 }
-
 
 
 @media only screen and (max-width: 480px) {
@@ -104,32 +114,16 @@
   }
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 10;
-}
 
-.hamburger div {
-  width: 2rem;
-  height: 0.25rem;
-  background: #8b8383;
-  border-radius: 10px;
-  transition: all 0.3s linear;
-  position: relative;
-  transform-origin: 1px;
-}
 @media (max-width: 768px) {
+  .hamburger-wrapper {
+    display: block;
+  }
+
   .navbar {
     width: 100%;
   }
+
   .navbar-container {
     flex-direction: column-reverse;
   }
@@ -138,52 +132,54 @@
     display: none;
   }
 
-  .hamburger {
-    display: flex;
-    margin-left: 18rem;
-    margin-right: 1rem;
-  }
-
   .navbar-container-navbar-menu {
-    display: none;
+    width: 100%;
+    height: 50vh; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    display: none; 
     flex-direction: column;
-    margin-right: 2rem;
-    margin-left: 10rem;
-
-    padding: 1rem;
-    background: #2e2c2c;
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  }
-
-  .navbar-container-navbar-menu.active {
-    display: flex;
-  }
-}
-
-/* Media query for general laptop screens */
-@media only screen and (max-width: 1200px) {
-  .navbar-container-navbar-logo {
-    font-size: 1.4rem;
-  }
-
-  .navbar-container-navbar-menu {
-    margin-right: 60px;
+    margin: 0; 
+    padding: 1.5rem 2rem; 
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    align-items: center;  
+    justify-content: center; 
   }
 
   .navbar-container-navbar-item {
-    margin-left: 1.5rem;
+    margin: 1rem 0; 
+    font-size: large;
+    transition: background-color 0.3s ease; 
+    border-radius: 5px; 
+    padding: 0.1rem 0rem; 
+    margin-right: 5rem;
   }
 
-  .navbar-container-navbar-links svg {
-    width: 0.9rem;
-    height: 0.9rem;
+  .navbar-container-navbar-item:hover {
+    background-color: rgba(255, 152, 0, 0.2); 
+}
+
+
+  .navbar-container-navbar-menu.active {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  .hamburger-wrapper {
+    position: fixed;
+    top: 1.5rem;
+    right: 2rem;
   }
 }
 
+
 /* Media query for smaller laptop screens */
 @media only screen and (max-width: 1024px) {
-  /* Remove background and box-shadow when navbar is active (hamburger menu is opened) */
   .navbar {
     background: none;
     box-shadow: none;
