@@ -11,7 +11,7 @@
   padding: 20px;
   background: linear-gradient(135deg, #121212, #1f1e1e);
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero-container::before {
@@ -117,10 +117,11 @@
 
 .hero-icon-container {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 49.5%;
   transform: translateX(-50%);
 }
+
 
 /* Responsive styles stay largely the same, but you can adjust padding, margin and font-sizes if needed */
 
@@ -164,6 +165,10 @@
   .hero-container-hero-story {
     width: 80%; 
     font-size: 1.2rem;
+  }
+
+  .hero-icon-container {
+    bottom: 5px;
   }
 
 }

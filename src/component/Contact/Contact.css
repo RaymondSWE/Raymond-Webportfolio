@@ -2,14 +2,12 @@
   padding: 20px;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
-  background: linear-gradient(135deg, #121212, #1f1e1e),
-              linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(135deg, #121212, #1f1e1e);
   color: #ff9800;
   font-family: "Orbitron", sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
 }
-
 
 .contact-section h2 {
   text-align: center;
@@ -19,8 +17,6 @@
   font-size: 2em;
   margin-bottom: 2em;
 }
-
-
 
 .contact-section h2::after {
   content: "";
