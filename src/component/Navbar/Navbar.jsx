@@ -46,11 +46,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container" ref={ref}>
-        <a href="#hero" className="navbar-container-navbar-logo">
+        <a href="#hero" className="navbar-container-logo">
           Raman Mohammed
         </a>
         <div className="menu-container">
-          <ul className={`navbar-container-navbar-menu ${active ? "active" : ""}`}>
+          <ul className={`navbar-container-menu ${active ? "active" : ""}`}>
             {navItems.map((item, index) => (
               <li key={index} className="navbar-container-navbar-item" style={{ "--i": index }}>
                 <a href={item.href} className="navbar-container-navbar-links" onClick={(e) => handleClick(e, item.href)}>
