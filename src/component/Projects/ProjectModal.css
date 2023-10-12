@@ -9,6 +9,8 @@
   justify-content: center;
   align-items: center;
   z-index: 99999;
+  backdrop-filter: blur(5px);
+
 }
 
 .project-modal-content {
@@ -24,7 +26,8 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 165, 0, 0.5) rgba(0, 0, 0, 0.5);
-  
+  animation: modalFadeIn 1s ease-out forwards;
+
 }
 .project-modal-content::-webkit-scrollbar {
   width: 8px;
@@ -62,7 +65,7 @@
   right: 10px;
   background: linear-gradient(45deg, #ff9800, #ffaa80);
   border: 1px solid #ff9f70;
-  color: white;
+  color: white !important;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
@@ -72,36 +75,29 @@
   letter-spacing: 0.5px;
   cursor: pointer;
   border-radius: 25px;
-  transition:
-    background 0.3s,
-    box-shadow 0.2s,
-    transform 0.2s;
+  background: none;
+  border: 2px solid #ff9800;
+  transition: background 0.3s, box-shadow 0.3s, border 0.3s;
 }
 
 .modal-close-btn:hover {
-  background: linear-gradient(45deg, #ffaa80, #ff9800);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+  background: #ff9800;
+  border-color: #ffaa80;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .player-wrapper {
   position: relative;
-  padding-top: 56.25%; 
+  padding-top: 56.25%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden; 
 }
 
 .react-player {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .project-dates {
@@ -111,7 +107,19 @@
   background: rgba(0, 0, 0, 0.1);
   padding: 5px 10px;
   border-radius: 5px;
-  animation: fadeIn 1s ease-out;
+  animation: modalFadeIn 2s ease-in-out;
+}
+
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9); 
+  }
+  to {
+    opacity: 1;
+    transform: scale(1); 
+  }
 }
 
 .project-dates p {

@@ -17,9 +17,9 @@ const Education = () => {
     },
     {
       school: "University Borås",
-      degree: "Bachelor's in Economics (60 credits)",
+      degree: "Bachelor's in Economics (30 credits)",
       startDate: "August 2020",
-      endDate: "May 2021",
+      endDate: "Jan 2021",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       logo: Boras,
     },
