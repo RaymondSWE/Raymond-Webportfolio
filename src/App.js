@@ -13,12 +13,9 @@ import Loader from "./component/Loader/Loader.jsx";
 
 function App() {
   useEffect(() => {
-    // Initialize Google Analytics
     ReactGA.initialize(process.env.REACT_APP_PUBLIC_GOOGLE_ANALYTICS);
-    // Record an initial pageview
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -32,8 +29,6 @@ function App() {
   if (loading) {
     return <Loader />;
   }
-
-
 
   return (
     <>

@@ -143,7 +143,7 @@ const Projects = () => {
         "Event-driven architecture",
       ],
       liveDemo: "https://www.youtube.com/watch?v=m-omLSKbUtc",
-      githubRepo: "https://github.com/RaymondSWE/DistributedQueue",
+      githubRepo: "https://github.com/RaymondSWE/Queue-system---Event-Driven-Architecture",
       demoVideo: "https://www.youtube.com/watch?v=m-omLSKbUtc",
     },
     {
