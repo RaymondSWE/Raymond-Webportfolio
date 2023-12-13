@@ -4,6 +4,7 @@ import "./Projects.css";
 import "./ProjectModal.css";
 import csgoImage from "../../img/csgo.png";
 import blackjackImage from "../../img/blackjack.png";
+import codemateImage from "../../img/codemate.png";
 import taskmanagementImage from "../../img/Todo-javaswing.png";
 import raydeployImage from "../../img/RayDeploy.png";
 import webportfolioImage from "../../img/webportfolio.png";
@@ -69,7 +70,62 @@ const Projects = () => {
       demoVideo: "https://www.youtube.com/watch?v=fYdAn0O2g0Q",
     },
     {
-      id: 2,
+      "id": 2,
+      "title": "CodeMate",
+      "startDate": "2023-11-23",
+      "endDate": "Ongoing",
+      "description": 
+        "A dynamic platform designed to enhance collaboration among students in the tech field, facilitating the sharing of ideas, project development, and networking opportunities.",
+      "detailedDescription": `
+        🤝 Collaboration Hub: CodeMate acts as a bridge connecting students from various technical backgrounds. It offers a space for finding co-founders, sharing innovative project ideas, and networking.
+    
+        🛠️ Technology Stack: Using a combination of Next.js for front-end development, and Spring Boot for back-end architecture, CodeMate integrates modern web technologies. It also utilizes Redux for state management and React Query for efficient data fetching, coupled with Axios for HTTP requests.
+    
+        🎓 Skill Showcase: Students can exhibit their technical knowledge to attract potential co-founders and investors. The platform provides a portfolio feature to display projects and skills.
+    
+        🚀 Attracting Investors: By showcasing compelling projects, students can draw the attention of potential investors, aiding in kickstarting their entrepreneurial journey.
+    
+        🌐 Full Stack Development: The server-side, managed by Spring Boot, offers features like AMQP for messaging, Data JPA for database interactions, and OAuth2 & JWT for secure authentication.
+
+        🐳 Docker Integration: Utilizes Docker containers for essential services. MySQL container handles the database needs, and RabbitMQ container facilitates message oriented middleware for the platform.
+    
+        🧪 Testing and Quality Assurance: Emphasis on testing with Jest for the front end, and dedicated Spring Boot testing tools for the back end. I'd like to learn and implement Cypress for the end to end testing in the future.
+        
+      `,
+      "image": codemateImage,
+      "technologyStack": [
+        "Java",
+        "Typescript",
+        "Next.js",
+        "Spring Boot",
+        "Redux",
+        "React/Tan Query",
+        "Axios",
+        "Data JPA",
+        "OAuth2",
+        "JWT",
+        "Jest",
+        "MySQL",
+        "RabbitMQ",
+        "AMQP",
+        "Lombok",
+        "Liquibase",
+        "Docker",
+        "Github",
+        "Github Actions",
+        "Sonarlint",
+        "Postman",
+        "Linux",
+        "IntelliJ",
+        "VSCode",
+        "TailwindCSS",
+        "React",
+      ],
+      "liveDemo": "https://codecomrades.vercel.app/",
+      "githubRepo": null,
+    },    
+    {
+      id: 3,
       title: "SnipeSkins",
       startDate: "2023-08-12",
       endDate: "Ongoing",
@@ -109,7 +165,7 @@ const Projects = () => {
       githubRepo: null,
     },
     {
-      id: 3,
+      id: 4,
       title: "Distributed Queue System For Students",
       startDate: "2023-09-05",
       endDate: "2023-09-29",
@@ -147,7 +203,7 @@ const Projects = () => {
       demoVideo: "https://www.youtube.com/watch?v=m-omLSKbUtc",
     },
     {
-      id: 3,
+      id: 5,
       title: "Booking Application For Company Employees",
       startDate: "2022-06-05",
       endDate: "2022-07-12",
@@ -181,7 +237,7 @@ const Projects = () => {
       githubRepo: null,
     },
     {
-      id: 4,
+      id: 6,
       title: "Blackjack game",
       startDate: "2022-03-04",
       endDate: "2022-04-20",
@@ -203,7 +259,7 @@ const Projects = () => {
       githubRepo: "https://github.com/RaymondSWE/Blackjack-game",
     },
     {
-      id: 5,
+      id: 7,
       title: "Web Portfolio",
       startDate: "2023-06-25",
       endDate: "Ongoing",
@@ -238,7 +294,7 @@ const Projects = () => {
     },
 
     {
-      id: 6,
+      id: 8,
       title: "Simple Website",
       startDate: "2021-10-26",
       endDate: "2021-10-26",

@@ -38,17 +38,15 @@ export default function About() {
             technology enthusiast
           </h3>
           <p className="about-description" data-aos={"fade-left"}>
-            Software Developer with 2 and a half years of experience across
-            various platforms and languages. I gained experience in Java,
-            React.js, TypeScript, Node.js, MySQL and AWS during school and
-            bootcamp, which I also applied in real world projects.
+          I am a Software Developer with over three years of experience, 
+          nearing completion of my Bachelor's in System Development in Computer Science.
+          My expertise spans multiple languages, such as Java, React.js, TypeScript, Node.js, MySQL, AWS, and more.
+           I am interested in creating distributed systems, ensuring scalability and reliability. 
+           My projects showcase my ability in both frontend and backend development, 
+           utilizing DevOps methodologies for infrastructures within distributed systems.
           </p>
           <p className="about-description" data-aos={"fade-right"}>
-            I've shown competence in both self managed and team enviroment,
-            using the modern tools to create good software systems. With a
-            foundation in computer science and experience, I excel in frontend,
-            backend development, database design, and cloud services. Always
-            open to learn more.
+          I am committed to continuous learning and eager to apply my technical knowledge to various challenges, with the goal of creating impactful software infrastructure.
           </p>
         </div>
 
