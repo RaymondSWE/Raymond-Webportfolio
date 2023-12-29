@@ -46,6 +46,7 @@ import SwarmLogo from "../../img/logo/Dockerswarm.png"
 import VercelLogo from "../../img/logo/Vercel.png"
 import AWSLambdaLogo from "../../img/logo/AWSLambda.png"
 import GrafanaLogo from "../../img/logo/Grafana.png"
+import PrometheusLogo from "../../img/logo/prometheusio.svg"
 
 const SkillsSection = () => {
   const languages = [
@@ -64,10 +65,10 @@ const SkillsSection = () => {
     { name: "Node.js", level: 4, icon: NodeLogo },
     { name: "NextJS", level: 4, icon: NextJS },
     { name: "Prisma", level: 4, icon: Prisma },
+    { name: "Spring", level: 4, icon: Spring },
     { name: "TailwindCSS", level: 4, icon: Tailwind },
     { name: "Express.js", level: 4, icon: ExpressLogo },
-    { name: "Redux", level: 4, icon: ReduxLogo },
-    { name: "Spring", level: 3, icon: Spring },
+    { name: "Redux", level: 3, icon: ReduxLogo },
     { name: "Bootstrap", level: 3, icon: Bootstrap },
   ];
 
@@ -81,7 +82,9 @@ const SkillsSection = () => {
     { name: "Azure", level: 2, icon: Azure },
     { name: "Docker", level: 2, icon: Docker },
     { name: "Grafana", level: 2, icon: GrafanaLogo },
+    { name: "Prometheus", level: 2, icon: PrometheusLogo },
     { name: "Swarm Orchestration", level: 1, icon: SwarmLogo },
+    { name: "Nginx", level: 1, icon: Nginx },
   ];
 
   const others = [
@@ -97,7 +100,6 @@ const SkillsSection = () => {
     { name: "Ubuntu", level: 2, icon: Ubuntu },
     { name: "Jest", level: 2, icon: JestLogo },
     { name: "Cypress", level: 1, icon: CypressLogo },
-    { name: "Nginx", level: 1, icon: Nginx },
     { name: "Figma", level: 0.5, icon: Figma },
     { name: "tRPC", level: 0.5, icon: TRPCLogo },
   ];
