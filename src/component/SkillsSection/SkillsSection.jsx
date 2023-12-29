@@ -41,7 +41,11 @@ import socketIO from "../../img/logo/socketIO.png";
 import pythonLogo from "../../img/logo/python.png";
 import zeromqLogo from "../../img/logo/zeromq.svg"
 import pycharmLogo from "../../img/logo/pycharm.svg"
-
+import LiquibaseLogo from "../../img/logo/Liquibase.png"
+import SwarmLogo from "../../img/logo/Dockerswarm.png"
+import VercelLogo from "../../img/logo/Vercel.png"
+import AWSLambdaLogo from "../../img/logo/AWSLambda.png"
+import GrafanaLogo from "../../img/logo/Grafana.png"
 
 const SkillsSection = () => {
   const languages = [
@@ -58,37 +62,47 @@ const SkillsSection = () => {
   const frameworks = [
     { name: "React", level: 4, icon: ReactLogo },
     { name: "Node.js", level: 4, icon: NodeLogo },
+    { name: "NextJS", level: 4, icon: NextJS },
     { name: "Prisma", level: 4, icon: Prisma },
+    { name: "TailwindCSS", level: 4, icon: Tailwind },
     { name: "Express.js", level: 4, icon: ExpressLogo },
     { name: "Redux", level: 4, icon: ReduxLogo },
     { name: "Spring", level: 3, icon: Spring },
-    { name: "NextJS", level: 2, icon: NextJS },
     { name: "Bootstrap", level: 3, icon: Bootstrap },
-    { name: "TailwindCSS", level: 2, icon: Tailwind },
+  ];
+
+  const databaseDevOps = [
+    { name: "Git & Github", level: 4, icon: Git },
+    { name: "Github Action", level: 3, icon: Github },
+    { name: "Liquibase", level: 3, icon: LiquibaseLogo },
+    { name: "MySQL", level: 4, icon: mysql },
+    { name: "AWS Lambda", level: 3, icon: AWSLambdaLogo },
+    { name: "Vercel", level: 3, icon: VercelLogo },
+    { name: "Azure", level: 2, icon: Azure },
+    { name: "Docker", level: 2, icon: Docker },
+    { name: "Grafana", level: 2, icon: GrafanaLogo },
+    { name: "Swarm Orchestration", level: 1, icon: SwarmLogo },
   ];
 
   const others = [
     { name: "VsCode", level: 5, icon: vscode },
-    { name: "MySQL", level: 4, icon: mysql },
-    { name: "Git & Github", level: 4, icon: Git },
+    { name: "Intellj", level: 5, icon: intellj },
+    { name: "Pycharm", level: 5, icon: pycharmLogo },
+    { name: "Datagrip", level: 5, icon: datagrip },
     { name: "REST", level: 4, icon: REST },
-    { name: "Github Action", level: 3, icon: Github },
+    { name: "Postman", level: 4, icon: Postman },
     { name: "ZeroMQ", level: 3.5, icon: zeromqLogo },
     { name: "SocketIO (Websocket)", level: 3, icon: socketIO },
-    { name: "Intellj", level: 2.5, icon: intellj },
-    { name: "Pycharm", level: 2.5, icon: pycharmLogo },
-    { name: "Datagrip", level: 2.5, icon: datagrip },
-    { name: "Postman", level: 2, icon: Postman },
-    { name: "Azure", level: 2, icon: Azure },
     { name: "Linux", level: 2, icon: Linux },
     { name: "Ubuntu", level: 2, icon: Ubuntu },
     { name: "Jest", level: 2, icon: JestLogo },
     { name: "Cypress", level: 1, icon: CypressLogo },
-    { name: "Docker", level: 1, icon: Docker },
     { name: "Nginx", level: 1, icon: Nginx },
     { name: "Figma", level: 0.5, icon: Figma },
     { name: "tRPC", level: 0.5, icon: TRPCLogo },
   ];
+
+
   const certifications = [
     {
       name: "Testing React with Jest and React Testing Library (RTL)",
@@ -143,18 +157,16 @@ const SkillsSection = () => {
 
   return (
     <div id="skills" className="skills-section">
-      <h2
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      >
+      <h2 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         Skills
       </h2>
       <h3>Languages</h3>
       <div className="skills-grid">{languages.map(renderSkill)}</div>
       <h3>Frameworks</h3>
       <div className="skills-grid">{frameworks.map(renderSkill)}</div>
-      <h3>Others Tools</h3>
+      <h3>Database & DevOps Tools</h3>
+      <div className="skills-grid">{databaseDevOps.map(renderSkill)}</div>
+      <h3>Other Tools</h3>
       <div className="skills-grid">{others.map(renderSkill)}</div>
       <Certifications certifications={certifications} />
     </div>
