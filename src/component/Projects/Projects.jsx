@@ -109,6 +109,7 @@ const Projects = () => {
         "MySQL",
         "RabbitMQ",
         "AMQP",
+        "HTTPS",
         "Lombok",
         "Liquibase",
         "Docker",
