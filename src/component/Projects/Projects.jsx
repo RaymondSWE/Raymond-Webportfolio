@@ -65,7 +65,7 @@ const Projects = () => {
         "Github",
         "Prettier",
       ],
-      liveDemo: "https://csfairtrade.com/",
+      liveDemo: "https://csfairtrade-frontend.vercel.app/",
       githubRepo: null,
       demoVideo: "https://www.youtube.com/watch?v=fYdAn0O2g0Q",
     },
