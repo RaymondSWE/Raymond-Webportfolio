@@ -47,6 +47,7 @@ import VercelLogo from "../../img/logo/Vercel.png"
 import AWSLambdaLogo from "../../img/logo/AWSLambda.png"
 import GrafanaLogo from "../../img/logo/Grafana.png"
 import PrometheusLogo from "../../img/logo/prometheusio.svg"
+import Kubernetes from "../../img/logo/kubernetes.png"
 
 const SkillsSection = () => {
   const languages = [
@@ -74,17 +75,19 @@ const SkillsSection = () => {
 
   const databaseDevOps = [
     { name: "Git & Github", level: 4, icon: Git },
+    { name: "Docker", level: 4, icon: Docker },
+    { name: "Docker-Swarm", level: 3, icon: SwarmLogo },
     { name: "Github Action", level: 3, icon: Github },
     { name: "Liquibase", level: 3, icon: LiquibaseLogo },
     { name: "MySQL", level: 4, icon: mysql },
     { name: "AWS Lambda", level: 3, icon: AWSLambdaLogo },
     { name: "Vercel", level: 3, icon: VercelLogo },
     { name: "Azure", level: 2, icon: Azure },
-    { name: "Docker", level: 2, icon: Docker },
     { name: "Grafana", level: 2, icon: GrafanaLogo },
     { name: "Prometheus", level: 2, icon: PrometheusLogo },
-    { name: "Swarm Orchestration", level: 1, icon: SwarmLogo },
-    { name: "Nginx", level: 1, icon: Nginx },
+    { name: "Nginx", level: 2, icon: Nginx },
+    { name: "Kubernetes", level: 1, icon: Kubernetes },
+
   ];
 
   const others = [
@@ -92,12 +95,12 @@ const SkillsSection = () => {
     { name: "Intellj", level: 5, icon: intellj },
     { name: "Pycharm", level: 5, icon: pycharmLogo },
     { name: "Datagrip", level: 5, icon: datagrip },
+    { name: "Linux", level: 4, icon: Linux },
+    { name: "Ubuntu", level: 4, icon: Ubuntu },
     { name: "REST", level: 4, icon: REST },
     { name: "Postman", level: 4, icon: Postman },
     { name: "ZeroMQ", level: 3.5, icon: zeromqLogo },
     { name: "SocketIO (Websocket)", level: 3, icon: socketIO },
-    { name: "Linux", level: 2, icon: Linux },
-    { name: "Ubuntu", level: 2, icon: Ubuntu },
     { name: "Jest", level: 2, icon: JestLogo },
     { name: "Cypress", level: 1, icon: CypressLogo },
     { name: "Figma", level: 0.5, icon: Figma },
