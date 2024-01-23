@@ -110,17 +110,17 @@ const SkillsSection = () => {
 
   const certifications = [
     {
+      name: "Docker Mastery: with Kubernetes + Docker Swarm from a Docker Captain",
+      date: "Ongoing",
+      description:
+        "Comprehensive guide to using Docker, Compose, and Kubernetes. Includes CI/CD examples, configuration best practices, orchestration tool management, container creation, image registry, and workflow optimization.",
+      link: "https://www.udemy.com/certificate/UC-1fc30466-eee4-488e-9993-67d336a8c927/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com",
+    },
+    {
       name: "Testing React with Jest and React Testing Library (RTL)",
       date: "Ongoing",
       description:
         "Comprehensive course on React testing best practices, includes a variety of examples and interactive 'code quizzes'.",
-      link: "https://ramanmohammedportfolio.me",
-    },
-    {
-      name: "Docker Mastery: with Kubernetes +Swarm from a Docker Captain",
-      date: "Ongoing",
-      description:
-        "Comprehensive guide to using Docker, Compose, and Kubernetes. Includes CI examples, configuration best practices, container creation, image registry, and workflow optimization.",
       link: "https://ramanmohammedportfolio.me",
     },
     {

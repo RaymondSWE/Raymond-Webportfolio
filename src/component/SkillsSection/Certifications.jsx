@@ -26,7 +26,7 @@ const Certifications = ({ certifications }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faDownload} /> Install Certificate
+              <FontAwesomeIcon icon={faDownload} /> See Certificate
             </a>
           </div>
         ))}
