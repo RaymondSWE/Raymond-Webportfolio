@@ -70,10 +70,8 @@ export const projects = [
       "detailedDescription": `
       🤝 Collaboration Hub: CodeMate acts as a bridge connecting students from various technical backgrounds. It offers a space for finding co-founders, sharing innovative project ideas, and networking.
 
-      🛠️ Technology Stack: Employing a combination of Next.js for front-end development and Spring Boot for back-end services, CodeMate leverages modern web technologies. It utilizes useContext for state management and React/Tan Query for efficient data fetching.
-  
-      🎓 Skill Showcase: The platform allows students to demonstrate their technical prowess, thereby attracting potential co-founders and investors through a dedicated portfolio feature.
-  
+      🛠️ Technology Stack: Utilising Next.js for front-end development and Spring Boot for back-end services. Docker compose is used although it adds extra layer of complication, this will make it easier when deploying for production
+    
       🚀 Attracting Investors: CodeMate enables students to present their projects compellingly, drawing the attention of potential investors to kickstart their entrepreneurial ventures.
   
       🌐 Full Stack Development: The backend is using Spring Boot, featuring Data JPA for database interactions. For secure authentication, we've integrated Spring Security to manage JWTs.
