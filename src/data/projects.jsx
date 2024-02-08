@@ -68,20 +68,21 @@ export const projects = [
       "description": 
         "A dynamic platform designed to enhance collaboration among students in the tech field, facilitating the sharing of ideas, project development, and networking opportunities.",
       "detailedDescription": `
-        🤝 Collaboration Hub: CodeMate acts as a bridge connecting students from various technical backgrounds. It offers a space for finding co-founders, sharing innovative project ideas, and networking.
-    
-        🛠️ Technology Stack: Using a combination of Next.js for front-end development, and Spring Boot for back-end architecture, CodeMate integrates modern web technologies. It also utilizes useContext for state management and React/Tan Query for efficient data fetching.
-    
-        🎓 Skill Showcase: Students can exhibit their technical knowledge to attract potential co-founders and investors. The platform provides a portfolio feature to display projects and skills.
-    
-        🚀 Attracting Investors: By showcasing compelling projects, students can draw the attention of potential investors, aiding in kickstarting their entrepreneurial journey.
-    
-        🌐 Full Stack Development: The server side, managed by Spring Boot which provides features like AMQP for messaging, and Data JPA for database interactions. It also includes integrated OAuth2 and JWT for secure authentication. To ensure a good development and production environment, CI/CD was implemented at the beginning of the project.
+      🤝 Collaboration Hub: CodeMate acts as a bridge connecting students from various technical backgrounds. It offers a space for finding co-founders, sharing innovative project ideas, and networking.
 
-        🐳 Docker Integration: Utilizes Docker containers for essential services. MySQL container handles the database needs, and RabbitMQ container facilitates message oriented middleware for the platform.
-    
-        🧪 Testing and Quality Assurance: Emphasis on testing with Jest for the front end, and dedicated Spring Boot testing tools for the back end. I'd like to implement Cypress for the end to end testing in the future.
-        
+      🛠️ Technology Stack: Employing a combination of Next.js for front-end development and Spring Boot for back-end services, CodeMate leverages modern web technologies. It utilizes useContext for state management and React/Tan Query for efficient data fetching.
+  
+      🎓 Skill Showcase: The platform allows students to demonstrate their technical prowess, thereby attracting potential co-founders and investors through a dedicated portfolio feature.
+  
+      🚀 Attracting Investors: CodeMate enables students to present their projects compellingly, drawing the attention of potential investors to kickstart their entrepreneurial ventures.
+  
+      🌐 Full Stack Development: The backend is using Spring Boot, featuring Data JPA for database interactions. For secure authentication, we've integrated Spring Security to manage JWTs.
+  
+      🐳 Docker Integration: The project employs Docker containers for key services, with a MySQL container for database management, Future images and containers might be implemented in the compose file.
+  
+      🧪 Testing and Quality Assurance: We place a strong emphasis on testing, utilizing Jest for the frontend and Spring Boot's testing tools for the backend. Plans are underway to include Cypress for end-to-end testing.
+  
+      🛡️ Enhanced Security with JWT: Utilizing Spring Security, CodeMate implements JWT for secure authentication. This integration ensures that all user interactions with the platform are authenticated and authorized efficiently, providing a secure environment for collaboration.
       `,
       "image": codemateImage,
       "technologyStack": [
@@ -90,16 +91,13 @@ export const projects = [
         "Nextjs",
         "NextUI",
         "Spring Boot",
-        "Redux",
-        "React/Tan Query",
+        "Spring Security",
+        "Spring Data JPA",
         "Axios",
-        "Data JPA",
         "OAuth2",
         "JWT",
         "Jest",
         "MySQL",
-        "RabbitMQ",
-        "AMQP",
         "HTTPS",
         "Lombok",
         "Liquibase",
