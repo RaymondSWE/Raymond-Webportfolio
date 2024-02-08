@@ -54,7 +54,7 @@ export const projects = [
         "Linux (Ubuntu)",
         "Event-driven architecture",
         "Github",
-        "Prettier",
+        "Github Actions",
       ],
       liveDemo: "https://csfairtrade-frontend.vercel.app/",
       githubRepo: null,
@@ -86,8 +86,7 @@ export const projects = [
       "technologyStack": [
         "Java",
         "Typescript",
-        "Nextjs",
-        "NextUI",
+        "Nextjs (React)",
         "Spring Boot",
         "Spring Security",
         "Spring Data JPA",
@@ -96,19 +95,15 @@ export const projects = [
         "JWT",
         "Jest",
         "MySQL",
-        "HTTPS",
+        "REST",
         "Lombok",
         "Liquibase",
         "Docker",
         "Github",
         "Github Actions",
-        "Sonarlint",
         "Postman",
         "Linux",
-        "IntelliJ",
-        "VSCode",
         "TailwindCSS",
-        "React",
       ],
       "liveDemo": "https://codecomrades.vercel.app/",
       "githubRepo": null,
@@ -124,7 +119,7 @@ export const projects = [
       detailedDescription: `
       📈 Market Positioning: Drawing inspiration from platforms such as RustSkins.com, the site aspires to offer an enhanced user experience, ensuring an easy way of trading for the game enthusiast community.
 
-      🏅 Recognition & Teamwork: My work on CSFairTrade led to me being approached for SnipeSkins, a testament to my technical skills and contribution to the gaming community. Throughout the development process of SnipeSkins, I had the privilege of collaborating with two senior developers with over 6+ years of experience.
+      🏅 Recognition & Teamwork: My work on CSFairTrade led to me being approached for SnipeSkins, a testament to my technical skills and contribution to the gaming community. Throughout the development process of SnipeSkins, I had the privilege of collaborating with two other developers, both over 6+ years of experience.
 
       🛠️ Technology Stack: The platform consist of latest technologies. Node.js powers backend operations, while Next.js, enhanced with server side rendering, ensures a dynamic frontend experience. Prisma handles data, and real time interactions are driven by Socket.io. Furthermore, the entire project is dockerized, ensuring consistency across various environments. Additionally, we utilize a monorepo structure with NextJS, which simplifies the management of the codebase and promotes code reusability.
       
@@ -141,12 +136,9 @@ export const projects = [
         "Socket.io",
         "Redis",
         "TailwindCSS",
-        "Zen",
-        "Sumsub",
         "Docker",
         "Steam Modules",
         "Postman",
-        "Web3",
         "HTTPS",
         "Github",
       ],
