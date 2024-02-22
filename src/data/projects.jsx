@@ -111,7 +111,7 @@ export const projects = [
     {
       id: 3,
       title: "SnipeSkins",
-      startDate: "2023-08-12",
+      startDate: "2023-06-12",
       endDate: "Ongoing",
       description:
         "A comprehensive trading platform designed for Rust ingame skins.  SnipeSkins aims to provide a seamless experience for trading digital assets in the expanding Rust market.",
