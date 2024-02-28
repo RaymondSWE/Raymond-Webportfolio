@@ -6,7 +6,6 @@ import Integrify from "../../img/logo/Integrify.jpeg";
 import Mathem from "../../img/logo/Mathem.png";
 import Volvo from "../../img/logo/Volvo.jpg";
 import Scandic from "../../img/logo/Scandic.png";
-import WorkExperienceModal from "./WorkExperienceModal/WorkExperienceModal";
 
 const WorkExperience = () => {
   const jobs = [
