@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import emailjs from "emailjs-com";
+import { sendEmail } from "../../services/emailService";
 import Lottie from "lottie-react";
 import "./Contact.css";
 import topAnimationData from "../../img/animation_contact.json";
@@ -16,13 +16,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
+
   const [contactForm, setContactForm] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const [lastEmailTime, setLastEmailTime] = useState(Date.now() - 60000); // Initialize to a time that allows immediate email sending
+  const [lastEmailTime, setLastEmailTime] = useState(Date.now() - 60000); 
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -34,37 +35,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Check if a minute has passed since last email
-    if (Date.now() - lastEmailTime >= 60000) {
-      emailjs
-        .send(
-          process.env.REACT_APP_SERVICE_ID,
-          process.env.REACT_APP_TEMPLATE_ID,
-          contactForm,
-          process.env.REACT_APP_PUBLIC_KEY,
-        )
-        .then(
-          (response) => {
-            console.log("SUCCESS!", response.status, response.text);
-            toast.success(
-              "Email sent successfully! You will get respond within 24 hours.",
-            );
-            setLastEmailTime(Date.now()); // Update last email time
-          },
-          (err) => {
-            console.error("FAILED...", err);
-            toast.error("Failed to send email.");
-          },
-        );
-    } else {
+    if (Date.now() - lastEmailTime < 60000) {
       toast.error("You can send only one email per minute. Please wait.");
+      return;
+    }
+
+    if (sendEmail(contactForm, setLastEmailTime)) {
+      setContactForm({ name: "", email: "", message: "" });
     }
   };
 
   return (
     <div id="contact" className="contact-section">
-      <ToastContainer />
       <h2 className="contact-section-title" data-aos="zoom-out-down">
         Contact
       </h2>

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./HeroSection.css";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { a as animated, Spring } from "react-spring";
 
 export default function HeroSection() {
   const stringSplitter = (string) => {
@@ -28,8 +27,6 @@ export default function HeroSection() {
       location.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-  const AnimatedDiv = animated.div;
 
   return (
     <div className="hero-container" id="hero">

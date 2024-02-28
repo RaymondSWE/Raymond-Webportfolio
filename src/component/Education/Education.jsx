@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Education.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also load AOS styles here
+import "aos/dist/aos.css"; 
 import Skovde from "../../img/logo/UniversitySkovde.png";
 import Boras from "../../img/logo/BorasLogo.jpg";
+import { TimelineItem } from "../../ui/TimelineItem";
 
 const Education = () => {
   const education = [
@@ -12,7 +13,7 @@ const Education = () => {
       degree: "Bachelor's in Computer Science",
       startDate: "August 2021",
       endDate: "May 2024",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Specialization in System Development",
       logo: Skovde,
     },
     {
@@ -20,7 +21,7 @@ const Education = () => {
       degree: "Bachelor's in Economics (30 credits)",
       startDate: "August 2020",
       endDate: "Jan 2021",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Drop out after first term",
       logo: Boras,
     },
   ];
@@ -43,26 +44,5 @@ const Education = () => {
   );
 };
 
-const TimelineItem = ({
-  school,
-  degree,
-  description,
-  startDate,
-  endDate,
-  logo,
-}) => {
-  return (
-    <div className="timeline-item in-view" data-aos="flip-right">
-      <img src={logo} alt={school} className="education-logo" />
-      <div className="timeline-item-content">
-        <span className="tag" style={{ background: "#ff9800" }}>
-          {startDate} - {endDate}
-        </span>
-        <h3>{school}</h3>
-        <p>{degree}</p>
-      </div>
-    </div>
-  );
-};
 
 export default Education;
