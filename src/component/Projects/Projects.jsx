@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { toast } from "react-toastify";
-import { projectsData } from "../../data/projectsData";
+import { ProjectsData } from "../../data/ProjectsData";
 
 const Projects = () => {
   
@@ -23,7 +23,7 @@ const Projects = () => {
     <section id="projects" className="projects-section">
       <h2 data-aos="fade-down-right">Projects</h2>
       <div className="projects-grid" data-aos="fade-down-left">
-        {projectsData.map((project) => (
+        {ProjectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
