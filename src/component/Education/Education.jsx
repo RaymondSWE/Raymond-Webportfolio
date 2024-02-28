@@ -9,16 +9,16 @@ import { TimelineItem } from "../../ui/TimelineItem";
 const Education = () => {
   const education = [
     {
-      school: "University Skövde",
-      degree: "Bachelor's in Computer Science",
+      title: "University Skövde",
+      subtitle: "Bachelor's in Computer Science",
       startDate: "August 2021",
       endDate: "May 2024",
       description: "Specialization in System Development",
       logo: Skovde,
     },
     {
-      school: "University Borås",
-      degree: "Bachelor's in Economics (30 credits)",
+      title: "University Borås",
+      subtitle: "Bachelor's in Economics (30 credits)",
       startDate: "August 2020",
       endDate: "Jan 2021",
       description: "Drop out after first term",
