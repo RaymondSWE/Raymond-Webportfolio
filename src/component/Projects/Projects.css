@@ -150,6 +150,12 @@
   transform: translateY(-2px);
 }
 
+.link-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
 
 .more-info-button {
   border-top: 1px solid #444;

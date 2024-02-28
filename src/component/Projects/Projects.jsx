@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { toast } from "react-toastify";
-import { projects } from "../../data/projects";
+import { projectsData } from "../../data/projectsData";
 
 const Projects = () => {
   
@@ -23,7 +23,7 @@ const Projects = () => {
     <section id="projects" className="projects-section">
       <h2 data-aos="fade-down-right">Projects</h2>
       <div className="projects-grid" data-aos="fade-down-left">
-        {projects.map((project) => (
+        {projectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
@@ -38,11 +38,6 @@ const ProjectCard = ({ project }) => {
   });
   const [isModalOpen, setModalOpen] = useState(false);
 
-  const handleButtonClick = (link) => {
-    if (!link) {
-      toast.error("This link is not available.");
-    }
-  };
 
   const { title, description, image, liveDemo, githubRepo, technologyStack } =
     project;
@@ -62,30 +57,24 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
       <div className="project-links">
-        <div>
-          <a
-            href={githubRepo}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => handleButtonClick(githubRepo)}
-          >
-            <button className="link-button">
-              <FontAwesomeIcon icon={faGithub} /> GitHub
-            </button>
-          </a>
-        </div>
-        <div>
-          <a
-            href={liveDemo}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => handleButtonClick(liveDemo)}
-          >
-            <button className="link-button">
-              <FontAwesomeIcon icon={faGlobe} /> Live Preview
-            </button>
-          </a>
-        </div>
+        <a
+          href={githubRepo || "#!"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`link-button ${githubRepo ? "" : "disabled"}`}
+          onClick={githubRepo ? undefined : (e) => e.preventDefault()}
+        >
+          <FontAwesomeIcon icon={faGithub} /> GitHub
+        </a>
+        <a
+          href={liveDemo || "#!"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`link-button ${liveDemo ? "" : "disabled"}`}
+          onClick={liveDemo ? undefined : (e) => e.preventDefault()}
+        >
+          <FontAwesomeIcon icon={faGlobe} /> Live Preview
+        </a>
       </div>
       <div className="more-info-button">
         <button onClick={() => setModalOpen(true)}>

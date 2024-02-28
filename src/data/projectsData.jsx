@@ -9,7 +9,7 @@ import massageAppImage from "../img/massageapp.png";
 import snipeskinsImage from "../img/snipeskins.jpg";
 import queueStudentImage from "../img/queue-student.png"
 
-export const projects = [
+export const projectsData = [
     {
       id: 1,
       title: "CSFairTrade",
