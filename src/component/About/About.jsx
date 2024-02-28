@@ -6,15 +6,6 @@ import AOS from "aos";
 export default function About() {
   const [animationData, setAnimationData] = useState(null);
 
-  const getDate = () => {
-    var dob = new Date("03/05/1999");
-    var month_diff = Date.now() - dob.getTime();
-    var age_dt = new Date(month_diff);
-    var year = age_dt.getUTCFullYear();
-    var age = Math.abs(year - 1970);
-    return age;
-  };
-
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
