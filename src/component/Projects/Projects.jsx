@@ -2,17 +2,7 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "./Projects.css";
 import "./ProjectModal.css";
-import csgoImage from "../../img/csgo.png";
-import blackjackImage from "../../img/blackjack.png";
-import codemateImage from "../../img/codemate.png";
-import taskmanagementImage from "../../img/Todo-javaswing.png";
-import raydeployImage from "../../img/RayDeploy.png";
-import webportfolioImage from "../../img/webportfolio.png";
-import massageAppImage from "../../img/massageapp.png";
-import snipeskinsImage from "../../img/snipeskins.jpg";
-import queueStudentImage from "../../img/queue-student.png"
 import { useInView } from "react-intersection-observer";
-import { Carousel } from "react-responsive-carousel";
 import ProjectModal from "./ProjectModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle, faGlobe } from "@fortawesome/free-solid-svg-icons";
