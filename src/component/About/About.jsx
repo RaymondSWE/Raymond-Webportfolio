@@ -11,11 +11,20 @@ export default function About() {
   }, []);
 
   useEffect(() => {
-    fetch("https://assets10.lottiefiles.com/packages/lf20_w98qte06.json")
-      .then((response) => response.json())
-      .then((data) => setAnimationData(data))
-      .catch((error) => console.error(error));
+    const fetchData = async () => {
+      try {
+        const response = await fetch("https://assets10.lottiefiles.com/packages/lf20_w98qte06.json");
+        const data = await response.json();
+        setAnimationData(data);
+      } catch (error) {
+        console.error(`Error fetching animation data: ${error.message}`);
+      }
+    };
+  
+    fetchData();
+    AOS.init({ duration: 2000 });
   }, []);
+  
 
   return (
     <div id="about" className="about-container">
